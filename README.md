@@ -4,7 +4,7 @@ A comprehensive collection of Open Source Intelligence (OSINT) tools, websites, 
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-December%202024-brightgreen.svg)](https://github.com)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-December%202025-brightgreen.svg)](https://github.com)
 
 ---
 
