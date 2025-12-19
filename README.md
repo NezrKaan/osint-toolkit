@@ -100,8 +100,8 @@ Tools for extracting, viewing, and analyzing metadata from various file types.
 
 ### Notes on Metadata Tools
 
-**Important Update (December 2024):**
-- **Jeffrey's Image Metadata Viewer** was permanently discontinued in December 2024 due to bandwidth costs
+**Important Update (December 2025):**
+- **Jeffrey's Image Metadata Viewer** was permanently discontinued in December 2025 due to bandwidth costs
 - **Recommended Alternatives:**
   - **Metadata2go** - Best for multi-format support
   - **EXIF.tools** - Best for technical users needing raw ExifTool output
@@ -624,14 +624,14 @@ Use this template for structured investigations:
 ## Timeline of Activities
 | Date/Time (UTC) | Action Taken | Tool Used | Result |
 |-----------------|--------------|-----------|--------|
-| 2024-12-19 10:30 | Initial image search | Google Images | Found 3 matches |
-| 2024-12-19 10:45 | Metadata extraction | ExifTool | GPS: 51.5074° N, 0.1278° W |
+| 2025-12-19 10:30 | Initial image search | Google Images | Found 3 matches |
+| 2025-12-19 10:45 | Metadata extraction | ExifTool | GPS: 51.5074° N, 0.1278° W |
 
 ## Findings
 
 ### Source 1: [Platform/Website Name]
 - **URL:** https://example.com/...
-- **Date Accessed:** 2024-12-19
+- **Date Accessed:** 2025-12-19
 - **Archived:** [Archive.today link]
 - **Key Information:** 
   - Finding 1
@@ -640,7 +640,7 @@ Use this template for structured investigations:
 
 ### Source 2: [Platform/Website Name]
 - **URL:** https://example.com/...
-- **Date Accessed:** 2024-12-19
+- **Date Accessed:** 2025-12-19
 - **Archived:** [Archive.today link]
 - **Key Information:**
   - Finding 1
@@ -768,6 +768,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Made with care by the OSINT Community
 
-*Last Updated: December 2024*
+*Last Updated: December 2025*
 
 </div>
