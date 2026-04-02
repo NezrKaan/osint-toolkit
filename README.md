@@ -1,773 +1,531 @@
-# OSINT Research Resources
+# 🔍 OSINT Nexus — The Ultimate Open Source Intelligence Toolkit
 
-A comprehensive collection of Open Source Intelligence (OSINT) tools, websites, and resources for digital investigations, geolocation analysis, and metadata extraction.
+> **A curated, categorized, and comprehensive collection of 200+ OSINT tools for investigators, journalists, researchers, and security professionals.**
+>
+> Inspired by [Bellingcat's Online Investigation Toolkit](https://www.bellingcat.com/category/resources/how-to/) — improved, expanded, and maintained for the modern OSINT workflow.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-December%202025-brightgreen.svg)](https://github.com)
-
----
-
-## Quick Start Guide
-
-### New to OSINT? Start Here!
-
-#### Your First Investigation (30 minutes)
-
-1. **Basic Image Search**
-   - Upload any image to [Google Reverse Image Search](https://images.google.com/)
-   - Try [TinEye](https://tineye.com/) for comparison
-   
-2. **Extract Metadata**
-   - Upload the same image to [Metadata2go](https://www.metadata2go.com/)
-   - Look for GPS coordinates, creation date, camera model
-   
-3. **Verify Location**
-   - If GPS coordinates exist, check them on [Google Earth Pro](https://www.google.com/earth/versions/)
-   - Use [SunCalc](https://www.suncalc.org/) to verify time from shadows
-
-4. **Practice More**
-   - Try challenges at [KASE Scenarios](https://kasescenarios.com/)
-   - Join [Trace Labs](https://tracelabs.org/) for real investigations
-
-#### Essential Setup
-
-**Browser Extensions:**
-- Wayback Machine
-- Archive.today button  
-- EXIF Viewer
-- User-Agent Switcher
-
-**Command Line (Optional):**
-```bash
-# Install ExifTool for advanced metadata extraction
-# macOS: brew install exiftool
-# Ubuntu: sudo apt install libimage-exiftool-perl
-
-# Basic usage
-exiftool image.jpg
-exiftool -gps:all image.jpg
-```
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
 
-## Table of Contents
+## 📖 Table of Contents
 
-- [Learning & Training Platforms](#learning--training-platforms)
-- [Metadata Analysis Tools](#metadata-analysis-tools)
-- [Data Comparison & Analysis](#data-comparison--analysis)
-- [Geolocation & Mapping](#geolocation--mapping)
-- [Additional OSINT Resources](#additional-osint-resources)
-- [Contributing](#contributing)
-- [Legal & Ethical Considerations](#legal--ethical-considerations)
-
----
-
-## Learning & Training Platforms
-
-Professional training resources and scenario-based learning for OSINT practitioners.
-
-| Resource | Description | Status | Type |
-|----------|-------------|--------|------|
-| [KASE Scenarios](https://kasescenarios.com/) | Interactive OSINT training scenarios and challenges | Active | Training |
-| [Trace Labs](https://tracelabs.org/) | OSINT competitions for missing persons investigations | Active | CTF/Training |
-| [Click Safe Intelligence](https://clicksafeintelligence.com/) | OSINT training and cybersecurity education | Active | Training |
-| [NCPTF](https://ncptf.org/) | National Child Protection Task Force resources | Active | Training/Resources |
-| [GeoHints](https://geohints.com/) | Geolocation learning resources and tips | Active | Education |
-
----
-
-## Metadata Analysis Tools
-
-Tools for extracting, viewing, and analyzing metadata from various file types.
-
-### Online Tools
-
-| Tool | Description | Status | Best For |
-|------|-------------|--------|----------|
-| [Metadata2go](https://www.metadata2go.com/) | Upload files to view metadata from 50+ file types | Active | Multi-format support |
-| [EXIF.tools](https://exif.tools/) | Web wrapper for ExifTool with comprehensive extraction | Active | Technical users |
-| [ExifView.net](https://exifview.net/) | Client-side metadata viewer (no upload required) | Active | Privacy-focused |
-| [Jimpl EXIF Viewer](https://jimpl.com/) | Privacy-focused online EXIF viewer | Active | Privacy & Security |
-
-### Desktop/Command-Line Tools
-
-| Tool | Description | Platform | Status |
-|------|-------------|----------|--------|
-| [ExifTool](https://exiftool.org/) | Industry-standard CLI tool for metadata extraction | Win/Mac/Linux | Actively Maintained |
-| [FOCA](https://github.com/ElevenPaths/FOCA) | Metadata extraction from public documents | Windows | Active |
-| [Metagoofil](https://github.com/laramies/metagoofil) | Metadata extraction from public documents | Python | Active |
-
-### Notes on Metadata Tools
-
-**Important Update (December 2025):**
-- **Jeffrey's Image Metadata Viewer** was permanently discontinued in December 2025 due to bandwidth costs
-- **Recommended Alternatives:**
-  - **Metadata2go** - Best for multi-format support
-  - **EXIF.tools** - Best for technical users needing raw ExifTool output
-  - **ExifView.net** - Best for privacy (client-side processing)
-
-**ExifTool Usage:**
-```bash
-# Install ExifTool
-# macOS
-brew install exiftool
-
-# Ubuntu/Debian
-sudo apt install libimage-exiftool-perl
-
-# Basic usage
-exiftool image.jpg
-exiftool -all image.jpg
-exiftool -gps:all image.jpg
-
-# Extract metadata to text file
-exiftool -a -G1 -s image.jpg > metadata.txt
-
-# Remove all metadata
-exiftool -all= image.jpg
-```
+- [How to Use This Toolkit](#how-to-use-this-toolkit)
+- [Maps & Geolocation](#-maps--geolocation)
+- [Satellite Imagery & Earth Observation](#-satellite-imagery--earth-observation)
+- [Social Media Intelligence](#-social-media-intelligence)
+- [Username & Identity Search](#-username--identity-search)
+- [Facial Recognition & Image Analysis](#-facial-recognition--image-analysis)
+- [Reverse Image Search & Verification](#-reverse-image-search--verification)
+- [Video Analysis & Verification](#-video-analysis--verification)
+- [Transportation Tracking](#-transportation-tracking)
+- [Maritime Intelligence](#-maritime-intelligence)
+- [Corporate & Financial Intelligence](#-corporate--financial-intelligence)
+- [Data Leaks & Breach Intelligence](#-data-leaks--breach-intelligence)
+- [Domain, IP & Website Analysis](#-domain-ip--website-analysis)
+- [Archiving & Preservation](#-archiving--preservation)
+- [Environmental & Wildlife Intelligence](#-environmental--wildlife-intelligence)
+- [Conflict, Arms & Munitions](#-conflict-arms--munitions)
+- [Sanctions & Politically Exposed Persons](#-sanctions--politically-exposed-persons)
+- [Legal & Court Records](#-legal--court-records)
+- [Data Visualization & Analysis](#-data-visualization--analysis)
+- [Workflow, Note-Taking & Case Management](#-workflow-note-taking--case-management)
+- [Browser Extensions & Scrapers](#-browser-extensions--scrapers)
+- [Code & Technical Search](#-code--technical-search)
+- [Communication & Messaging Intelligence](#-communication--messaging-intelligence)
+- [Cryptocurrency & Blockchain](#-cryptocurrency--blockchain)
+- [Phone & People Lookup](#-phone--people-lookup)
+- [Weather, Time & Shadow Analysis](#-weather-time--shadow-analysis)
+- [Miscellaneous & Specialty Tools](#-miscellaneous--specialty-tools)
 
 ---
 
-## Data Comparison & Analysis
+## How to Use This Toolkit
 
-| Tool | Description | Use Case |
-|------|-------------|----------|
-| [Diffchecker](https://www.diffchecker.com/) | Compare text, images, PDFs, and files | Document comparison, change detection |
-| [Beyond Compare](https://www.scootersoftware.com/) | Professional file/folder comparison tool | Advanced file analysis |
-| [WinMerge](https://winmerge.org/) | Open-source file/folder comparison | Free alternative |
+Each tool entry follows this format:
 
----
+| Field | Meaning |
+|-------|---------|
+| **Name** | Tool name with link |
+| **Description** | What it does and how OSINT professionals use it |
+| **Pricing** | 🟢 Free · 🟡 Freemium · 🔴 Paid · 🔵 Open Source |
 
-## Geolocation & Mapping
-
-Essential tools for geospatial intelligence and location verification.
-
-### Geolocation Resources
-
-| Resource | Description | Status |
-|----------|-------------|--------|
-| [GeoHints](https://geohints.com/) | Tips and tricks for geolocation OSINT | Active |
-| [GeoGuessr Wiki](https://geoguessr.fandom.com/wiki/GeoGuessr_Wiki) | Comprehensive geolocation knowledge base | Active |
-| [OpenStreetMap Tagging](https://wiki.openstreetmap.org/wiki/Map_features) | Infrastructure and regional mapping features | Active |
-| [Google Street View Changelogs](https://www.google.com/streetview/explore/) | Historical Street View coverage updates | Active |
-| [Google Earth Pro](https://www.google.com/earth/versions/) | Advanced satellite imagery and historical views | Active |
-| [SunCalc](https://www.suncalc.org/) | Sun position calculator for image verification | Active |
-| [PeakFinder](https://www.peakfinder.org/) | Mountain peak identification tool | Active |
-
-### Geolocation Techniques
-
-- **Shadow Analysis:** Use SunCalc to determine time/location from shadows
-- **Architectural Style:** Buildings and infrastructure patterns
-- **Flora/Fauna:** Regional vegetation and wildlife
-- **Street Furniture:** Traffic signs, utility poles, road markings
-- **Language/Script:** Signs and text in images
-- **Vehicle Types:** Regional vehicle models and license plates
-- **Transport Authorities:** Local sign manuals and infrastructure standards
-  - [Manual on Uniform Traffic Control Devices (MUTCD)](https://mutcd.fhwa.dot.gov/) - US traffic signs
-  - [UK Traffic Signs Manual](https://www.gov.uk/government/collections/traffic-signs-manual) - UK standards
-  - [European Transport Standards](https://transport.ec.europa.eu/) - EU regulations
-  - Search: "[Country] transport authority sign manual PDF" for regional guides
+> **Tip:** Use `Ctrl+F` / `Cmd+F` to quickly find a specific tool.
 
 ---
 
-## Additional OSINT Resources
+## 🗺️ Maps & Geolocation
 
-### Comprehensive OSINT Frameworks
+Tools for mapping, geolocating imagery, and working with geographic data.
 
-| Framework | Description |
-|-----------|-------------|
-| [OSINT Framework](https://osintframework.com/) | Categorized collection of OSINT tools |
-| [IntelTechniques Tools](https://inteltechniques.com/tools/) | Custom search tools by Michael Bazzell |
-| [Bellingcat's Online Investigation Toolkit](https://bit.ly/bcattools) | Curated tools from Bellingcat |
-
-### Social Media Intelligence (SOCMINT)
-
-### Social Media Intelligence (SOCMINT)
-
-SOCMINT (Social Media Intelligence) is a branch of OSINT that focuses on collecting, analyzing, and interpreting information from social media platforms.
-
-#### What is SOCMINT?
-
-Social media platforms have become one of the richest sources of intelligence for investigations. SOCMINT covers platforms including:
-
-**Major Platforms:**
-- Twitter / X
-- Facebook
-- Instagram
-- LinkedIn
-- TikTok
-- YouTube
-- Reddit
-
-**Specialized Platforms:**
-- GitHub (developer activity)
-- Behance (creative work)
-- Strava (fitness/routes)
-- Soundcloud (music/audio)
-- Discord (communities)
-- Telegram (messaging/channels)
-
-#### Why SOCMINT Matters
-
-People often leave digital traces through:
-- **Reused Usernames:** Same handle across multiple platforms
-- **Photo Metadata:** GPS coordinates in uploaded images
-- **Cross-Linking:** URLs and usernames in bios
-- **Location Clues:** Check-ins, geotagged posts, background landmarks
-- **Social Connections:** Friends, followers, tagged photos
-- **Behavioral Patterns:** Posting times, habits, schedules
-
-Most investigations today—whether cybercrime, missing persons, threat intelligence, or fraud—have some trace on social media. The key principle: **the internet never forgets.**
-
-#### SOCMINT Use Cases
-
-With collected information, investigators can:
-- Assist in locating missing persons based on photos and online posts
-- Verify if a job applicant's claims match their online presence
-- Investigate criminal networks via social media connections
-- Map digital trails to connect sockpuppet accounts
-- Trace scammers by linking their bios across platforms
-- Establish timelines through post histories
-- Identify associates through tagged content and comments
-
-#### Core SOCMINT Principles
-
-**1. Everything Must Be Public**
-- Never engage, log in, friend-request, or scrape private data
-- OSINT is ethical intelligence, not intrusion
-- Respect platform terms of service
-- No social engineering or deception
-
-**2. Cross-Platform Analysis is Essential**
-- A Twitter handle leads to GitHub
-- GitHub reveals a LinkedIn profile
-- LinkedIn mentions a university
-- University website has team photos
-- Now you have a verified identity
-
-**3. Reused Usernames Are Valuable**
-- People often reuse the same handle across multiple sites
-- Find patterns and validate connections
-- Document all discovered accounts
-- Verify each account belongs to the target
-
-**4. Context Over Raw Data**
-- Location + Time + Activity = Intelligence
-- Example: Someone posts vacation photos while claiming to be elsewhere
-- Cross-reference timestamps across platforms
-- Build a comprehensive timeline
-
-**5. Ethical Boundaries**
-- **Do NOT:** Dox, leak, manipulate, or intimidate
-- **Do NOT:** Harass or contact subjects
-- **Do NOT:** Access private information without authorization
-- **Remember:** We are protectors of truth, not stalkers or threat actors
-
-#### SOCMINT Tools
-
-| Tool | Purpose | Status |
-|------|---------|--------|
-| [Sherlock](https://github.com/sherlock-project/sherlock) | Username search across social platforms | Active |
-| [WhatsMyName](https://whatsmyname.app/) | Find where a username exists across hundreds of platforms | Active |
-| [Namechk](https://namechk.com/) | Verify username availability/usage across platforms | Active |
-| [Namecheckup](https://namecheckup.com/) | Alternative username checker with extensive coverage | Active |
-| [Social-Analyzer](https://github.com/qeeqbox/social-analyzer) | Profile analysis across platforms | Active |
-| [Lullar](https://lullar.com/) | Social media profile discovery | Active |
-| [Blackbird](https://github.com/p1ngul1n0/blackbird) | Username OSINT across 500+ sites | Active |
-| [Maigret](https://github.com/soxoj/maigret) | Collect information about username from sites | Active |
-
-#### SOCMINT Techniques
-
-**Username Enumeration:**
-```bash
-# Using Sherlock
-python3 sherlock username123
-
-# Using WhatsMyName
-# Visit https://whatsmyname.app/ and enter username
-```
-
-**Google Dorking for Social Media:**
-```
-site:twitter.com "username"
-site:linkedin.com "company name" "job title"
-site:instagram.com "location"
-site:github.com "email address"
-```
-
-**Reverse Image Search for Profiles:**
-- Upload profile pictures to Google Images, TinEye, Yandex
-- Find where else the same image appears
-- Discover alternate accounts or identity theft
-
-**Archive Social Media Content:**
-- Use Archive.today for posts before they're deleted
-- Screenshot everything with timestamps
-- Document URLs and metadata
-- Maintain chain of custody
-
-**Timeline Analysis:**
-- Extract post timestamps across all platforms
-- Convert to UTC for consistency
-- Look for gaps or patterns
-- Cross-reference with known events
-
-#### SOCMINT Investigation Workflow
-
-```
-1. Identify Starting Point (username, email, phone, image)
-   ↓
-2. Username Enumeration (Sherlock, WhatsMyName)
-   ↓
-3. Profile Discovery & Documentation
-   ↓
-4. Content Collection & Archiving
-   ↓
-5. Metadata Extraction from Posts/Images
-   ↓
-6. Social Graph Mapping (connections, followers)
-   ↓
-7. Timeline Construction
-   ↓
-8. Cross-Platform Verification
-   ↓
-9. Report Generation
-```
-
-#### SOCMINT Best Practices
-
-- **Archive First, Analyze Later:** Content disappears quickly
-- **Use Multiple Tools:** Each tool has different coverage
-- **Document Everything:** Screenshots, URLs, timestamps
-- **Verify Connections:** Don't assume same username = same person
-- **Respect Privacy:** Public doesn't mean free-for-all
-- **Stay Updated:** Platforms change features constantly
-- **Use Separate Accounts:** Never investigate from personal accounts
-- **Consider OPSEC:** Use VMs for sensitive investigations
-
-| Tool | Purpose |
-|------|---------|
-| [Sherlock](https://github.com/sherlock-project/sherlock) | Username search across social platforms |
-| [WhatsMyName](https://whatsmyname.app/) | Find where a username exists across hundreds of platforms |
-| [Namechk](https://namechk.com/) | Verify username usage across platforms |
-| [Namecheckup](https://namecheckup.com/) | Alternative username verification service |
-| [Social-Analyzer](https://github.com/qeeqbox/social-analyzer) | Profile analysis across platforms |
-| [Lullar](https://lullar.com/) | Social media profile discovery |
-
-### Domain & Infrastructure Analysis
-
-| Tool | Purpose |
-|------|---------|
-| [DNSDumpster](https://dnsdumpster.com/) | DNS reconnaissance and research |
-| [Censys](https://search.censys.io/) | Internet-wide scanning and analysis |
-| [Shodan](https://www.shodan.io/) | IoT and exposed device search |
-| [SecurityTrails](https://securitytrails.com/) | DNS and domain history |
-
-### Image & Video Analysis
-
-| Tool | Purpose |
-|------|---------|
-| [Google Reverse Image Search](https://images.google.com/) | Find similar/source images |
-| [TinEye](https://tineye.com/) | Reverse image search |
-| [FotoForensics](https://fotoforensics.com/) | Image authenticity analysis |
-| [InVID](https://www.invid-project.eu/tools-and-services/invid-verification-plugin/) | Video verification browser extension |
-
-### Archiving & Preservation
-
-| Tool | Purpose |
-|------|---------|
-| [Archive.today](https://archive.ph/) | Webpage archiving and preservation |
-| [Wayback Machine](https://web.archive.org/) | Historical webpage snapshots |
-| [Hunchly](https://www.hunch.ly/) | Professional web capture for investigations |
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Google Maps](https://maps.google.com) | The most widely used mapping platform. OSINT use: Street View for visual verification, historical imagery, measuring distances, identifying businesses and landmarks. | 🟢 Free |
+| [Google Earth Pro](https://www.google.com/earth/versions/#earth-pro) | Desktop application with advanced satellite imagery, historical imagery timeline, 3D terrain, measurement tools, and GIS data import. Essential for geolocation and temporal analysis. | 🟢 Free |
+| [Google Earth Engine](https://earthengine.google.com) | Cloud-based platform for planetary-scale geospatial analysis. Access decades of satellite data (Landsat, Sentinel, MODIS) and run custom analyses. Used for environmental monitoring and change detection. | 🟢 Free (for research/non-commercial) |
+| [Bing Maps](https://www.bing.com/maps) | Microsoft's mapping platform with Bird's Eye View (oblique aerial imagery) not available on Google Maps. Useful for verifying angles and perspectives. | 🟢 Free |
+| [Apple Maps](https://maps.apple.com) | Apple's mapping service with Look Around (street-level imagery). Sometimes has newer imagery than Google in certain areas. Web version available. | 🟢 Free |
+| [Baidu Maps](https://map.baidu.com) | China's dominant mapping platform. Essential for investigations involving Chinese locations. Includes Chinese street-level imagery and local business data. | 🟢 Free |
+| [Gaode Maps (Amap)](https://www.amap.com) | China's second major mapping platform (Alibaba-owned). Provides detailed Chinese mapping data, traffic info, and POI data not available on Western platforms. | 🟢 Free |
+| [Tencent Maps](https://map.qq.com) | Tencent's mapping service. Useful for cross-referencing Chinese locations. Has its own street-level imagery. | 🟢 Free |
+| [Yandex Maps](https://yandex.com/maps) | Russia's primary mapping platform. Crucial for investigations in Russia, CIS countries, and Turkey. Offers street-level panoramas and local business data. | 🟢 Free |
+| [Wikimapia](https://wikimapia.org) | Collaborative mapping project where users annotate locations. Useful for identifying military bases, factories, and other sites described by locals. | 🟢 Free |
+| [OpenStreetMap (via Overpass Turbo)](https://overpass-turbo.eu) | Query and extract specific features from OpenStreetMap's massive open database. Search for specific building types, infrastructure, POIs by attribute. Extremely powerful for targeted geolocation. | 🟢 Free / 🔵 Open Source |
+| [Bellingcat OpenStreetMap Search](https://osm-search.bellingcat.com) | Bellingcat's dedicated tool for searching OpenStreetMap data by object type and location. Simplifies complex Overpass queries into a user-friendly interface. | 🟢 Free |
+| [Mapillary](https://www.mapillary.com) | Crowdsourced street-level imagery platform (Meta-owned). Covers areas Google Street View doesn't. Images are timestamped and geotagged. | 🟢 Free |
+| [KartaView](https://kartaview.org) | Crowdsourced street-level photo platform. Another source of ground-level imagery, especially in Eastern Europe and areas with sparse Google coverage. | 🟢 Free |
+| [F4Map](https://demo.f4map.com) | Interactive 3D map rendering OpenStreetMap data. Useful for visualizing building heights, terrain, and urban layouts for geolocation verification. | 🟢 Free |
+| [what3words](https://what3words.com) | Divides the world into 3m x 3m squares, each with a unique 3-word address. Used in emergency services and can help pinpoint exact locations. | 🟢 Free (basic) / 🟡 Freemium (API) |
+| [GeoHints](https://geohints.com) | A reference guide for GeoGuessr-style geolocation. Contains clues by country including road markings, bollards, utility poles, and signage patterns. Invaluable for image geolocation. | 🟢 Free |
+| [MapChecking](https://www.mapchecking.com) | Estimate crowd sizes by drawing an area on a map and adjusting crowd density. Used by journalists to verify protest/rally attendance claims. | 🟢 Free |
+| [MapSwitcher](https://github.com/nicbou/MapSwitcher) | Browser extension to switch between map services (Google, Bing, Yandex, etc.) for the same location with one click. Huge time saver. | 🟢 Free / 🔵 Open Source |
+| [GovMap](https://www.govmap.gov.il) | Israel's official government mapping portal. Detailed cadastral data, aerial imagery, and infrastructure for Israeli territory. | 🟢 Free |
+| [About Maps and Satellites](https://aboutmapsandsatellites.com) | Educational resource explaining how to use maps and satellite imagery for OSINT investigations. Guides on imagery interpretation and geolocation techniques. | 🟢 Free |
+| [Convert Geographic Units](https://www.pgc.umn.edu/apps/convert/) | Convert between coordinate formats (decimal degrees, DMS, UTM, MGRS). Essential when working with coordinates from different sources. | 🟢 Free |
+| [Geo Data Tool](https://www.geodatatool.com) | IP geolocation lookup and geographic data conversion utility. Map IP addresses to approximate physical locations. | 🟢 Free |
+| [Quick Geolocation Search](https://github.com/Quorafind/Quick-Geolocation-Search) | Rapid coordinate-based search tool that queries multiple mapping platforms simultaneously. Speeds up the geolocation workflow. | 🟢 Free / 🔵 Open Source |
+| [MW Geofind](https://mattw.io/youtube-geofind/) | Search YouTube videos by geographic location. Find videos uploaded from specific coordinates or within a radius — useful for verifying events. | 🟢 Free |
+| [Chronotrains](https://www.chronotrains.com) | Visualize how far you can travel by train from any European station in a given time. Useful for understanding transit possibilities and alibis. | 🟢 Free |
+| [License Plate Maps](https://www.licenseplatemaps.com) | Reference for license plate formats by country/state. Helps identify vehicle origin from partial plate visibility in images and video. | 🟢 Free |
+| [Instagram Location Search](https://github.com/bellingcat/instagram-location-search) | Search Instagram posts by geographic coordinates. Find user-generated content from specific locations for event verification. | 🟢 Free / 🔵 Open Source |
 
 ---
 
-## Learning Resources
+## 🛰️ Satellite Imagery & Earth Observation
 
-### Books
-- **"Open Source Intelligence Techniques"** by Michael Bazzell
-- **"OSINT Techniques"** by Nihad Hassan
-- **"We Are Bellingcat"** by Eliot Higgins
+Access and analyze satellite imagery for change detection, infrastructure monitoring, and environmental analysis.
 
-### Online Courses
-- [Trace Labs OSINT Training](https://www.tracelabs.org/training)
-- [SANS SEC487: Open-Source Intelligence Gathering](https://www.sans.org/cyber-security-courses/open-source-intelligence-gathering/)
-- [Udemy OSINT Courses](https://www.udemy.com/topic/osint/)
-
-### Communities & Forums
-- [r/OSINT](https://www.reddit.com/r/OSINT/) - Reddit community
-- [OSINT Curious](https://osintcurio.us/) - Project and podcast
-- [Bellingcat Discord](https://discord.gg/bellingcat)
-
----
-
-## Setting Up Your OSINT Toolkit
-
-### Essential Browser Extensions
-
-```
-✓ Wayback Machine
-✓ Archive.today button
-✓ Exif Viewer
-✓ User-Agent Switcher
-✓ Screenshot tools (FireShot, Nimbus)
-✓ Video DownloadHelper
-```
-
-### Python OSINT Libraries
-
-```bash
-# Install popular OSINT Python packages
-pip install exifread           # EXIF data extraction
-pip install pillow             # Image processing
-pip install googlesearch-python # Google searching
-pip install tweepy             # Twitter API
-pip install beautifulsoup4     # Web scraping
-pip install requests           # HTTP requests
-```
-
-### Virtual Machine Setup
-
-Consider using a dedicated VM for OSINT work:
-- **Operating System:** Ubuntu/Kali Linux
-- **Tools Pre-installed:** Many OSINT distributions available
-- **Privacy:** Separate from personal system
-- **Sandboxing:** Safe environment for testing tools
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Sentinel Hub Playground](https://apps.sentinel-hub.com/sentinel-playground/) | Access and visualize Sentinel-2 satellite imagery with various band combinations (true color, NDVI, false color). 10m resolution, global coverage, updated every 5 days. | 🟢 Free (basic) / 🟡 Freemium (advanced) |
+| [NASA Worldview](https://worldview.earthdata.nasa.gov) | Near-real-time satellite imagery from NASA's fleet. Visualize fires, smoke plumes, flooding, and other events. Supports temporal comparison. | 🟢 Free |
+| [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov) | Fire Information for Resource Management System. Detect active fires and thermal anomalies worldwide in near-real-time via MODIS and VIIRS. Used to verify conflict/fire events. | 🟢 Free |
+| [Planet Labs](https://www.planet.com) | Commercial satellite constellation capturing daily imagery of the entire Earth at 3-5m resolution. Gold standard for monitoring change over time. | 🔴 Paid (journalist/NGO programs available) |
+| [Umbra Space](https://umbra.space) | Commercial Synthetic Aperture Radar (SAR) satellite provider. SAR penetrates clouds and captures imagery at night — essential when optical imagery is unavailable. | 🔴 Paid |
+| [SkyFi](https://www.skyfi.com) | Marketplace for purchasing satellite imagery from multiple providers (Planet, Airbus, Maxar). Simplifies ordering high-resolution commercial imagery. | 🔴 Paid |
+| [Apollo Mapping](https://apollomapping.com) | Satellite and aerial imagery broker offering access to imagery from 30+ providers. Useful for obtaining historical high-res imagery for specific dates. | 🔴 Paid |
+| [Earth Explorer (USGS)](https://earthexplorer.usgs.gov) | Free access to the USGS archive of Landsat imagery, aerial photos, and elevation data. Decades of historical imagery. | 🟢 Free |
+| [Earth Online (ESA)](https://earth.esa.int) | European Space Agency's platform for accessing Sentinel mission data and other ESA Earth observation datasets. | 🟢 Free |
+| [OpenAerialMap](https://openaerialmap.org) | Open repository of publicly licensed aerial and satellite imagery. Includes drone imagery, post-disaster captures, and humanitarian mapping data. | 🟢 Free / 🔵 Open Source |
+| [satellites.pro](https://satellites.pro) | Quick access to satellite imagery from Google, Bing, Yandex, and Esri in a single interface. Convenient for rapid comparison. | 🟢 Free |
+| [RAMMB SLIDER](https://rammb-slider.cira.colostate.edu) | Real-time weather satellite imagery viewer. Full-disk imagery from GOES, Himawari, and Meteosat. Useful for verifying weather conditions at specific times. | 🟢 Free |
+| [Google Flood Hub](https://sites.research.google/floods/) | Google's AI-powered flood forecasting platform. Visualize flood predictions and historical flood data for river basins globally. | 🟢 Free |
+| [Radar Interference Tracker](https://ollielballinger.users.earthengine.app/view/interference) | Detect GPS/radar jamming and interference by analyzing Sentinel-1 SAR data. Reveals military electronic warfare activity. Built by Ollie Ballinger. | 🟢 Free |
+| [GPSJam](https://gpsjam.org) | Visualize GPS interference and jamming zones worldwide using ADS-B aircraft data. Reveals areas of electronic warfare or intentional disruption. | 🟢 Free |
+| [QGIS](https://qgis.org) | Professional open-source Geographic Information System. Full GIS analysis, custom map creation, spatial data processing. The open-source alternative to ArcGIS. | 🟢 Free / 🔵 Open Source |
+| [PeakVisor](https://peakvisor.com) | Mountain and terrain identification app. Match mountain silhouettes to geolocate photos taken in mountainous areas. | 🟡 Freemium |
+| [ShadeMap](https://shademap.app) | Visualize sun shadows on a 3D map at any date and time. Helps verify when a photo was taken based on shadow direction and length. | 🟢 Free |
 
 ---
 
-## Learning Path
+## 📱 Social Media Intelligence
 
-### Week 1: Fundamentals
-- Understand what OSINT is and its legal boundaries
-- Learn basic Google dorking techniques
-- Practice reverse image search
-- Try simple metadata extraction
+Tools for searching, monitoring, and analyzing social media platforms.
 
-### Week 2: Metadata & Documents
-- Master ExifTool usage
-- Extract metadata from PDFs, images, and documents
-- Understand GPS coordinates and timestamps
-- Practice with real files
-
-### Week 3: Geolocation
-- Study [GeoHints](https://geohints.com/) and [GeoGuessr Wiki](https://geoguessr.fandom.com/wiki/GeoGuessr_Wiki)
-- Practice geolocation challenges at [KASE Scenarios](https://kasescenarios.com/)
-- Learn shadow analysis techniques
-- Use Google Earth Pro for verification
-
-### Week 4: Social Media & Advanced
-- Username searches across platforms
-- Profile analysis and network mapping
-- Archive social media content properly
-- Join your first OSINT CTF competition
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Twitter Advanced Search](https://twitter.com/search-advanced) | Twitter/X's built-in advanced search. Filter by date range, user, location, engagement, language. Indispensable for timeline reconstruction. | 🟢 Free |
+| [Twitter Location Search](https://github.com/bellingcat/twitter-location-search) | Search tweets by geographic coordinates and radius. Find eyewitness content from specific locations. | 🟢 Free / 🔵 Open Source |
+| [Who Posted What?](https://whopostedwhat.com) | Facebook search tool by Henk van Ess. Search public Facebook posts by keyword and date without needing a Facebook account. | 🟢 Free |
+| [Meta Content Library](https://transparency.meta.com/researchtools/meta-content-library) | Meta's official research API for accessing public content across Facebook and Instagram. Available to qualified researchers. | 🟢 Free (for approved researchers) |
+| [Bluesky Insights](https://bsky.jazco.dev) | Analytics and search tool for the Bluesky social network. Explore posts, user networks, and trending content. | 🟢 Free |
+| [BskyFollowFinder](https://bsky.thieflord.dev) | Bluesky network analysis tool. Find mutual connections, discover who your follows follow, and map network relationships. | 🟢 Free |
+| [BskyThreadReader](https://bskythreadreader.glitch.me) | Read and archive Bluesky threads in a clean format. Useful for preserving threaded discussions. | 🟢 Free |
+| [Strava](https://www.strava.com/heatmap) | Fitness tracking platform with a global heatmap showing exercise routes. Has revealed the locations of military bases, secret facilities, and intelligence personnel movements. | 🟡 Freemium |
+| [Snap Map](https://map.snapchat.com) | Snapchat's public map showing geotagged Snaps worldwide. Real-time crowd-sourced video and photo content from events, protests, and breaking news. | 🟢 Free |
+| [Hoaxy](https://hoaxy.osome.iu.edu) | Visualize the spread of misinformation and fact-checks on Twitter/X. Network analysis of how claims propagate. | 🟢 Free |
+| [Skopenow](https://www.skopenow.com) | Professional social media and web investigation platform. Automated collection and analysis across multiple platforms with reporting. | 🔴 Paid |
+| [Spot](https://spotthe.bot) | Bot detection tool. Analyze social media accounts for automated behavior patterns and bot-like activity. | 🟢 Free |
+| [LinkdTime](https://freegeoip.live/linkedtime/) | Determine when a LinkedIn profile was created based on profile URL ID analysis. | 🟢 Free |
+| [Open Measures](https://openmeasures.io) | Search and analyze content from fringe and extremist platforms (Telegram, 4chan, Gab, etc.). Previously known as the Social Media Analysis Toolkit. | 🟡 Freemium |
 
 ---
 
-## Practice Exercises
+## 👤 Username & Identity Search
 
-### Exercise 1: Image Metadata Analysis
-1. Download any image from a public source
-2. Extract metadata using [Metadata2go](https://www.metadata2go.com/)
-3. Check for GPS coordinates
-4. Verify location on Google Maps
-5. Document your findings
+Find accounts and digital footprints across platforms.
 
-### Exercise 2: Website Reconnaissance
-1. Choose a website (use your own or public example)
-2. Use Google dorking: `site:example.com filetype:pdf`
-3. Extract metadata from found documents
-4. Map the organization structure
-5. Create a report
-
-### Exercise 3: Geolocation Challenge
-1. Visit [KASE Scenarios](https://kasescenarios.com/)
-2. Choose a beginner challenge
-3. Use multiple tools from this repository
-4. Document your methodology
-5. Compare with the solution
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Sherlock](https://github.com/sherlock-project/sherlock) | Search for usernames across 400+ social networks simultaneously. The most popular OSINT username enumeration tool. | 🟢 Free / 🔵 Open Source |
+| [Maigret](https://github.com/soxoj/maigret) | Advanced username search across 2500+ sites. Fork of Sherlock with additional features including profile page parsing and data extraction. | 🟢 Free / 🔵 Open Source |
+| [WhatsMyName](https://whatsmyname.app) | Username enumeration tool checking 600+ websites. Maintained with a focus on reducing false positives. | 🟢 Free / 🔵 Open Source |
+| [Namechk](https://namechk.com) | Check username and domain availability across dozens of platforms simultaneously. Quick way to map a person's online presence. | 🟢 Free |
+| [Blackbird](https://github.com/p1ngul1n0/blackbird) | OSINT tool for fast username searching across 500+ sites. Supports Tor routing for anonymous searches. | 🟢 Free / 🔵 Open Source |
+| [NeutrOSINT](https://github.com/JEROMEBSN/NeutrOSINT) | Multi-purpose OSINT tool combining username search, email lookup, phone lookup, and IP analysis in one interface. | 🟢 Free / 🔵 Open Source |
+| [Name Variant Search](https://namevariants.com) | Generate name variations, transliterations, and alternative spellings. Essential when searching for individuals across different languages and alphabets. | 🟢 Free |
+| [Ghunt](https://github.com/mxrch/GHunt) | Google account investigation tool. Extract information from Google accounts including profile photos, Maps reviews, and Google Calendar data. | 🟢 Free / 🔵 Open Source |
+| [IDN Checker](https://www.punycoder.com) | Detect internationalized domain name (IDN) homograph attacks. Identifies visually similar characters used in phishing domains. | 🟢 Free |
 
 ---
 
-## Common OSINT Workflows
+## 🧑‍🦰 Facial Recognition & Image Analysis
 
-### Workflow 1: Image Verification
-```
-1. Reverse Image Search (Google, TinEye, Yandex)
-   ↓
-2. Metadata Extraction (ExifTool, Metadata2go)
-   ↓
-3. GPS Verification (Google Earth, OpenStreetMap)
-   ↓
-4. Timestamp Analysis (SunCalc for shadow matching)
-   ↓
-5. Authenticity Check (FotoForensics)
-   ↓
-6. Cross-Reference Sources
-   ↓
-7. Document Findings
-```
+Tools for face matching, comparison, and recognition.
 
-### Workflow 2: Document Analysis
-```
-1. Document Acquisition (Google Dorking, Public Sources)
-   ↓
-2. Metadata Extraction (ExifTool, FOCA, Metagoofil)
-   ↓
-3. Author/Creator Identification
-   ↓
-4. Software Version Analysis
-   ↓
-5. Internal Path Discovery
-   ↓
-6. Timeline Creation
-   ↓
-7. Report Generation
-```
-
-### Workflow 3: Geolocation Investigation
-```
-1. Initial Clues (Signs, Architecture, Flora)
-   ↓
-2. Region Identification (GeoGuessr Wiki, GeoHints)
-   ↓
-3. Infrastructure Analysis (OpenStreetMap, Transport Manuals)
-   ↓
-4. Narrowing Down (Street View, Satellite Imagery)
-   ↓
-5. Shadow/Sun Analysis (SunCalc)
-   ↓
-6. Final Verification (Multiple Sources)
-   ↓
-7. Coordinate Confirmation
-```
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [PimEyes](https://pimeyes.com) | Reverse face search engine. Upload a face photo to find where that face appears online. Extremely powerful and controversial. | 🟡 Freemium (limited free) / 🔴 Paid |
+| [FaceCheck.ID](https://facecheck.id) | Reverse face search across social media, mugshots, and news. Alternative to PimEyes with different source databases. | 🟡 Freemium |
+| [Search4Faces](https://search4faces.com) | Facial recognition search engine focused on Russian social networks (VK, OK.ru). Covers ~500M+ profile photos. | 🟢 Free (limited) / 🟡 Freemium |
+| [Face Comparison by ToolPie](https://www.toolpie.com/face-comparison) | Compare two face images for similarity. Free client-side face comparison without uploading to servers. | 🟢 Free |
 
 ---
 
-## Pro Tips
+## 🔎 Reverse Image Search & Verification
 
-### General OSINT Tips
-- **Document Everything:** Keep detailed notes of your methodology
-- **Verify from Multiple Sources:** Never rely on a single source
-- **Use Archive Tools:** Websites change - archive important findings
-- **Stay Legal:** Always respect privacy laws and ToS
-- **Time Zones Matter:** Convert all timestamps to UTC for consistency
-- **OPSEC:** Use VMs and separate browsers for sensitive investigations
+Trace the origin of images, detect manipulation, and verify visual content.
 
-### Metadata Extraction Tips
-- **Check Multiple Tools:** Different tools extract different metadata
-- **Original Files Only:** Metadata is often stripped from social media
-- **Look for Hidden Data:** Check for embedded thumbnails and alternate data streams
-- **Compare Timestamps:** Creation date vs. modification date tells a story
-
-### Geolocation Tips
-- **Start Broad, Then Narrow:** Continent → Country → Region → City → Location
-- **Learn Sign Systems:** Different countries have distinct traffic signs
-- **Flora Identification:** Plants can narrow down climate zones
-- **Power Line Styles:** Electrical infrastructure varies by country
-- **Language Clues:** Alphabet, script, and language on signs
-- **Use Multiple Angles:** Cross-reference Google Street View with satellite imagery
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Google Lens](https://lens.google.com) | Google's visual search tool. Identify objects, landmarks, text, and find visually similar images. Also extracts text from images (OCR). | 🟢 Free |
+| [TinEye](https://tineye.com) | Dedicated reverse image search engine. Finds exact and modified matches. Unique "oldest" sort feature shows the first known appearance of an image online. | 🟢 Free (basic) / 🔴 Paid (API) |
+| [Search by Image (Browser Extension)](https://github.com/nicbou/reverse-image-search) | Browser extension that lets you right-click any image and reverse-search it on Google, Yandex, TinEye, Bing, and more simultaneously. | 🟢 Free / 🔵 Open Source |
+| [Forensically](https://29a.ch/photo-forensics/) | Browser-based image forensics tool. Error Level Analysis (ELA), clone detection, metadata extraction, noise analysis. Helps detect image manipulation. | 🟢 Free |
+| [ExifTool](https://exiftool.org) | The gold standard for reading, writing, and editing metadata in image, video, and document files. Extract GPS coords, camera model, timestamps, and more. | 🟢 Free / 🔵 Open Source |
+| [xIFr](https://github.com/nicbou/xIFr) | Firefox extension for viewing EXIF and metadata directly in the browser. Quick metadata inspection without downloading files. | 🟢 Free / 🔵 Open Source |
+| [InVID](https://www.invid-project.eu/tools-and-services/invid-verification-plugin/) | Verification plugin for journalists. Video/image keyframe extraction, reverse image search, metadata analysis, and magnification tools in one package. | 🟢 Free |
+| [Pinpoint](https://journaliststudio.google.com/pinpoint/) | Google's AI-powered document and image analysis tool for journalists. OCR, entity extraction, and search across large document collections. | 🟢 Free |
+| [AutoStitch](http://matthewalunbrown.com/autostitch/autostitch.html) | Automatic panorama stitching software. Combine multiple overlapping images into a single panorama for spatial context. | 🟢 Free |
+| [Hugin](https://hugin.sourceforge.io) | Open-source panoramic photo stitcher. Advanced control over image alignment and projection — useful for reconstructing scenes from multiple photos. | 🟢 Free / 🔵 Open Source |
+| [PixPlot](https://dhlab.yale.edu/projects/pixplot/) | Machine learning-based tool for visualizing and clustering large image collections. Plot thousands of images by visual similarity. | 🟢 Free / 🔵 Open Source |
+| [RootAbout](https://rootabout.com) | Reverse image search for book covers and artwork. Search by ISBN, DOI, or image to identify publications. | 🟢 Free |
 
 ---
 
-## Common Mistakes to Avoid
+## 🎬 Video Analysis & Verification
 
-### Don't:
-- Access non-public information without authorization
-- Violate terms of service of platforms
-- Harass, stalk, or harm individuals
-- Share private information publicly
-- Ignore legal restrictions in your jurisdiction
-- Make assumptions without verification
-- Forget to archive evidence before it disappears
+Analyze, verify, and extract data from video content.
 
-### Do:
-- Stay within legal boundaries always
-- Document your complete methodology
-- Verify information from multiple sources
-- Respect privacy rights and ethical boundaries
-- Get proper authorization for professional investigations
-- Use archived versions to avoid alerting targets
-- Join OSINT communities for learning and support
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [InVID Verification Plugin](https://www.invid-project.eu/tools-and-services/invid-verification-plugin/) | Chrome/Firefox plugin for video verification. Extract keyframes from YouTube/Facebook/Twitter videos, perform reverse image search on frames, and analyze metadata. | 🟢 Free |
+| [Azure AI Video Indexer](https://vi.microsoft.com) | Microsoft's AI-powered video analysis. Extracts faces, text (OCR), objects, scenes, spoken words (transcription), and sentiments from video. | 🟡 Freemium (10 hours free) / 🔴 Paid |
+| [Twitter Video Downloader](https://twittervideodownloader.com) | Download videos from Twitter/X for offline analysis and archiving. Preserves original quality. | 🟢 Free |
 
 ---
 
-## Investigation Template
+## ✈️ Transportation Tracking
 
-Use this template for structured investigations:
+Track aircraft, vehicles, and land transportation.
 
-```markdown
-# OSINT Investigation Report
-
-## Case Information
-- **Case ID:** [Unique identifier]
-- **Date Started:** [YYYY-MM-DD]
-- **Investigator:** [Your name/handle]
-- **Objective:** [What are you trying to find?]
-
-## Scope & Authorization
-- **Legal Authorization:** [Yes/No - Details]
-- **Scope Limitations:** [What won't you investigate?]
-- **Jurisdictional Considerations:** [Applicable laws]
-
-## Sources Used
-- [ ] Search Engines (Google, Bing, Yandex)
-- [ ] Social Media Platforms
-- [ ] Public Records & Databases
-- [ ] Metadata Analysis Tools
-- [ ] Geolocation Resources
-- [ ] Archive Services
-- [ ] Other: ___________
-
-## Timeline of Activities
-| Date/Time (UTC) | Action Taken | Tool Used | Result |
-|-----------------|--------------|-----------|--------|
-| 2025-12-19 10:30 | Initial image search | Google Images | Found 3 matches |
-| 2025-12-19 10:45 | Metadata extraction | ExifTool | GPS: 51.5074° N, 0.1278° W |
-
-## Findings
-
-### Source 1: [Platform/Website Name]
-- **URL:** https://example.com/...
-- **Date Accessed:** 2025-12-19
-- **Archived:** [Archive.today link]
-- **Key Information:** 
-  - Finding 1
-  - Finding 2
-- **Verification Status:** Verified / Partial / Unverified
-
-### Source 2: [Platform/Website Name]
-- **URL:** https://example.com/...
-- **Date Accessed:** 2025-12-19
-- **Archived:** [Archive.today link]
-- **Key Information:**
-  - Finding 1
-  - Finding 2
-- **Verification Status:** Verified / Partial / Unverified
-
-## Analysis
-[Synthesize findings - what patterns emerge?]
-
-## Verification Methods
-- Cross-referenced X with Y
-- Confirmed via independent source Z
-- Metadata timestamp matches reported date
-- Geolocation verified through multiple angles
-
-## Confidence Level
-- **High (90-100%):** [Which findings?]
-- **Medium (50-89%):** [Which findings?]
-- **Low (<50%):** [Which findings?]
-
-## Limitations
-- Could not access [specific resource]
-- Conflicting information from [sources X and Y]
-- Unable to verify [specific claim]
-
-## Conclusion
-[Summary of investigation results]
-
-## Recommendations
-[Next steps or additional investigations needed]
-
-## Evidence Preservation
-- All screenshots saved to: [location]
-- Web archives created: [list Archive.today links]
-- Metadata files exported: [location]
-- Chain of custody maintained: [Yes/No]
-```
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Flightradar24](https://www.flightradar24.com) | Real-time global flight tracker using ADS-B data. Track military/government flights, identify aircraft over conflict zones, and access flight history. | 🟡 Freemium / 🔴 Paid (premium history) |
+| [FlightAware](https://flightaware.com) | Flight tracking with extensive US coverage. Detailed flight history, route analysis, and airport activity. Preferred by US-focused investigators. | 🟡 Freemium / 🔴 Paid |
+| [OrbTrack](https://www.orbtrack.org) | Real-time satellite tracking. Visualize the position and orbit of satellites, the ISS, and space debris. Verify satellite pass times. | 🟢 Free |
+| [AllTrails](https://www.alltrails.com) | Hiking and trail map platform. Identify trails and paths visible in imagery. User-uploaded photos geotagged along routes can provide ground-level context. | 🟡 Freemium |
 
 ---
 
-## Contributing
+## 🚢 Maritime Intelligence
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+Track ships, monitor maritime activity, and investigate vessel movements.
 
-### Contribution Guidelines
-
-1. **Tool Verification:** Ensure tools are actively maintained (updated within last 12 months)
-2. **Legal Tools Only:** No tools designed for illegal activities
-3. **Documentation:** Provide clear descriptions and use cases
-4. **Testing:** Verify tools work before submitting
-5. **Organization:** Place tools in appropriate categories
-
----
-
-## Legal & Ethical Considerations
-
-### Important Disclaimer
-
-This repository is for **educational and legitimate investigative purposes only**. Users must:
-
-- Comply with all applicable laws and regulations
-- Respect privacy and data protection laws (GDPR, CCPA, etc.)
-- Obtain proper authorization before conducting investigations
-- Follow terms of service for all platforms and tools
-- Use tools ethically and responsibly
-
-### Ethical OSINT Principles
-
-1. **Legal Compliance:** Only access publicly available information
-2. **Authorization:** Obtain permission for organizational investigations
-3. **Privacy Respect:** Minimize collection of personal data
-4. **Responsible Disclosure:** Report vulnerabilities appropriately
-5. **Do No Harm:** Never use OSINT for stalking, harassment, or illegal activities
-
-### Country-Specific Considerations
-
-Different jurisdictions have varying laws regarding:
-- Data collection and processing
-- Privacy rights and expectations
-- Surveillance and monitoring
-- Cross-border data transfer
-
-**Always consult with legal counsel when conducting OSINT operations.**
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [MarineTraffic](https://www.marinetraffic.com) | Global ship tracking using AIS data. Vessel positions, port calls, voyage history, and ownership details. The standard for maritime OSINT. | 🟡 Freemium / 🔴 Paid (full history) |
+| [VesselFinder](https://www.vesselfinder.com) | Real-time vessel tracking with AIS data. Free tier offers good coverage. Port arrival/departure data and vessel details. | 🟡 Freemium |
+| [ShipFinder](https://shipfinder.co) | Simplified vessel tracking platform. Good for quick lookups of vessel positions and basic voyage information. | 🟡 Freemium |
+| [Equasis](https://www.equasis.org) | Free maritime safety database. Ship inspection records, flag history, classification, and ownership data. Run by the European Maritime Safety Agency. | 🟢 Free (registration required) |
+| [Global Fishing Watch](https://globalfishingwatch.org/map/) | Visualize global fishing vessel activity. Detect illegal fishing, transshipment events, and track fishing fleet movements via AIS and VMS data. | 🟢 Free |
+| [Navtex](https://www.navtex.net) | Maritime navigational warning system. Monitor maritime safety information, coastal warnings, and navigational hazards. | 🟢 Free |
 
 ---
 
-## Tool Status Key
+## 🏢 Corporate & Financial Intelligence
 
-| Symbol | Meaning |
-|--------|---------|
-| Active | Tool is maintained and functional |
-| Limited | Tool has limitations or partial functionality |
-| Discontinued | Tool is no longer maintained |
-| Paid | Requires payment or subscription |
-| Free | Completely free to use |
+Investigate companies, beneficial ownership, trade relationships, and financial data.
 
----
-
-## Contact & Support
-
-- **Issues:** Open an issue in this repository
-- **Suggestions:** Submit a pull request with new tools
-- **Questions:** Start a discussion in the Discussions tab
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-- OSINT Community contributors worldwide
-- Tool developers maintaining these resources
-- Security researchers and investigators
-- Trace Labs and other OSINT training organizations
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [OpenCorporates](https://opencorporates.com) | World's largest open database of companies. 200M+ company records from 140+ jurisdictions. Free basic search; bulk data requires subscription. | 🟡 Freemium |
+| [Companies House (UK)](https://www.gov.uk/government/organisations/companies-house) | UK's official company register. Free access to filings, directors, ownership, and financial statements for all UK companies. | 🟢 Free |
+| [ICIJ Offshore Leaks Database](https://offshoreleaks.icij.org) | Searchable database from Panama Papers, Paradise Papers, Pandora Papers, and other major leaks. Explore offshore entities, intermediaries, and beneficial owners. | 🟢 Free |
+| [OpenSecrets](https://www.opensecrets.org) | US political spending and lobbying data. Track campaign donations, lobbying expenditures, and the financial influence of organizations on US politics. | 🟢 Free |
+| [LittleSis](https://littlesis.org) | Free database mapping relationships between powerful people and organizations. Visualize corporate boards, political connections, and influence networks. | 🟢 Free |
+| [North Data](https://www.northdata.com) | European company information platform. Beneficial ownership, financial data, network graphs, and corporate hierarchies for EU companies. | 🟡 Freemium / 🔴 Paid |
+| [Open Ownership](https://www.openownership.org) | Global beneficial ownership data. Track the real humans behind corporate structures across multiple jurisdictions. | 🟢 Free |
+| [EU Consolidated Corporate Registers](https://e-justice.europa.eu/489/EN/business_registers__search_for_a_company_in_the_eu) | Access point for company registers across all EU member states. Direct links to each country's official business register. | 🟢 Free |
+| [Wikipedia List of Company Registers](https://en.wikipedia.org/wiki/List_of_company_registers) | Comprehensive list of company registers worldwide. Useful starting point when investigating companies in unfamiliar jurisdictions. | 🟢 Free |
+| [EDGAR (SEC)](https://www.sec.gov/edgar) | US Securities and Exchange Commission's database. All public company filings including annual reports, insider trading, and ownership disclosures. | 🟢 Free |
+| [EDGAR Suite (Full-Text Search)](https://efts.sec.gov/LATEST/search-index?q=) | Full-text search across all SEC EDGAR filings. Search for names, companies, or terms across millions of documents. | 🟢 Free |
+| [ImportGenius](https://www.importgenius.com) | Search US and international import/export shipping records. Track supply chains, identify trading partners, and investigate smuggling. | 🔴 Paid |
+| [ImportYeti](https://www.importyeti.com) | Free US import/export record search. Find suppliers and buyers based on customs data. Good free alternative to ImportGenius. | 🟢 Free |
+| [Global Suppliers Online](https://www.globalsuppliersonline.com) | Database of global manufacturers and suppliers. Investigate supply chain relationships and find company connections. | 🟢 Free |
+| [UN Comtrade Database](https://comtradeplus.un.org) | United Nations international trade statistics. Bilateral trade flows between countries for specific commodities. Detect sanctions evasion patterns. | 🟢 Free |
+| [OCCRP Aleph](https://aleph.occrp.org) | OCCRP's investigative data platform. Search across leaked databases, corporate registries, court records, and other data sources. | 🟢 Free |
+| [The Information Laundromat](https://www.informationlaundromat.com) | Track laundered narratives and coordinated information operations. Analyze how disinformation is packaged and distributed. | 🟢 Free |
 
 ---
 
-<div align="center">
+## 🔓 Data Leaks & Breach Intelligence
 
-**Star this repository if you find it helpful!**
+Search leaked databases and credential breaches for investigative purposes.
 
-Made with care by the OSINT Community
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Have I Been Pwned](https://haveibeenpwned.com) | Check if an email or phone number appears in known data breaches. Created by Troy Hunt. The most trusted breach notification service. | 🟢 Free |
+| [DeHashed](https://dehashed.com) | Search engine for leaked databases. Search by email, username, name, IP, phone, address, or password hash. | 🔴 Paid |
+| [Leak-Lookup](https://leak-lookup.com) | Database breach search engine. Query leaked data by email, username, keyword, domain, or password. | 🟡 Freemium / 🔴 Paid |
+| [Intelx.io (Intelligence X)](https://intelx.io) | Search engine for leaked data, darknet content, and OSINT data. Archives Tor sites, paste sites, and breach data. Powerful but expensive. | 🟡 Freemium / 🔴 Paid |
+| [Index Database](https://indexdb.org) | Directory of publicly available database dumps and data breach information. | 🟢 Free |
+| [DiscordLeaks](https://discordleaks.unicornriot.ninja) | Searchable archive of leaked Discord server messages from extremist groups, published by Unicorn Riot. | 🟢 Free |
 
-*Last Updated: December 2025*
+---
 
-</div>
+## 🌐 Domain, IP & Website Analysis
+
+Investigate websites, domains, infrastructure, and technology stacks.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [DomainTools Whois Lookup](https://whois.domaintools.com) | Industry-leading WHOIS lookup with historical records. Track domain ownership changes over time, DNS history, and connected domains. | 🟡 Freemium / 🔴 Paid |
+| [ICANN Lookup](https://lookup.icann.org) | Official ICANN WHOIS lookup. The authoritative source for domain registration data. | 🟢 Free |
+| [Whoxy](https://www.whoxy.com) | WHOIS search with reverse lookup capabilities. Find all domains registered by a person/email/company. Affordable API. | 🟡 Freemium / 🔴 Paid |
+| [Urlscan.io](https://urlscan.io) | Scan and analyze websites. See what a URL loads, including DOM, cookies, requests, and screenshots — without visiting it yourself. | 🟡 Freemium |
+| [PublicWWW](https://publicwww.com) | Search the source code of websites. Find sites using specific analytics IDs, ad codes, or code snippets. Connect websites to the same operator. | 🟡 Freemium / 🔴 Paid |
+| [What CMS](https://whatcms.org) | Detect the Content Management System a website uses. Also identifies hosting providers, themes, and plugins. | 🟢 Free |
+| [Lumen](https://lumendatabase.org) | Database of legal takedown requests (DMCA, copyright, defamation). Reveals what content was removed and why — useful for uncovering suppressed information. | 🟢 Free |
+| [TruffleHog](https://github.com/trufflesecurity/trufflehog) | Scan Git repositories, S3 buckets, and other sources for exposed API keys, passwords, and secrets. | 🟢 Free / 🔵 Open Source |
+
+---
+
+## 📦 Archiving & Preservation
+
+Capture and preserve web content before it disappears.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Wayback Machine (Internet Archive)](https://web.archive.org) | The most comprehensive web archive. Billions of saved web pages going back to 1996. View how websites looked at specific dates. | 🟢 Free |
+| [Archive.today](https://archive.today) | On-demand webpage snapshot service. Creates permanent, frozen copies of web pages. Bypasses paywalls on archived content. | 🟢 Free |
+| [Web Archives (aggregator)](https://en.wikipedia.org/wiki/List_of_Web_archiving_initiatives) | Directory of web archiving initiatives worldwide. Find regional and specialized web archives beyond the Internet Archive. | 🟢 Free |
+| [Hunchly](https://www.hunchly.com) | Automated web capture tool for investigators. Runs in the background during browsing, saving every page visited with timestamps and hashes for legal evidence. | 🔴 Paid (~$130/year) |
+| [Auto Archiver](https://github.com/bellingcat/auto-archiver) | Bellingcat's automated archiving tool. Bulk archive URLs from spreadsheets to the Wayback Machine, archive.today, or local storage. | 🟢 Free / 🔵 Open Source |
+| [Zotero](https://www.zotero.org) | Reference manager and web page archiver. Save full snapshots of web pages with metadata. Organize research with tags and collections. | 🟢 Free / 🔵 Open Source |
+| [Distill.io](https://distill.io) | Web page change monitoring. Get notified when specific parts of web pages change — useful for tracking profile updates, price changes, or content edits. | 🟡 Freemium |
+
+---
+
+## 🌍 Environmental & Wildlife Intelligence
+
+Tools for investigating environmental crime, deforestation, wildlife trafficking, and ecological data.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Global Forest Watch](https://www.globalforestwatch.org) | Monitor deforestation in near-real-time. Tree cover loss alerts, fire data, and land use analysis. Used by investigators tracking illegal logging. | 🟢 Free |
+| [Resource Watch](https://resourcewatch.org) | Hundreds of datasets visualized on maps: air quality, deforestation, water stress, food production. World Resources Institute platform. | 🟢 Free |
+| [Aqueduct Water Risk Atlas](https://www.wri.org/aqueduct) | Map global water stress, flood risk, and drought severity. Useful for environmental investigations and climate impact analysis. | 🟢 Free |
+| [Environmental Justice Atlas](https://ejatlas.org) | Global map of environmental conflicts. Documents ecological disputes, pollution incidents, and land-grabbing with detailed case studies. | 🟢 Free |
+| [Global Monitoring System (ECOSOLVE)](https://ecosolve.org) | Environmental monitoring platform tracking pollution, emissions, and ecological health indicators. | 🟢 Free |
+| [CITES Trade Database](https://trade.cites.org) | International trade in endangered species. Search permits and shipments regulated under CITES. Track wildlife trafficking patterns. | 🟢 Free |
+| [Species+](https://speciesplus.net) | CITES species database with trade data, distribution maps, and legal status. Identify protected species encountered in investigations. | 🟢 Free |
+| [WildEye](https://wildlifejustice.org/wildeye/) | Wildlife crime monitoring tool by Wildlife Justice Commission. Track seizures, arrests, and prosecutions related to wildlife trafficking. | 🟢 Free |
+| [Wildlife Trade Portal](https://www.wildlifetradeportal.org) | Monitor global wildlife trade with species-level data. Analyze legal and illegal trade flows. | 🟢 Free |
+| [World Database on Protected Areas](https://www.protectedplanet.net) | Global database of terrestrial and marine protected areas. Verify whether activities are occurring in protected zones. | 🟢 Free |
+| [Merlin (Cornell Lab)](https://merlin.allaboutbirds.org) | Bird identification app using AI. Identify birds by photo or sound. Relevant for verifying location claims using bird species present in media. | 🟢 Free |
+| [Locust Hub (FAO)](https://locust-hub-hqfao.hub.arcgis.com) | Track desert locust swarms globally. FAO platform monitoring locust outbreaks and their impact on food security. | 🟢 Free |
+| [EIA Global Environmental Crime Tracker](https://eia-international.org) | Environmental Investigation Agency's tracker of environmental crimes including illegal logging, wildlife trafficking, and climate crimes. | 🟢 Free |
+
+---
+
+## 💣 Conflict, Arms & Munitions
+
+Identify weapons, munitions, and track conflict events.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [ACLED (Armed Conflict Location & Event Data)](https://acleddata.com) | Real-time data on political violence and protest events worldwide. Detailed event-level data with precise geolocations. The standard for conflict tracking. | 🟢 Free (registration required) |
+| [Liveuamap](https://liveuamap.com) | Real-time interactive map of conflict events, protests, and security incidents. Covers Ukraine, Middle East, Africa, and other conflict zones. | 🟢 Free |
+| [CAT UXO](https://cat-uxo.com) | Collaborative Arms Transparency — UXO identification tool. Identify unexploded ordnance and munitions found in conflict zones from photos. | 🟢 Free |
+| [Bulletpicker.com](https://bulletpicker.com) | US military ordnance identification database. Detailed technical data on bombs, rockets, mines, and other military ordnance. | 🟢 Free |
+| [Open Source Munitions Portal](https://www.omsportal.org) | Open database for identifying munitions from images. Collaborative platform for weapons identification in conflict documentation. | 🟢 Free |
+| [UNOSAT Analyses](https://unosat.org/products/) | United Nations satellite-based damage assessments and situational analyses for conflict zones and natural disasters. | 🟢 Free |
+| [Atlos](https://www.atlos.org) | Collaborative platform for visual investigation and geolocation. Open-source tool for verifying conflict incidents from media. | 🟢 Free / 🔵 Open Source |
+
+---
+
+## 🚫 Sanctions & Politically Exposed Persons
+
+Check sanctions lists, PEP databases, and politically exposed individuals.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [OpenSanctions](https://www.opensanctions.org) | Unified database of international sanctions, PEPs, and persons of interest. Aggregates data from 30+ official sources. Free and open source. | 🟢 Free / 🔵 Open Source |
+| [SanctionsExplorer](https://sanctionsexplorer.org) | Visual search and exploration of OFAC sanctions data. Explore networks and connections between sanctioned entities. | 🟢 Free |
+| [EU Sanctions Map](https://sanctionsmap.eu) | Official EU sanctions visualization. See all EU restrictive measures by country, regime, and sanction type. | 🟢 Free |
+| [RuPEP](https://rupep.org) | Russian and Belarusian politically exposed persons database. Track Russian oligarchs, officials, and their connections. | 🟢 Free |
+
+---
+
+## ⚖️ Legal & Court Records
+
+Access court filings, legal documents, and law enforcement data.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [US Court Case Databases (PACER/RECAP)](https://www.courtlistener.com) | Access US federal court records. CourtListener (free) and PACER (paid). Search millions of court filings, opinions, and dockets. | 🟢 Free (CourtListener) / 🔴 Paid (PACER) |
+| [Police Records Access Project](https://www.policerec.com) | Platform for accessing US police records including use-of-force incidents, misconduct complaints, and department policies. | 🟢 Free |
+| [Uwazi](https://www.uwazi.io) | Open-source document management for human rights organizations. Organize, analyze, and publish collections of legal and investigative documents. | 🟢 Free / 🔵 Open Source |
+
+---
+
+## 📊 Data Visualization & Analysis
+
+Create charts, graphs, network diagrams, and visual presentations of investigative data.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Maltego](https://www.maltego.com) | The industry-standard OSINT link analysis and visualization platform. Map relationships between people, companies, domains, IPs, and more. Transform-based data gathering. | 🟡 Freemium (Community Edition) / 🔴 Paid |
+| [Gephi](https://gephi.org) | Open-source network analysis and visualization software. Create complex network graphs from large datasets. Supports social network analysis. | 🟢 Free / 🔵 Open Source |
+| [Datawrapper](https://www.datawrapper.de) | Create publication-ready charts, maps, and tables. Used by major newsrooms. Clean output, no coding required. | 🟡 Freemium |
+| [RAWGraphs](https://rawgraphs.io) | Open-source data visualization framework. Create unconventional chart types from spreadsheet data. Bridge between data and vector graphics. | 🟢 Free / 🔵 Open Source |
+| [Blender](https://www.blender.org) | Professional 3D modeling and rendering software. Used in OSINT for 3D crime scene reconstruction, terrain modeling, and visual recreations of events. | 🟢 Free / 🔵 Open Source |
+
+---
+
+## 📝 Workflow, Note-Taking & Case Management
+
+Organize investigations, manage evidence, and maintain operational workflows.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Obsidian](https://obsidian.md) | Markdown-based knowledge management with graph-based note linking. Build interconnected investigation notebooks. Plugin ecosystem extends functionality for OSINT. | 🟢 Free (personal) / 🔴 Paid (sync/commercial) |
+| [Logseq](https://logseq.com) | Open-source outliner and knowledge management tool. Privacy-first (local storage), bidirectional linking, and daily journals for investigation logging. | 🟢 Free / 🔵 Open Source |
+| [Osint Tools Map](https://osinttools.io) | Visual map of OSINT tools organized by category. Useful for discovering new tools and understanding the OSINT landscape. | 🟢 Free |
+| [Hunchly](https://www.hunchly.com) | Web capture and case management tool for investigations. Automatically saves and hashes every page visited. Court-admissible evidence chain. | 🔴 Paid |
+
+---
+
+## 🧩 Browser Extensions & Scrapers
+
+Extensions and tools for data extraction, monitoring, and browser-based investigation.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Instant Data Scraper](https://chrome.google.com/webstore/detail/instant-data-scraper/ofaokhiedipichpaobibbnahnkdoiiah) | AI-powered browser extension that automatically detects tables and lists on web pages and exports them to CSV/Excel. No coding required. | 🟢 Free |
+| [Zeeschuimer](https://github.com/digitalmethodsinitiative/zeeschuimer) | Browser extension that intercepts social media API traffic and saves it as structured data. Captures data from TikTok, Instagram, Twitter, LinkedIn, and more. | 🟢 Free / 🔵 Open Source |
+| [InstaLoader](https://instaloader.github.io) | Download Instagram profiles, posts, stories, reels, IGTV, and metadata. Python-based command-line tool for bulk Instagram data collection. | 🟢 Free / 🔵 Open Source |
+| [Discord Chat Exporter](https://github.com/Tyrrrz/DiscordChatExporter) | Export Discord chat history in HTML, JSON, CSV, or plain text. Preserve Discord evidence for investigations. | 🟢 Free / 🔵 Open Source |
+
+---
+
+## 💻 Code & Technical Search
+
+Search code repositories, technical infrastructure, and source code.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Grep.app](https://grep.app) | Search across 500K+ public Git repositories. Find API keys, configuration files, code snippets, and developer attributions. | 🟢 Free |
+| [TruffleHog](https://github.com/trufflesecurity/trufflehog) | Scan Git repos, S3 buckets, Docker images, and CI/CD systems for exposed secrets, API keys, and credentials. | 🟢 Free / 🔵 Open Source |
+
+---
+
+## 💬 Communication & Messaging Intelligence
+
+Investigate Telegram, messaging platforms, and communication channels.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Telegago](https://cse.google.com/cse?cx=006368593537057042503:efxu7xprihg) | Google Custom Search Engine focused on Telegram content. Search Telegram channels and groups via indexed web content. | 🟢 Free |
+| [TGStat](https://tgstat.com) | Telegram analytics platform. Search channels/groups, view subscriber growth, engagement metrics, and cross-posting patterns. | 🟡 Freemium |
+| [TelegramDB](https://www.telegramdb.org) | Search and explore Telegram groups and channels. Discover public Telegram communities by keyword. | 🟢 Free |
+| [Telemetrio](https://telemetr.io) | Telegram channel analytics. Track subscriber dynamics, post reach, engagement, and content patterns. | 🟡 Freemium |
+| [Telemetry (Telegram)](https://telemetry.so) | Another Telegram analytics platform offering channel statistics, audience overlap analysis, and growth tracking. | 🟡 Freemium |
+| [Telepathy](https://github.com/jordanwildon/Telepathy) | OSINT toolkit for Telegram investigations. Extract members, messages, and media from Telegram groups and channels. | 🟢 Free / 🔵 Open Source |
+| [Telegram Group Joiner](https://github.com/th3unkn0n/TeleGram-Scraper) | Tool for discovering and joining Telegram groups related to specific topics. Used for infiltration research and monitoring. | 🟢 Free / 🔵 Open Source |
+| [Telegram Phone Number Checker](https://github.com/bellingcat/telegram-phone-number-checker) | Check if phone numbers are associated with Telegram accounts. Bellingcat tool for linking phone numbers to Telegram identities. | 🟢 Free / 🔵 Open Source |
+| [4plebs](https://4plebs.org) | Archive of 4chan boards (/pol/, /x/, /sp/, etc.). Searchable by keyword, date, and image hash. Essential for tracking extremist content and disinformation origins. | 🟢 Free |
+
+---
+
+## ⛓️ Cryptocurrency & Blockchain
+
+Investigate blockchain transactions, wallets, and crypto-related activity.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [Etherscan](https://etherscan.io) | Ethereum blockchain explorer. Track ETH transactions, wallet balances, smart contracts, and token transfers. The standard for Ethereum investigation. | 🟢 Free |
+| [527 Explorer](https://527explorer.com) | Explore 527 political organizations and their blockchain/financial activities. Track dark money in US politics. | 🟢 Free |
+
+---
+
+## 📞 Phone & People Lookup
+
+Investigate phone numbers, find people, and verify identities.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [TrueCaller](https://www.truecaller.com) | Identify unknown phone numbers using crowdsourced caller ID database of 300M+ users. Reverse phone lookup. | 🟡 Freemium |
+| [Hitta.se](https://www.hitta.se) | Swedish person and business search. Find individuals, phone numbers, and addresses in Sweden's public records. | 🟢 Free |
+| [Telegram Phone Number Checker](https://github.com/bellingcat/telegram-phone-number-checker) | Check whether phone numbers are linked to Telegram accounts and retrieve associated usernames. | 🟢 Free / 🔵 Open Source |
+
+---
+
+## ☀️ Weather, Time & Shadow Analysis
+
+Verify timestamps, analyze lighting conditions, and determine when photos/videos were taken.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [SunCalc](https://www.suncalc.org) | Calculate sun position, golden hour, sunrise/sunset for any location and date. Essential for chronolocation — determining when a photo was taken based on sun position. | 🟢 Free |
+| [Shadow Finder](https://shadowfinder.com) | Estimate the time a photo was taken by analyzing shadow length and direction combined with location data. | 🟢 Free |
+| [ShadowMap](https://shadowmap.org) | 3D shadow simulation for any location and time. Visualize how buildings and terrain cast shadows throughout the day. | 🟢 Free |
+| [ShadeMap](https://shademap.app) | Interactive shade and shadow visualization on a 3D globe. Calculate shadow coverage at any point in time for geolocation and chronolocation. | 🟢 Free |
+
+---
+
+## 🧰 Miscellaneous & Specialty Tools
+
+Specialized tools that don't fit neatly into other categories.
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [China-related Resources](https://docs.google.com/spreadsheets/d/1Ekwz82FJnKbVp3IcDJ8N4NdRmxfgOImM8pNqaLaHM3c) | Curated collection of OSINT resources specifically for investigating Chinese entities, including social media platforms, corporate registries, and mapping tools. | 🟢 Free |
+| [Hitta.se](https://www.hitta.se) | Swedish public records search including person lookup, address verification, and business data. | 🟢 Free |
+| [Have I Been Pwned](https://haveibeenpwned.com) | Check if personal data has been compromised in known data breaches. Useful as a starting point for identity verification. | 🟢 Free |
+
+---
+
+## 📋 Tool Count by Pricing
+
+| Type | Count | Description |
+|------|-------|-------------|
+| 🟢 Free | ~120 | Completely free to use |
+| 🔵 Open Source | ~40 | Free and open source (many overlap with Free) |
+| 🟡 Freemium | ~30 | Free tier with paid premium features |
+| 🔴 Paid | ~15 | Requires subscription or payment |
+
+---
+
+## 🤝 Contributing
+
+Found a tool that should be listed here? Want to update a description or pricing?
+
+1. Fork this repository
+2. Add the tool in the appropriate category
+3. Follow the existing format: `| [Tool Name](URL) | Description | Pricing |`
+4. Submit a Pull Request
+
+### Guidelines
+
+- Tools must be relevant to OSINT investigations
+- Include accurate pricing information
+- Write clear, actionable descriptions explaining the OSINT use case
+- Place tools in the most relevant category
+
+---
+
+## ⚠️ Disclaimer
+
+This toolkit is intended for **lawful research, journalism, and security purposes only**. Always ensure your use of these tools complies with local laws, terms of service, and ethical guidelines. Many tools in this list can access personal data — handle all information responsibly.
+
+---
+
+## 📜 License
+
+This toolkit reference is released under [MIT License](LICENSE). Individual tools listed here have their own licenses and terms of service.
+
+---
+
+> **Built for [OSINT Nexus](https://github.com/your-repo) — Professional OSINT Case & Evidence Management**
