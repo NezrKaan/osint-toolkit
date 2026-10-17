@@ -16,7 +16,7 @@ Holding a specific clue — a photo, a username, a ship, a wallet address? Start
 |-------|----------------------------|
 | **Start here** | [How to Use This Toolkit](#how-to-use-this-toolkit)<br>[Start From What You Have](#start-from-what-you-have)<br>[Tool Index A–Z](#tool-index-az) |
 | **Places and imagery** | 🗺️ [Maps and Geolocation](#maps-and-geolocation) (34)<br>🛰️ [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation) (25)<br>☀️ [Weather, Time and Shadow Analysis](#weather-time-and-shadow-analysis) (14) |
-| **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (20)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (10)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (10)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
+| **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (20)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (11)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (10)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
 | **Media verification** | 🖼️ [Reverse Image Search and Image Forensics](#reverse-image-search-and-image-forensics) (14)<br>🤖 [AI-Generated and Synthetic Media Detection](#ai-generated-and-synthetic-media-detection) (5)<br>🎬 [Video Analysis and Verification](#video-analysis-and-verification) (6)<br>🎙️ [Audio Analysis and Acoustic OSINT](#audio-analysis-and-acoustic-osint) (22) |
 | **Organisations, money and law** | 🏢 [Corporate and Financial Intelligence](#corporate-and-financial-intelligence) (16)<br>🏛️ [Public Records, Procurement and Lobbying](#public-records-procurement-and-lobbying) (14)<br>🚫 [Sanctions and Politically Exposed Persons](#sanctions-and-politically-exposed-persons) (8)<br>⚖️ [Legal and Court Records](#legal-and-court-records) (10)<br>⛓️ [Cryptocurrency and Blockchain](#cryptocurrency-and-blockchain) (15) |
 | **Transport** | ✈️ [Transport Tracking](#transport-tracking) (21)<br>🚢 [Maritime Intelligence](#maritime-intelligence) (11) |
@@ -84,7 +84,7 @@ Each tool entry follows this format:
 Every tool in this list, alphabetically. Each name links to the section where it appears.
 
 <details>
-<summary><b>Show all 417 tools</b></summary>
+<summary><b>Show all 418 tools</b></summary>
 
 **0–9** · [2GIS](#map-platforms) · [4CAT](#browser-extensions-and-scrapers) · [4plebs](#forums-and-imageboards)
 
@@ -132,7 +132,7 @@ Every tool in this list, alphabetically. Each name links to the section where it
 
 **V** · [Validin](#threat-intelligence-and-reputation) · [VesselFinder](#maritime-intelligence) · [ViewDNS.info](#whois-dns-and-certificates) · [VirusTotal](#threat-intelligence-and-reputation) · [VLC Media Player](#video-analysis-and-verification)
 
-**W** · [WalletExplorer](#tracing-attribution-and-risk) · [Wappalyzer](#website-fingerprinting-and-connections) · [War & Sanctions](#sanctions-and-politically-exposed-persons) · [Wayback Machine (Internet Archive)](#public-web-archives) · [Weather Underground History](#historical-weather) · [Web Scraper](#browser-extensions-and-scrapers) · [what3words](#geolocation-aids) · [What CMS](#website-fingerprinting-and-connections) · [WhatsMyName](#username-and-identity-search) · [Whisper (OpenAI)](#speech-language-and-music-identification) · [Who Posted What?](#facebook-and-instagram) · [Whoxy](#whois-dns-and-certificates) · [WiGLE](#geolocation-aids) · [Wikimapia](#map-platforms) · [Wikipedia: List of Company Registers](#directories-and-meta-resources) · [Wikipedia: List of Web Archiving Initiatives](#directories-and-meta-resources) · [Wildlife Trade Portal](#wildlife-and-biodiversity) · [Windy](#historical-weather) · [World Database on Protected Areas](#wildlife-and-biodiversity) · [World License Plates](#road-and-vehicles) · [World Port Index](#maritime-intelligence)
+**W** · [WalletExplorer](#tracing-attribution-and-risk) · [Wappalyzer](#website-fingerprinting-and-connections) · [War & Sanctions](#sanctions-and-politically-exposed-persons) · [Wayback Machine (Internet Archive)](#public-web-archives) · [Weather Underground History](#historical-weather) · [Web Scraper](#browser-extensions-and-scrapers) · [what3words](#geolocation-aids) · [What CMS](#website-fingerprinting-and-connections) · [WhatsMyName](#username-and-identity-search) · [WhatsMyName Apps](#username-and-identity-search) · [Whisper (OpenAI)](#speech-language-and-music-identification) · [Who Posted What?](#facebook-and-instagram) · [Whoxy](#whois-dns-and-certificates) · [WiGLE](#geolocation-aids) · [Wikimapia](#map-platforms) · [Wikipedia: List of Company Registers](#directories-and-meta-resources) · [Wikipedia: List of Web Archiving Initiatives](#directories-and-meta-resources) · [Wildlife Trade Portal](#wildlife-and-biodiversity) · [Windy](#historical-weather) · [World Database on Protected Areas](#wildlife-and-biodiversity) · [World License Plates](#road-and-vehicles) · [World Port Index](#maritime-intelligence)
 
 **X** · [xeno-canto](#environmental-and-bioacoustic-sound-identification) · [XTools](#monitoring-and-cross-platform-analysis) · [X (Twitter) Advanced Search](#x-twitter)
 
@@ -428,6 +428,7 @@ Find accounts and digital footprints across platforms.
 | [Sherlock](https://github.com/sherlock-project/sherlock) | Search for usernames across 400+ social networks simultaneously. The most popular OSINT username enumeration tool. | 🟢 Free / 🔵 Open Source |
 | [Maigret](https://github.com/soxoj/maigret) | Advanced username search across 3,000+ sites. A powerful Sherlock evolution with profile page parsing and identifier extraction. | 🟢 Free / 🔵 Open Source |
 | [WhatsMyName](https://whatsmyname.app) | Username enumeration checking 600+ websites, maintained with a focus on reducing false positives. Also powers many other tools' site lists. | 🟢 Free / 🔵 Open Source |
+| [WhatsMyName Apps](https://whatsmynameapps.us/) | Browser-based username search across public websites and social platforms for public-profile discovery. Results are leads to verify manually. | 🟢 Free |
 | [Blackbird](https://github.com/p1ngul1n0/blackbird) | Fast username (and email) search across hundreds of sites, with metadata extraction and reporting. | 🟢 Free / 🔵 Open Source |
 | [Social Analyzer](https://github.com/qeeqbox/social-analyzer) | Finds a profile across 1,000+ sites and rates its confidence in each match. CLI or web interface. | 🟢 Free / 🔵 Open Source |
 | [Instant Username Search](https://instantusername.com) | Checks a handle across 100+ platforms as you type — a quick first pass before running Sherlock or Maigret. | 🟢 Free |
@@ -1252,11 +1253,11 @@ These tools were listed in earlier editions but are now defunct, unreliable, res
 
 ## Tool Count by Pricing
 
-**417 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
+**418 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
 
 | Type | Tools |
 |------|-------|
-| 🟢 Free | 335 — free to use, including free tiers |
+| 🟢 Free | 336 — free to use, including free tiers |
 | 🔵 Open Source | 78 — source code is public |
 | 🟡 Freemium | 74 — free tier with paid features, or access by application |
 | 🔴 Paid | 31 — subscription or per-use payment |
