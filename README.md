@@ -126,7 +126,7 @@ Every tool in this list, alphabetically. Each name links to the section where it
 
 **S** · [SanctionsExplorer](#sanctions-and-politically-exposed-persons) · [satellites.pro](#imagery-viewers-and-archives) · [Search4Faces](#facial-recognition) · [Search by Image (Extension)](#reverse-image-search) · [SecurityTrails](#whois-dns-and-certificates) · [Sentinel-2 Cloudless (EOX)](#imagery-viewers-and-archives) · [ShadeMap](#sun-moon-and-shadows) · [Shadow Finder](#sun-moon-and-shadows) · [ShadowMap](#sun-moon-and-shadows) · [Shazam](#speech-language-and-music-identification) · [Sherlock](#username-and-identity-search) · [Sherloq](#image-forensics-and-metadata) · [ShipFinder](#maritime-intelligence) · [ShipSpotting.com](#maritime-intelligence) · [Shodan](#internet-wide-device-search) · [Sightengine AI Image Detection](#ai-generated-and-synthetic-media-detection) · [SingleFile](#capture-and-monitoring-tools) · [SIPRI Arms Transfers Database](#weapons-and-munitions-identification) · [Skopenow](#monitoring-and-cross-platform-analysis) · [SkyFi](#commercial-imagery) · [Skylight](#maritime-intelligence) · [Snap Map](#location-based-platforms) · [Social Analyzer](#username-and-identity-search) · [Software Heritage Archive](#code-and-technical-search) · [Solscan](#block-explorers) · [Sonic Visualiser](#spectrogram-and-frequency-analysis) · [SoX (Sound eXchange)](#annotation-and-batch-processing) · [Species+](#wildlife-and-biodiversity) · [SpiderFoot](#recon-and-automation) · [Spleeter](#background-sound-isolation-and-enhancement) · [Strava Global Heatmap](#location-based-platforms) · [Subfinder](#recon-and-automation) · [SunCalc](#sun-moon-and-shadows) · [SunEarthTools](#sun-moon-and-shadows)
 
-**T** · [Tableau Public](#charts-maps-and-timelines) · [TED – Tenders Electronic Daily](#procurement-and-public-spending) · [Telegago](#telegram) · [Telegram Phone Number Checker](#telegram) · [Telemetr.io](#telegram) · [Telepathy](#telegram) · [Tencent Maps](#map-platforms) · [TGStat](#telegram) · [That'sThem](#email-phone-and-people-lookup) · [The Gazette (UK)](#charities-and-official-notices) · [theHarvester](#recon-and-automation) · [The Information Laundromat](#website-fingerprinting-and-connections) · [Time and Date](#historical-weather) · [TimelineJS](#charts-maps-and-timelines) · [TinEye](#reverse-image-search) · [Trace Labs OSINT VM](#investigation-environments) · [Trase](#land-forests-and-emissions) · [Tronscan](#block-explorers) · [TrueCaller](#email-phone-and-people-lookup) · [TruffleHog](#code-and-technical-search) · [Tsurugi Linux](#investigation-environments)
+**T** · [Tableau Public](#charts-maps-and-timelines) · [TED – Tenders Electronic Daily](#procurement-and-public-spending) · [Telegago](#telegram) · [Telegram Phone Number Checker](#telegram) · [Telemetr.io](#telegram) · [Telepathy](#telegram) · [Tencent Maps](#map-platforms) · [TGStat](#telegram) · [That'sThem](#email-phone-and-people-lookup) · [The Gazette (UK)](#charities-and-official-notices) · [theHarvester](#recon-and-automation) · [The Information Laundromat](#website-fingerprinting-and-connections) · [Time and Date](#historical-weather) · [TimelineJS](#charts-maps-and-timelines) · [TinEye](#reverse-image-search) · [Trace Labs OSINT VM](#investigation-environments) · [Trase](#land-forests-and-emissions) · [Tronscan](#block-explorers) · [TrueCaller](#email-phone-and-people-lookup) · [TruffleHog](#code-and-technical-search) · [Tsurugi Linux](#investigation-environments) · [twtData X Trends Archive](#x-twitter)
 
 **U** · [UCDP](#conflict-monitoring-and-documentation) · [UK CAA G-INFO](#aviation) · [UK Electoral Commission Political Finance](#lobbying-and-political-finance) · [UK Sanctions List Search](#sanctions-and-politically-exposed-persons) · [Umbra Space](#commercial-imagery) · [UN Comtrade Database](#trade-and-supply-chains) · [UNOSAT](#conflict-monitoring-and-documentation) · [UN Security Council Consolidated List](#sanctions-and-politically-exposed-persons) · [URLhaus](#threat-intelligence-and-reputation) · [urlscan.io](#website-fingerprinting-and-connections) · [USAspending](#procurement-and-public-spending) · [Uwazi](#notes-and-case-management)
 
@@ -326,6 +326,7 @@ Tools for searching, monitoring, and analyzing social media platforms.
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [X (Twitter) Advanced Search](https://x.com/search-advanced) | X's built-in advanced search: filter by words, accounts, dates, engagement and language for timeline reconstruction. X also documents location operators (`near:`, `within:`, `geocode:`), but since early 2026 some users report they return no results — test them before relying on them. | 🟢 Free (X account required) |
+| [twtData X Trends Archive](https://twtdata.com/twitter-trends/) | Dated archive of what trended on X by country and city, one page per place and day, with each trend's best position and hours on the list where the location is tracked hourly. Useful for dating when a hashtag or narrative took off in a given country. | 🟢 Free (no account; follower and tweet CSV exports are paid) |
 
 ### Facebook and Instagram
 
@@ -1252,11 +1253,11 @@ These tools were listed in earlier editions but are now defunct, unreliable, res
 
 ## Tool Count by Pricing
 
-**417 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
+**418 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
 
 | Type | Tools |
 |------|-------|
-| 🟢 Free | 335 — free to use, including free tiers |
+| 🟢 Free | 336 — free to use, including free tiers |
 | 🔵 Open Source | 78 — source code is public |
 | 🟡 Freemium | 74 — free tier with paid features, or access by application |
 | 🔴 Paid | 31 — subscription or per-use payment |
