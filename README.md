@@ -84,7 +84,7 @@ Each tool entry follows this format:
 Every tool in this list, alphabetically. Each name links to the section where it appears.
 
 <details>
-<summary><b>Show all 417 tools</b></summary>
+<summary><b>Show all 418 tools</b></summary>
 
 **0–9** · [2GIS](#map-platforms) · [4CAT](#browser-extensions-and-scrapers) · [4plebs](#forums-and-imageboards)
 
@@ -122,7 +122,7 @@ Every tool in this list, alphabetically. Each name links to the section where it
 
 **Q** · [QGIS](#analysis-and-event-monitoring)
 
-**R** · [RadarBox](#aviation) · [Radar Interference Tracker](#analysis-and-event-monitoring) · [RAMMB SLIDER](#imagery-viewers-and-archives) · [ransomware.live](#data-leaks-and-breach-intelligence) · [RAWGraphs](#charts-maps-and-timelines) · [Realtime Trains](#rail) · [recon-ng](#recon-and-automation) · [ReplayWeb.page](#capture-and-monitoring-tools) · [Resource Watch](#land-forests-and-emissions) · [RIPEstat](#ip-asn-and-routing) · [Robtex](#ip-asn-and-routing) · [RootAbout](#reverse-image-search) · [RuPEP](#sanctions-and-politically-exposed-persons)
+**R** · [RadarBox](#aviation) · [Radar Interference Tracker](#analysis-and-event-monitoring) · [RAMMB SLIDER](#imagery-viewers-and-archives) · [ransomware.live](#data-leaks-and-breach-intelligence) · [RAWGraphs](#charts-maps-and-timelines) · [Realtime Trains](#rail) · [recon-ng](#recon-and-automation) · [ReplayWeb.page](#capture-and-monitoring-tools) · [Resource Watch](#land-forests-and-emissions) · [Reverse Image Search Anywhere](#reverse-image-search) · [RIPEstat](#ip-asn-and-routing) · [Robtex](#ip-asn-and-routing) · [RootAbout](#reverse-image-search) · [RuPEP](#sanctions-and-politically-exposed-persons)
 
 **S** · [SanctionsExplorer](#sanctions-and-politically-exposed-persons) · [satellites.pro](#imagery-viewers-and-archives) · [Search4Faces](#facial-recognition) · [Search by Image (Extension)](#reverse-image-search) · [SecurityTrails](#whois-dns-and-certificates) · [Sentinel-2 Cloudless (EOX)](#imagery-viewers-and-archives) · [ShadeMap](#sun-moon-and-shadows) · [Shadow Finder](#sun-moon-and-shadows) · [ShadowMap](#sun-moon-and-shadows) · [Shazam](#speech-language-and-music-identification) · [Sherlock](#username-and-identity-search) · [Sherloq](#image-forensics-and-metadata) · [ShipFinder](#maritime-intelligence) · [ShipSpotting.com](#maritime-intelligence) · [Shodan](#internet-wide-device-search) · [Sightengine AI Image Detection](#ai-generated-and-synthetic-media-detection) · [SingleFile](#capture-and-monitoring-tools) · [SIPRI Arms Transfers Database](#weapons-and-munitions-identification) · [Skopenow](#monitoring-and-cross-platform-analysis) · [SkyFi](#commercial-imagery) · [Skylight](#maritime-intelligence) · [Snap Map](#location-based-platforms) · [Social Analyzer](#username-and-identity-search) · [Software Heritage Archive](#code-and-technical-search) · [Solscan](#block-explorers) · [Sonic Visualiser](#spectrogram-and-frequency-analysis) · [SoX (Sound eXchange)](#annotation-and-batch-processing) · [Species+](#wildlife-and-biodiversity) · [SpiderFoot](#recon-and-automation) · [Spleeter](#background-sound-isolation-and-enhancement) · [Strava Global Heatmap](#location-based-platforms) · [Subfinder](#recon-and-automation) · [SunCalc](#sun-moon-and-shadows) · [SunEarthTools](#sun-moon-and-shadows)
 
@@ -496,6 +496,7 @@ Trace the origin of images, detect manipulation, and read hidden metadata.
 | [TinEye](https://tineye.com) | Dedicated reverse image search. Finds exact and modified matches. Its "oldest" sort shows the first known appearance of an image online. | 🟢 Free (basic) / 🔴 Paid (API) |
 | [Baidu Image Search](https://image.baidu.com) | Reverse image search with strong coverage of Chinese websites and platforms. | 🟢 Free |
 | [Search by Image (Extension)](https://github.com/dessant/search-by-image) | Browser extension to right-click any image and reverse-search it across Google, Yandex, TinEye, Bing, and more at once. | 🟢 Free / 🔵 Open Source |
+| [Reverse Image Search Anywhere](https://reverseimage.app/) | Browser extension and web tool to compare Google Lens, Yandex, Bing and TinEye results; can search cropped images or images without a directly accessible URL. Treat matches as leads, not proof of origin. | 🟢 Free |
 | [RootAbout](https://rootabout.com) | Reverse image search against Internet Archive collections (plus an Open Library book-cover search). Finds near-identical copies only, and searches can be slow or fail intermittently. | 🟢 Free |
 
 ### Image Forensics and Metadata
