@@ -16,7 +16,7 @@ Holding a specific clue — a photo, a username, a ship, a wallet address? Start
 |-------|----------------------------|
 | **Start here** | [How to Use This Toolkit](#how-to-use-this-toolkit)<br>[Start From What You Have](#start-from-what-you-have)<br>[Tool Index A–Z](#tool-index-az) |
 | **Places and imagery** | 🗺️ [Maps and Geolocation](#maps-and-geolocation) (34)<br>🛰️ [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation) (25)<br>☀️ [Weather, Time and Shadow Analysis](#weather-time-and-shadow-analysis) (14) |
-| **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (20)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (10)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (10)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
+| **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (20)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (10)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (11)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
 | **Media verification** | 🖼️ [Reverse Image Search and Image Forensics](#reverse-image-search-and-image-forensics) (14)<br>🤖 [AI-Generated and Synthetic Media Detection](#ai-generated-and-synthetic-media-detection) (5)<br>🎬 [Video Analysis and Verification](#video-analysis-and-verification) (6)<br>🎙️ [Audio Analysis and Acoustic OSINT](#audio-analysis-and-acoustic-osint) (22) |
 | **Organisations, money and law** | 🏢 [Corporate and Financial Intelligence](#corporate-and-financial-intelligence) (16)<br>🏛️ [Public Records, Procurement and Lobbying](#public-records-procurement-and-lobbying) (14)<br>🚫 [Sanctions and Politically Exposed Persons](#sanctions-and-politically-exposed-persons) (8)<br>⚖️ [Legal and Court Records](#legal-and-court-records) (10)<br>⛓️ [Cryptocurrency and Blockchain](#cryptocurrency-and-blockchain) (15) |
 | **Transport** | ✈️ [Transport Tracking](#transport-tracking) (21)<br>🚢 [Maritime Intelligence](#maritime-intelligence) (11) |
@@ -84,7 +84,7 @@ Each tool entry follows this format:
 Every tool in this list, alphabetically. Each name links to the section where it appears.
 
 <details>
-<summary><b>Show all 417 tools</b></summary>
+<summary><b>Show all 418 tools</b></summary>
 
 **0–9** · [2GIS](#map-platforms) · [4CAT](#browser-extensions-and-scrapers) · [4plebs](#forums-and-imageboards)
 
@@ -94,7 +94,7 @@ Every tool in this list, alphabetically. Each name links to the section where it
 
 **C** · [CanLII](#legal-and-court-records) · [Carbon Mapper](#land-forests-and-emissions) · [Castrick Clues](#email-phone-and-people-lookup) · [CAT-UXO](#weapons-and-munitions-identification) · [CelesTrak](#satellites-in-orbit) · [Censys Platform](#internet-wide-device-search) · [Chainabuse](#tracing-attribution-and-risk) · [Chainalysis](#tracing-attribution-and-risk) · [Charity Commission Register](#charities-and-official-notices) · [Chronotrains](#rail) · [CITES Trade Database](#wildlife-and-biodiversity) · [ClearSky (Bluesky)](#bluesky-and-the-fediverse) · [Climate TRACE](#land-forests-and-emissions) · [Cobalt](#video-analysis-and-verification) · [Companies House (UK)](#company-registers-and-ownership) · [Content Credentials Verify](#ai-generated-and-synthetic-media-detection) · [Convert Geographic Units](#coordinates-and-map-utilities) · [Copernicus Browser](#imagery-viewers-and-archives) · [Copernicus Emergency Management Service](#analysis-and-event-monitoring) · [CourtListener / RECAP](#legal-and-court-records) · [Criminal IP](#internet-wide-device-search) · [crt.sh](#whois-dns-and-certificates) · [Crunchbase](#company-registers-and-ownership) · [CSI Linux](#investigation-environments)
 
-**D** · [Datasette](#documents-and-data-wrangling) · [Datawrapper](#charts-maps-and-timelines) · [DeBank](#tracing-attribution-and-risk) · [DeepFake-o-Meter](#ai-generated-and-synthetic-media-detection) · [DeepL Translator](#translation-and-language) · [DeepStateMap](#conflict-monitoring-and-documentation) · [DeHashed](#data-leaks-and-breach-intelligence) · [Demucs](#background-sound-isolation-and-enhancement) · [Disboard](#discord) · [DiscordChatExporter](#browser-extensions-and-scrapers) · [discord.id](#discord) · [DiscordLeaks](#data-leaks-and-breach-intelligence) · [Distill.io](#capture-and-monitoring-tools) · [DNSDumpster](#whois-dns-and-certificates) · [DNSlytics](#whois-dns-and-certificates) · [DomainTools Whois](#whois-dns-and-certificates) · [draw.io](#link-analysis-and-networks) · [DVLA Vehicle Enquiry](#road-and-vehicles)
+**D** · [Datasette](#documents-and-data-wrangling) · [Datawrapper](#charts-maps-and-timelines) · [DeBank](#tracing-attribution-and-risk) · [DeepFake-o-Meter](#ai-generated-and-synthetic-media-detection) · [DeepSearch](#email-phone-and-people-lookup) · [DeepL Translator](#translation-and-language) · [DeepStateMap](#conflict-monitoring-and-documentation) · [DeHashed](#data-leaks-and-breach-intelligence) · [Demucs](#background-sound-isolation-and-enhancement) · [Disboard](#discord) · [DiscordChatExporter](#browser-extensions-and-scrapers) · [discord.id](#discord) · [DiscordLeaks](#data-leaks-and-breach-intelligence) · [Distill.io](#capture-and-monitoring-tools) · [DNSDumpster](#whois-dns-and-certificates) · [DNSlytics](#whois-dns-and-certificates) · [DomainTools Whois](#whois-dns-and-certificates) · [draw.io](#link-analysis-and-networks) · [DVLA Vehicle Enquiry](#road-and-vehicles)
 
 **E** · [Earth Explorer (USGS)](#imagery-viewers-and-archives) · [Earth Online (ESA)](#imagery-viewers-and-archives) · [eBird](#wildlife-and-biodiversity) · [EDGAR Full-Text Search](#company-registers-and-ownership) · [EDGAR (SEC)](#company-registers-and-ownership) · [EIA International](#land-forests-and-emissions) · [ELAN](#annotation-and-batch-processing) · [ENF Fingerprinting Tool](#enf-electric-network-frequency-analysis) · [ENS App](#tracing-attribution-and-risk) · [Environmental Justice Atlas](#land-forests-and-emissions) · [EOSDA LandViewer](#imagery-viewers-and-archives) · [Epieos](#email-phone-and-people-lookup) · [Equasis](#maritime-intelligence) · [Esri World Imagery Wayback](#imagery-viewers-and-archives) · [Etherscan](#block-explorers) · [EU Business Registers (e-Justice)](#company-registers-and-ownership) · [EU Financial Transparency System](#procurement-and-public-spending) · [Europe's Most Wanted](#legal-and-court-records) · [EU Sanctions Map](#sanctions-and-politically-exposed-persons) · [EU Transparency Register](#lobbying-and-political-finance) · [ExifTool](#image-forensics-and-metadata)
 
@@ -446,6 +446,7 @@ Investigate email addresses and phone numbers, trace where emails came from, and
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
+| [DeepSearch](https://deepsearch.tools/) | Name-based people search with candidate lists for comparing possible matches; independently verify identities and details. Free candidate-list previews have usage limits; full reports are paid. | 🟡 Freemium |
 | [Epieos](https://epieos.com) | Reverse email and phone lookup. Reveals connected Google account data, linked services, and profiles from a single address. One of the most-used email OSINT tools today. | 🟡 Freemium |
 | [Holehe](https://github.com/megadose/holehe) | CLI tool that checks whether an email is registered on 120+ sites via password-reset/registration flows, usually without alerting the target. | 🟢 Free / 🔵 Open Source |
 | [Hunter.io](https://hunter.io) | Find and verify professional email addresses associated with a domain. Useful for mapping an organization's staff. | 🟡 Freemium |
@@ -1252,13 +1253,13 @@ These tools were listed in earlier editions but are now defunct, unreliable, res
 
 ## Tool Count by Pricing
 
-**417 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
+**418 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
 
 | Type | Tools |
 |------|-------|
-| 🟢 Free | 335 — free to use, including free tiers |
+| 🟢 Free | 336 — free to use, including free tiers |
 | 🔵 Open Source | 78 — source code is public |
-| 🟡 Freemium | 74 — free tier with paid features, or access by application |
+| 🟡 Freemium | 75 — free tier with paid features, or access by application |
 | 🔴 Paid | 31 — subscription or per-use payment |
 
 ---
