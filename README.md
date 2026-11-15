@@ -1,12 +1,62 @@
-# 🔍 OSINT Nexus — The Ultimate Open Source Intelligence Toolkit
+# 🔍 OSINT Nexus — 400+ OSINT Tools for Investigations, Geolocation and CTFs
 
-> **A curated, categorized collection of 410+ OSINT tools for investigators, journalists, researchers, and security professionals.**
+> **A curated list of 418 open source intelligence (OSINT) tools for investigators, journalists, researchers, security professionals and CTF players.** Find the right tool for a photo, video, audio clip, username, email address, domain, company, ship, aircraft or crypto wallet, sorted by what you have and what you need.
 
+[![Tools: 418](https://img.shields.io/badge/tools-418-blue.svg)](#tool-index-az)
+[![Last commit](https://img.shields.io/github/last-commit/NezrKaan/osint-toolkit)](https://github.com/NezrKaan/osint-toolkit/commits/main)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> **🗓️ Last verified: 10 October 2026.** Every entry links to the tool's own website, extension-store page or repository; catalogues and guides are kept separately in [Directories and Meta-Resources](#directories-and-meta-resources). All GitHub links were checked to confirm the repository exists, and new additions and higher-risk entries were checked individually against the tool's own site; the remaining entries carry over from the July 2026 review. See the [Changelog](#changelog) for what changed. Tool availability changes fast — if you hit a dead link, please open an issue.
+<p align="center">
+  <a href="https://nezrkaan.com/writeups/"><img src="https://img.shields.io/badge/Bellingcat_challenges-5_walkthroughs-24292f?style=for-the-badge" alt="Five Bellingcat challenge walkthroughs on nezrkaan.com"></a>
+  <a href="https://ctf.lavirent.com/"><img src="https://img.shields.io/badge/Lavirent_Challenge_0.1-opens_1_Dec_2026-6e40c9?style=for-the-badge" alt="Lavirent Challenge 0.1, a free OSINT CTF, opens 1 December 2026"></a>
+</p>
+
+<p align="center">
+  <b><a href="#contents">Contents</a></b> · <b><a href="#start-from-what-you-have">Start From What You Have</a></b> · <b><a href="#tool-index-az">Tool Index A–Z</a></b> · <b><a href="#osint-ctf-challenges-and-walkthroughs">OSINT CTFs</a></b>
+</p>
+
+⭐ **If this list saves you time, star the repo** — stars are how other investigators find it.
 
 ---
+
+## OSINT CTF Challenges and Walkthroughs
+
+The quickest way to learn these tools is on a real case. Here are two free ones: worked solutions to Bellingcat's challenges, and a live OSINT CTF. Both use tools from this list, and each entry below says which sections to open.
+
+### Bellingcat Challenge Walkthroughs
+
+**[nezrkaan.com/writeups](https://nezrkaan.com/writeups/)** · Field Notes by Nezr Kaan, who maintains this list
+
+Step-by-step solutions to five challenges from the [Bellingcat Open Source Challenge](https://challenge.bellingcat.com/). Each one sets out the method, the evidence and the dead ends along the way.
+
+| № | Challenge | Clue | Where to look in this list |
+|:-:|-----------|------|----------------------------|
+| 001 | [Urban Symphony](https://nezrkaan.com/writeups/urban-symphony): an audio fingerprint of a city | Audio, no metadata | [Audio Analysis](#audio-analysis-and-acoustic-osint) · [Search Engines](#search-engines-and-advanced-operators) · [Maps and Geolocation](#maps-and-geolocation) |
+| 002 | [Rapid Fire](https://nezrkaan.com/writeups/rapid-fire): a burst that wasn't gunfire | Audio, no metadata | [Audio Analysis](#audio-analysis-and-acoustic-osint) · [Search Engines](#search-engines-and-advanced-operators) |
+| 003 | [Touching Tarmac](https://nezrkaan.com/writeups/touching-tarmac): a taxiing photo and an ICAO code | Photo | [Reverse Image Search](#reverse-image-search) · [Map Platforms](#map-platforms) |
+| 004 | [Window Seat](https://nezrkaan.com/writeups/window-seat): a jet engine over many snowy mountains | Photo | [Reverse Image Search](#reverse-image-search) · [Aviation](#aviation) · [Satellite Imagery](#satellite-imagery-and-earth-observation) |
+| 005 | [Point of Origin](https://nezrkaan.com/writeups/point-of-origin): a crater and a compass bearing | Photo | [Reverse Image Search](#reverse-image-search) · [Map Platforms](#map-platforms) · [Conflict, Arms and Munitions](#conflict-arms-and-munitions) |
+
+> ⚠️ Each walkthrough gives the answer, so try the challenge at [challenge.bellingcat.com](https://challenge.bellingcat.com/) first. The walkthroughs are independent and not affiliated with Bellingcat.
+
+### Lavirent Challenge 0.1
+
+**[ctf.lavirent.com](https://ctf.lavirent.com/)** · a free OSINT CTF from Lavirent, the maintainer's label
+
+**Opens at 18:00 UK time on Tuesday 1 December 2026.** Work out where two photographs were taken, then follow a trail of clues. The first photo unlocks the second, and the second unlocks the trail. The last part takes a while.
+
+- **Free** and in the browser, with nothing to install. Players must be 18 or over.
+- **Pick your username now.** You can sign up before the challenge opens.
+- **A public board** lists everyone who finishes, in finishing order. Earlier finishers get more points.
+- **Two prizes**, revealed when you finish: one for the first finisher and one for a finisher drawn at random. Prizes close at 23:59 UK time on 31 December 2026 and need an Instagram account to claim; the board stays open after that.
+- **Good places to start:** [Reverse Image Search](#reverse-image-search), [Maps and Geolocation](#maps-and-geolocation) and [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation). The trail goes beyond the photos, so keep the rest of this list open.
+
+**[Play →](https://ctf.lavirent.com/play)** · [Board](https://ctf.lavirent.com/board) · [Rules](https://ctf.lavirent.com/rules)
+
+---
+
+> **🗓️ Last full review: 10 October 2026. Links re-checked: 15 November 2026.** Every entry links to the tool's own website, extension-store page or repository; catalogues and guides are kept separately in [Directories and Meta-Resources](#directories-and-meta-resources). The November check covered every GitHub repository link and every internal link, plus spot checks of smaller community tools; other entries carry over from the October review. See the [Changelog](#changelog) for what changed. Tool availability changes fast — if you hit a dead link, please [open an issue](https://github.com/NezrKaan/osint-toolkit/issues).
 
 ## Contents
 
@@ -15,9 +65,10 @@ Holding a specific clue — a photo, a username, a ship, a wallet address? Start
 | Theme | Sections (number of tools) |
 |-------|----------------------------|
 | **Start here** | [How to Use This Toolkit](#how-to-use-this-toolkit)<br>[Start From What You Have](#start-from-what-you-have)<br>[Tool Index A–Z](#tool-index-az) |
+| **Practice** | 🏁 [OSINT CTF Challenges and Walkthroughs](#osint-ctf-challenges-and-walkthroughs) |
 | **Places and imagery** | 🗺️ [Maps and Geolocation](#maps-and-geolocation) (34)<br>🛰️ [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation) (25)<br>☀️ [Weather, Time and Shadow Analysis](#weather-time-and-shadow-analysis) (14) |
 | **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (20)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (10)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (10)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
-| **Media verification** | 🖼️ [Reverse Image Search and Image Forensics](#reverse-image-search-and-image-forensics) (14)<br>🤖 [AI-Generated and Synthetic Media Detection](#ai-generated-and-synthetic-media-detection) (5)<br>🎬 [Video Analysis and Verification](#video-analysis-and-verification) (6)<br>🎙️ [Audio Analysis and Acoustic OSINT](#audio-analysis-and-acoustic-osint) (22) |
+| **Media verification** | 🖼️ [Reverse Image Search and Image Forensics](#reverse-image-search-and-image-forensics) (14)<br>🤖 [AI-Generated and Synthetic Media Detection](#ai-generated-and-synthetic-media-detection) (5)<br>🎬 [Video Analysis and Verification](#video-analysis-and-verification) (6)<br>🎙️ [Audio Analysis and Acoustic OSINT](#audio-analysis-and-acoustic-osint) (23) |
 | **Organisations, money and law** | 🏢 [Corporate and Financial Intelligence](#corporate-and-financial-intelligence) (16)<br>🏛️ [Public Records, Procurement and Lobbying](#public-records-procurement-and-lobbying) (14)<br>🚫 [Sanctions and Politically Exposed Persons](#sanctions-and-politically-exposed-persons) (8)<br>⚖️ [Legal and Court Records](#legal-and-court-records) (10)<br>⛓️ [Cryptocurrency and Blockchain](#cryptocurrency-and-blockchain) (15) |
 | **Transport** | ✈️ [Transport Tracking](#transport-tracking) (21)<br>🚢 [Maritime Intelligence](#maritime-intelligence) (11) |
 | **Infrastructure and cyber** | 🌐 [Domains, IPs and Internet Infrastructure](#domains-ips-and-internet-infrastructure) (37)<br>🔓 [Data Leaks and Breach Intelligence](#data-leaks-and-breach-intelligence) (8)<br>💻 [Code and Technical Search](#code-and-technical-search) (6) |
@@ -84,13 +135,13 @@ Each tool entry follows this format:
 Every tool in this list, alphabetically. Each name links to the section where it appears.
 
 <details>
-<summary><b>Show all 417 tools</b></summary>
+<summary><b>Show all 418 tools</b></summary>
 
 **0–9** · [2GIS](#map-platforms) · [4CAT](#browser-extensions-and-scrapers) · [4plebs](#forums-and-imageboards)
 
 **A** · [AbuseIPDB](#threat-intelligence-and-reputation) · [ACLED](#conflict-monitoring-and-documentation) · [Adobe Audition](#spectrogram-and-frequency-analysis) · [Adobe Podcast Enhance](#background-sound-isolation-and-enhancement) · [ADS-B Exchange](#aviation) · [ADSB.lol](#aviation) · [AHA Music (Extension)](#speech-language-and-music-identification) · [AI or Not](#ai-generated-and-synthetic-media-detection) · [Airframes](#aviation) · [Airwars](#conflict-monitoring-and-documentation) · [AlienVault OTX](#threat-intelligence-and-reputation) · [AllTrails](#geolocation-aids) · [Apollo Mapping](#commercial-imagery) · [Apple Maps](#map-platforms) · [Aqueduct Water Risk Atlas](#land-forests-and-emissions) · [ArchiveBox](#capture-and-monitoring-tools) · [Archive.today](#public-web-archives) · [ArchiveWeb.page](#capture-and-monitoring-tools) · [Arctic Shift](#reddit-youtube-and-linkedin) · [Arkham Intelligence](#tracing-attribution-and-risk) · [Arquivo.pt](#public-web-archives) · [ASF Vertex](#imagery-viewers-and-archives) · [Atlos](#conflict-monitoring-and-documentation) · [Audacity](#spectrogram-and-frequency-analysis) · [Auto Archiver](#capture-and-monitoring-tools) · [Awesome OSINT](#directories-and-meta-resources) · [Azure AI Video Indexer](#video-analysis-and-verification)
 
-**B** · [Baidu](#search-engines-and-advanced-operators) · [Baidu Image Search](#reverse-image-search) · [Baidu Maps](#map-platforms) · [BAILII](#legal-and-court-records) · [BBOT](#recon-and-automation) · [Bellingcat Online Investigation Toolkit](#directories-and-meta-resources) · [Bellingcat OpenStreetMap Search](#geolocation-aids) · [Bellingcat Toolkit: China-related Resources](#directories-and-meta-resources) · [Bing](#search-engines-and-advanced-operators) · [Bing Maps](#map-platforms) · [Bing Visual Search](#reverse-image-search) · [BirdNET Analyzer](#environmental-and-bioacoustic-sound-identification) · [BirdNET Web Demo](#environmental-and-bioacoustic-sound-identification) · [Blackbird](#username-and-identity-search) · [Blender](#charts-maps-and-timelines) · [Blockchair](#block-explorers) · [Blockstream Explorer](#block-explorers) · [Bluesky Social Graph (Jaz)](#bluesky-and-the-fediverse) · [Brave Search](#search-engines-and-advanced-operators) · [Breadcrumbs](#tracing-attribution-and-risk) · [BskyFollowFinder](#bluesky-and-the-fediverse) · [BuiltWith](#website-fingerprinting-and-connections) · [Bulletpicker](#weapons-and-munitions-identification)
+**B** · [Baidu](#search-engines-and-advanced-operators) · [Baidu Image Search](#reverse-image-search) · [Baidu Maps](#map-platforms) · [BAILII](#legal-and-court-records) · [BBOT](#recon-and-automation) · [Bellingcat Online Investigation Toolkit](#directories-and-meta-resources) · [Bellingcat OpenStreetMap Search](#geolocation-aids) · [Bellingcat Toolkit: China-related Resources](#directories-and-meta-resources) · [Bing](#search-engines-and-advanced-operators) · [Bing Maps](#map-platforms) · [Bing Visual Search](#reverse-image-search) · [BirdNET Analyzer](#environmental-and-bioacoustic-sound-identification) · [BirdNET Web Demo](#environmental-and-bioacoustic-sound-identification) · [Blackbird](#username-and-identity-search) · [Blender](#charts-maps-and-timelines) · [Blockchair](#block-explorers) · [Blockstream Explorer](#block-explorers) · [Brave Search](#search-engines-and-advanced-operators) · [Breadcrumbs](#tracing-attribution-and-risk) · [BSky Atlas (Jaz)](#bluesky-and-the-fediverse) · [BskyFollowFinder](#bluesky-and-the-fediverse) · [BuiltWith](#website-fingerprinting-and-connections) · [Bulletpicker](#weapons-and-munitions-identification)
 
 **C** · [CanLII](#legal-and-court-records) · [Carbon Mapper](#land-forests-and-emissions) · [Castrick Clues](#email-phone-and-people-lookup) · [CAT-UXO](#weapons-and-munitions-identification) · [CelesTrak](#satellites-in-orbit) · [Censys Platform](#internet-wide-device-search) · [Chainabuse](#tracing-attribution-and-risk) · [Chainalysis](#tracing-attribution-and-risk) · [Charity Commission Register](#charities-and-official-notices) · [Chronotrains](#rail) · [CITES Trade Database](#wildlife-and-biodiversity) · [ClearSky (Bluesky)](#bluesky-and-the-fediverse) · [Climate TRACE](#land-forests-and-emissions) · [Cobalt](#video-analysis-and-verification) · [Companies House (UK)](#company-registers-and-ownership) · [Content Credentials Verify](#ai-generated-and-synthetic-media-detection) · [Convert Geographic Units](#coordinates-and-map-utilities) · [Copernicus Browser](#imagery-viewers-and-archives) · [Copernicus Emergency Management Service](#analysis-and-event-monitoring) · [CourtListener / RECAP](#legal-and-court-records) · [Criminal IP](#internet-wide-device-search) · [crt.sh](#whois-dns-and-certificates) · [Crunchbase](#company-registers-and-ownership) · [CSI Linux](#investigation-environments)
 
@@ -126,7 +177,7 @@ Every tool in this list, alphabetically. Each name links to the section where it
 
 **S** · [SanctionsExplorer](#sanctions-and-politically-exposed-persons) · [satellites.pro](#imagery-viewers-and-archives) · [Search4Faces](#facial-recognition) · [Search by Image (Extension)](#reverse-image-search) · [SecurityTrails](#whois-dns-and-certificates) · [Sentinel-2 Cloudless (EOX)](#imagery-viewers-and-archives) · [ShadeMap](#sun-moon-and-shadows) · [Shadow Finder](#sun-moon-and-shadows) · [ShadowMap](#sun-moon-and-shadows) · [Shazam](#speech-language-and-music-identification) · [Sherlock](#username-and-identity-search) · [Sherloq](#image-forensics-and-metadata) · [ShipFinder](#maritime-intelligence) · [ShipSpotting.com](#maritime-intelligence) · [Shodan](#internet-wide-device-search) · [Sightengine AI Image Detection](#ai-generated-and-synthetic-media-detection) · [SingleFile](#capture-and-monitoring-tools) · [SIPRI Arms Transfers Database](#weapons-and-munitions-identification) · [Skopenow](#monitoring-and-cross-platform-analysis) · [SkyFi](#commercial-imagery) · [Skylight](#maritime-intelligence) · [Snap Map](#location-based-platforms) · [Social Analyzer](#username-and-identity-search) · [Software Heritage Archive](#code-and-technical-search) · [Solscan](#block-explorers) · [Sonic Visualiser](#spectrogram-and-frequency-analysis) · [SoX (Sound eXchange)](#annotation-and-batch-processing) · [Species+](#wildlife-and-biodiversity) · [SpiderFoot](#recon-and-automation) · [Spleeter](#background-sound-isolation-and-enhancement) · [Strava Global Heatmap](#location-based-platforms) · [Subfinder](#recon-and-automation) · [SunCalc](#sun-moon-and-shadows) · [SunEarthTools](#sun-moon-and-shadows)
 
-**T** · [Tableau Public](#charts-maps-and-timelines) · [TED – Tenders Electronic Daily](#procurement-and-public-spending) · [Telegago](#telegram) · [Telegram Phone Number Checker](#telegram) · [Telemetr.io](#telegram) · [Telepathy](#telegram) · [Tencent Maps](#map-platforms) · [TGStat](#telegram) · [That'sThem](#email-phone-and-people-lookup) · [The Gazette (UK)](#charities-and-official-notices) · [theHarvester](#recon-and-automation) · [The Information Laundromat](#website-fingerprinting-and-connections) · [Time and Date](#historical-weather) · [TimelineJS](#charts-maps-and-timelines) · [TinEye](#reverse-image-search) · [Trace Labs OSINT VM](#investigation-environments) · [Trase](#land-forests-and-emissions) · [Tronscan](#block-explorers) · [TrueCaller](#email-phone-and-people-lookup) · [TruffleHog](#code-and-technical-search) · [Tsurugi Linux](#investigation-environments)
+**T** · [Tableau Public](#charts-maps-and-timelines) · [TED – Tenders Electronic Daily](#procurement-and-public-spending) · [Telegago](#telegram) · [Telegram Phone Number Checker](#telegram) · [Telemetr.io](#telegram) · [Telepathy](#telegram) · [Tencent Maps](#map-platforms) · [TGStat](#telegram) · [That'sThem](#email-phone-and-people-lookup) · [The Gazette (UK)](#charities-and-official-notices) · [theHarvester](#recon-and-automation) · [The Information Laundromat](#website-fingerprinting-and-connections) · [Time and Date](#historical-weather) · [TimelineJS](#charts-maps-and-timelines) · [TinEye](#reverse-image-search) · [TowerBells.org](#background-event-cross-reference) · [Trace Labs OSINT VM](#investigation-environments) · [Trase](#land-forests-and-emissions) · [Tronscan](#block-explorers) · [TrueCaller](#email-phone-and-people-lookup) · [TruffleHog](#code-and-technical-search) · [Tsurugi Linux](#investigation-environments)
 
 **U** · [UCDP](#conflict-monitoring-and-documentation) · [UK CAA G-INFO](#aviation) · [UK Electoral Commission Political Finance](#lobbying-and-political-finance) · [UK Sanctions List Search](#sanctions-and-politically-exposed-persons) · [Umbra Space](#commercial-imagery) · [UN Comtrade Database](#trade-and-supply-chains) · [UNOSAT](#conflict-monitoring-and-documentation) · [UN Security Council Consolidated List](#sanctions-and-politically-exposed-persons) · [URLhaus](#threat-intelligence-and-reputation) · [urlscan.io](#website-fingerprinting-and-connections) · [USAspending](#procurement-and-public-spending) · [Uwazi](#notes-and-case-management)
 
@@ -205,6 +256,8 @@ Tools for mapping, geolocating imagery, and working with geographic data.
 | [MapSwitcher](https://github.com/david-r-edgar/MapSwitcher) | ⚠️ Browser extension to switch between map services (Google, Bing, Yandex, etc.) for the same location with one click. The original Chrome Web Store release can no longer be installed; load it from source, or use the similar [OpenSwitchMaps](https://github.com/tankaru/OpenSwitchMaps) (Chrome/Firefox). | 🟢 Free / 🔵 Open Source |
 
 > **See also:** [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation) for overhead imagery, [Weather, Time and Shadow Analysis](#weather-time-and-shadow-analysis) for working out *when* a photo was taken, and Instagram Location Search in [Facebook and Instagram](#facebook-and-instagram).
+
+> **Worked examples:** [Touching Tarmac](https://nezrkaan.com/writeups/touching-tarmac) and [Point of Origin](https://nezrkaan.com/writeups/point-of-origin) geolocate single photos from Bellingcat's challenges with reverse image search, Google Maps and Google Earth.
 
 <sub>[⬆ Back to contents](#contents)</sub>
 
@@ -339,8 +392,8 @@ Tools for searching, monitoring, and analyzing social media platforms.
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Bluesky Social Graph (Jaz)](https://bsky.jazco.dev) | Engagement-based social graph for Bluesky. Visualize who interacts with whom to map communities and clusters around an account. | 🟢 Free |
-| [BskyFollowFinder](https://bsky.thieflord.dev) | Bluesky network analysis. Find mutual connections, discover who your follows follow, and map relationships. | 🟢 Free |
+| [BSky Atlas (Jaz)](https://bsky.jazco.dev) | Jaz's engagement-based map of the Bluesky social graph. Visualize who interacts with whom to map communities and clusters around an account. | 🟢 Free |
+| [BskyFollowFinder](https://bsky-follow-finder.theo.io/) | Finds the accounts that a profile's follows most often follow but the profile itself doesn't, ranked by how often they appear. A quick way to spot hubs around an account; it looks one hop out only. | 🟢 Free |
 | [ClearSky (Bluesky)](https://clearsky.app) | Bluesky account intelligence: block lists, who blocks whom, handle history, and list membership. Useful for network and moderation analysis. | 🟢 Free |
 | [FediDB](https://fedidb.com) | Statistics and directory of Fediverse servers (Mastodon, Misskey, Pixelfed and more): software, size and activity. Useful for profiling an instance. | 🟢 Free |
 
@@ -565,6 +618,8 @@ Tools for analyzing audio recordings to extract geolocation, environmental, and 
 > **Workflow overview:**
 > `Metadata Extraction → ENF Grid Analysis → Spectrogram Visualization → Background Sound Isolation → Environmental Sound ID → Cross-reference & Geolocation`
 
+> **Worked examples:** [Urban Symphony](https://nezrkaan.com/writeups/urban-symphony) and [Rapid Fire](https://nezrkaan.com/writeups/rapid-fire) walk through two of Bellingcat's audio-only challenges, both solved without metadata by close listening and well-chosen searches.
+
 **Jump to:** [Audio Metadata and File Forensics](#audio-metadata-and-file-forensics) · [Spectrogram and Frequency Analysis](#spectrogram-and-frequency-analysis) · [ENF (Electric Network Frequency) Analysis](#enf-electric-network-frequency-analysis) · [Environmental and Bioacoustic Sound Identification](#environmental-and-bioacoustic-sound-identification) · [Background Sound Isolation and Enhancement](#background-sound-isolation-and-enhancement) · [Speech, Language and Music Identification](#speech-language-and-music-identification) · [Background Event Cross-Reference](#background-event-cross-reference) · [Annotation and Batch Processing](#annotation-and-batch-processing)
 
 ### Audio Metadata and File Forensics
@@ -633,13 +688,18 @@ Heard something identifiable in the background? Check it against the recording's
 - **Ship horns or engines** → vessel positions in [Maritime Intelligence](#maritime-intelligence)
 - **Call to prayer (azan)** → Pray Times in [Sun, Moon and Shadows](#sun-moon-and-shadows)
 - **Thunder, rain or wind** → archives in [Historical Weather](#historical-weather)
+- **Church bells, chimes or a carillon** → TowerBells.org, below
+
+| Tool | Description | Pricing |
+|------|-------------|---------|
+| [TowerBells.org](https://www.towerbells.org) | Campanologist Carl Scott Zimmerman's catalogue of carillons, chimes and other tower bells worldwide, with regional locator maps and technical details. Narrow a bell heard in a recording down to the towers that could have played it. | 🟢 Free |
 
 ### Annotation and Batch Processing
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [ELAN](https://archive.mpi.nl/tla/elan) | Linguistic annotation tool from the Max Planck Institute. Create time-coded annotations on audio/video — useful for systematically documenting every sound event. | 🟢 Free |
-| [SoX (Sound eXchange)](http://sox.sourceforge.net) | The "Swiss Army knife" of terminal audio processing. Convert formats, apply filters, measure statistics, and batch-process. `sox file.mp3 -n stat` gives a statistical summary. | 🟢 Free / 🔵 Open Source |
+| [SoX (Sound eXchange)](https://sourceforge.net/projects/sox/) | The "Swiss Army knife" of terminal audio processing. Convert formats, apply filters, measure statistics, and batch-process. `sox file.mp3 -n stat` gives a statistical summary. | 🟢 Free / 🔵 Open Source |
 
 <sub>[⬆ Back to contents](#contents)</sub>
 
@@ -825,6 +885,8 @@ Track aircraft, satellites, trains, and road vehicles.
 | [FAA Aircraft Registry](https://registry.faa.gov/aircraftinquiry/) | Official US aircraft register: look up an N-number, serial number or registered owner. | 🟢 Free |
 | [UK CAA G-INFO](https://siteapps.caa.co.uk/g-info/) | Official UK aircraft register: G-registered aircraft, their owners and registration history. | 🟢 Free |
 
+> **Worked example:** [Window Seat](https://nezrkaan.com/writeups/window-seat) narrows a photo taken from a plane window to one flight, using Flightradar24's playback and the shape of the valleys below.
+
 ### Satellites in Orbit
 
 | Tool | Description | Pricing |
@@ -908,7 +970,7 @@ Investigate websites, domains, hosting, certificates, routing, and internet-conn
 | [Wappalyzer](https://www.wappalyzer.com) | Browser extension and website that detect a site's technologies (CMS, analytics, frameworks) — quick fingerprinting while you browse. | 🟡 Freemium |
 | [What CMS](https://whatcms.org) | Detect the CMS a website uses, plus hosting providers, themes, and plugins. | 🟢 Free |
 | [Netcraft Site Report](https://sitereport.netcraft.com) | Hosting history, netblock owner, nameservers and technologies for any website. | 🟢 Free |
-| [The Information Laundromat](https://www.informationlaundromat.com) | Alliance for Securing Democracy / ISD tool for spotting laundered content and linked websites. Content similarity finds reposted or rewritten articles; metadata similarity compares analytics IDs, IPs and other indicators across domains. | 🟢 Free |
+| [The Information Laundromat](https://www.informationlaundromat.com) | Alliance for Securing Democracy / ISD tool for spotting laundered content and linked websites. Content similarity finds reposted or rewritten articles; metadata similarity compares analytics IDs, IPs and other indicators across domains. Single searches are open; batch searches need a login. | 🟢 Free |
 
 ### IP, ASN and Routing
 
@@ -1252,11 +1314,11 @@ These tools were listed in earlier editions but are now defunct, unreliable, res
 
 ## Tool Count by Pricing
 
-**417 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
+**418 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
 
 | Type | Tools |
 |------|-------|
-| 🟢 Free | 335 — free to use, including free tiers |
+| 🟢 Free | 336 — free to use, including free tiers |
 | 🔵 Open Source | 78 — source code is public |
 | 🟡 Freemium | 74 — free tier with paid features, or access by application |
 | 🔴 Paid | 31 — subscription or per-use payment |
@@ -1264,6 +1326,24 @@ These tools were listed in earlier editions but are now defunct, unreliable, res
 ---
 
 ## Changelog
+
+### 15 November 2026
+
+**New at the top**
+
+- Added [OSINT CTF Challenges and Walkthroughs](#osint-ctf-challenges-and-walkthroughs): five Bellingcat challenge walkthroughs on nezrkaan.com, and Lavirent Challenge 0.1, a free OSINT CTF that opens on 1 December 2026. Each entry points to the sections of this list that help.
+- Added worked-example links to Maps and Geolocation, Audio Analysis and Acoustic OSINT, and Aviation.
+- New title, intro and badges, plus quick links to the contents, the lookup table and the index.
+
+**Tools and links**
+
+- Added TowerBells.org, a worldwide catalogue of carillons and chimes, to Background Event Cross-Reference. The list now has 418 tools.
+- BskyFollowFinder's old address (bsky.thieflord.dev) now redirects to ClearSky, so the entry links to the tool's own site at bsky-follow-finder.theo.io.
+- Renamed Bluesky Social Graph (Jaz) to BSky Atlas (Jaz), the name the tool uses.
+- SoX now links to its SourceForge project page, where its old homepage redirects.
+- The Information Laundromat: batch searches now need a login.
+- Re-checked every GitHub repository link (all 40 exist) and every internal link.
+- Added the MIT LICENSE file that the license badge links to.
 
 ### 10 October 2026
 
@@ -1309,9 +1389,10 @@ Found a tool that should be listed here? Want to update a description, pricing, 
 3. Follow the existing format: `| [Tool Name](https://official-link) | What it does and how investigators use it | Pricing |`
 4. Link to the tool's **official** website, extension-store page or source repository — not a directory, mirror, or article about it.
 5. Add the tool to the [Tool Index A–Z](#tool-index-az).
-6. For status changes, add ⚠️ with a note, or move dead tools to [Deprecated and Defunct Tools](#deprecated-and-defunct-tools) with a note.
-7. Keep section headings plain text (no emoji or symbols such as `&` or `/`) so the contents links keep working.
-8. Submit a pull request.
+6. Update the counts: the section's number in [Contents](#contents), the total in the intro, badge and Tool Index summary, and [Tool Count by Pricing](#tool-count-by-pricing).
+7. For status changes, add ⚠️ with a note, or move dead tools to [Deprecated and Defunct Tools](#deprecated-and-defunct-tools) with a note.
+8. Keep section headings plain text (no emoji or symbols such as `&` or `/`) so the contents links keep working.
+9. Submit a pull request.
 
 ### Guidelines
 
@@ -1331,3 +1412,7 @@ This toolkit is intended for **lawful research, journalism, and security purpose
 ## License
 
 This toolkit reference is released under the [MIT License](LICENSE). Individual tools listed here have their own licenses and terms of service.
+
+---
+
+<p align="center">Maintained by <a href="https://nezrkaan.com">Nezr Kaan</a> · <a href="https://nezrkaan.com/writeups/">Field Notes</a> · <a href="https://ctf.lavirent.com/">Lavirent Challenge 0.1</a></p>
