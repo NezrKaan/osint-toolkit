@@ -1,8 +1,8 @@
 # 🔍 OSINT Nexus — 400+ OSINT Tools for Investigations, Geolocation and CTFs
 
-> **A curated list of 418 open source intelligence (OSINT) tools for investigators, journalists, researchers, security professionals and CTF players.** Find the right tool for a photo, video, audio clip, username, email address, domain, company, ship, aircraft or crypto wallet, sorted by what you have and what you need.
+> **A curated list of 419 open source intelligence (OSINT) tools for investigators, journalists, researchers, security professionals and CTF players.** Find the right tool for a photo, video, audio clip, username, email address, domain, company, ship, aircraft or crypto wallet, sorted by what you have and what you need.
 
-[![Tools: 418](https://img.shields.io/badge/tools-418-blue.svg)](#tool-index-az)
+[![Tools: 419](https://img.shields.io/badge/tools-419-blue.svg)](#tool-index-az)
 [![Last commit](https://img.shields.io/github/last-commit/NezrKaan/osint-toolkit)](https://github.com/NezrKaan/osint-toolkit/commits/main)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -68,7 +68,7 @@ Holding a specific clue — a photo, a username, a ship, a wallet address? Start
 | **Practice** | 🏁 [OSINT CTF Challenges and Walkthroughs](#osint-ctf-challenges-and-walkthroughs) |
 | **Places and imagery** | 🗺️ [Maps and Geolocation](#maps-and-geolocation) (34)<br>🛰️ [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation) (25)<br>☀️ [Weather, Time and Shadow Analysis](#weather-time-and-shadow-analysis) (14) |
 | **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (20)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (10)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (10)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
-| **Media verification** | 🖼️ [Reverse Image Search and Image Forensics](#reverse-image-search-and-image-forensics) (14)<br>🤖 [AI-Generated and Synthetic Media Detection](#ai-generated-and-synthetic-media-detection) (5)<br>🎬 [Video Analysis and Verification](#video-analysis-and-verification) (6)<br>🎙️ [Audio Analysis and Acoustic OSINT](#audio-analysis-and-acoustic-osint) (23) |
+| **Media verification** | 🖼️ [Reverse Image Search and Image Forensics](#reverse-image-search-and-image-forensics) (15)<br>🤖 [AI-Generated and Synthetic Media Detection](#ai-generated-and-synthetic-media-detection) (5)<br>🎬 [Video Analysis and Verification](#video-analysis-and-verification) (6)<br>🎙️ [Audio Analysis and Acoustic OSINT](#audio-analysis-and-acoustic-osint) (23) |
 | **Organisations, money and law** | 🏢 [Corporate and Financial Intelligence](#corporate-and-financial-intelligence) (16)<br>🏛️ [Public Records, Procurement and Lobbying](#public-records-procurement-and-lobbying) (14)<br>🚫 [Sanctions and Politically Exposed Persons](#sanctions-and-politically-exposed-persons) (8)<br>⚖️ [Legal and Court Records](#legal-and-court-records) (10)<br>⛓️ [Cryptocurrency and Blockchain](#cryptocurrency-and-blockchain) (15) |
 | **Transport** | ✈️ [Transport Tracking](#transport-tracking) (21)<br>🚢 [Maritime Intelligence](#maritime-intelligence) (11) |
 | **Infrastructure and cyber** | 🌐 [Domains, IPs and Internet Infrastructure](#domains-ips-and-internet-infrastructure) (37)<br>🔓 [Data Leaks and Breach Intelligence](#data-leaks-and-breach-intelligence) (8)<br>💻 [Code and Technical Search](#code-and-technical-search) (6) |
@@ -135,7 +135,7 @@ Each tool entry follows this format:
 Every tool in this list, alphabetically. Each name links to the section where it appears.
 
 <details>
-<summary><b>Show all 418 tools</b></summary>
+<summary><b>Show all 419 tools</b></summary>
 
 **0–9** · [2GIS](#map-platforms) · [4CAT](#browser-extensions-and-scrapers) · [4plebs](#forums-and-imageboards)
 
@@ -549,7 +549,7 @@ Trace the origin of images, detect manipulation, and read hidden metadata.
 | [TinEye](https://tineye.com) | Dedicated reverse image search. Finds exact and modified matches. Its "oldest" sort shows the first known appearance of an image online. | 🟢 Free (basic) / 🔴 Paid (API) |
 | [Baidu Image Search](https://image.baidu.com) | Reverse image search with strong coverage of Chinese websites and platforms. | 🟢 Free |
 | [Search by Image (Extension)](https://github.com/dessant/search-by-image) | Browser extension to right-click any image and reverse-search it across Google, Yandex, TinEye, Bing, and more at once. | 🟢 Free / 🔵 Open Source |
-| [Reverse Image Search Anywhere](https://reverseimage.app/) | Browser extension and web tool to compare Google Lens, Yandex, Bing and TinEye results; can search cropped images or images without a directly accessible URL. Treat matches as leads, not proof of origin. | 🟢 Free |
+| [Reverse Image Search Anywhere](https://reverseimage.app/) | Browser extension (Chrome, Edge, Firefox) and web tool that runs one image through Google Lens, Yandex, Bing and TinEye, including cropped regions, pasted images and images on sites such as Instagram or Pinterest that hide the image address. Those images are uploaded to the developer's storage and deleted after about a day, so keep sensitive material local. Treat matches as leads, not proof of origin. | 🟢 Free / 🔵 Open Source |
 | [RootAbout](https://rootabout.com) | Reverse image search against Internet Archive collections (plus an Open Library book-cover search). Finds near-identical copies only, and searches can be slow or fail intermittently. | 🟢 Free |
 
 ### Image Forensics and Metadata
@@ -1315,12 +1315,12 @@ These tools were listed in earlier editions but are now defunct, unreliable, res
 
 ## Tool Count by Pricing
 
-**418 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
+**419 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
 
 | Type | Tools |
 |------|-------|
-| 🟢 Free | 336 — free to use, including free tiers |
-| 🔵 Open Source | 78 — source code is public |
+| 🟢 Free | 337 — free to use, including free tiers |
+| 🔵 Open Source | 79 — source code is public |
 | 🟡 Freemium | 74 — free tier with paid features, or access by application |
 | 🔴 Paid | 31 — subscription or per-use payment |
 
@@ -1338,13 +1338,17 @@ These tools were listed in earlier editions but are now defunct, unreliable, res
 
 **Tools and links**
 
-- Added TowerBells.org, a worldwide catalogue of carillons and chimes, to Background Event Cross-Reference. The list now has 418 tools.
+- Added TowerBells.org, a worldwide catalogue of carillons and chimes, to Background Event Cross-Reference.
 - BskyFollowFinder's old address (bsky.thieflord.dev) now redirects to ClearSky, so the entry links to the tool's own site at bsky-follow-finder.theo.io.
 - Renamed Bluesky Social Graph (Jaz) to BSky Atlas (Jaz), the name the tool uses.
 - SoX now links to its SourceForge project page, where its old homepage redirects.
 - The Information Laundromat: batch searches now need a login.
 - Re-checked every GitHub repository link (all 40 exist) and every internal link.
 - Added the MIT LICENSE file that the license badge links to.
+
+**Community additions**
+
+- Added Reverse Image Search Anywhere to Reverse Image Search (thanks to [tonic20](https://github.com/tonic20), #3). The list now has 419 tools.
 
 ### 10 October 2026
 
@@ -1401,6 +1405,8 @@ Found a tool that should be listed here? Want to update a description, pricing, 
 - Include accurate pricing and, where relevant, a last-checked note
 - Write clear, actionable descriptions explaining the OSINT use case
 - Place tools in the most relevant category
+- If you build, maintain or work for the tool you're adding, say so in the pull request. Disclosed submissions are welcome and are reviewed the same way
+- People-search and data-broker services are only listed if they name their operator and data sources and explain how people can have their data removed
 
 ---
 
