@@ -67,7 +67,7 @@ Holding a specific clue — a photo, a username, a ship, a wallet address? Start
 | **Start here** | [How to Use This Toolkit](#how-to-use-this-toolkit)<br>[Start From What You Have](#start-from-what-you-have)<br>[Tool Index A–Z](#tool-index-az) |
 | **Practice** | 🏁 [OSINT CTF Challenges and Walkthroughs](#osint-ctf-challenges-and-walkthroughs) |
 | **Places and imagery** | 🗺️ [Maps and Geolocation](#maps-and-geolocation) (34)<br>🛰️ [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation) (25)<br>☀️ [Weather, Time and Shadow Analysis](#weather-time-and-shadow-analysis) (14) |
-| **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (20)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (10)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (10)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
+| **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (21)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (10)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (10)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
 | **Media verification** | 🖼️ [Reverse Image Search and Image Forensics](#reverse-image-search-and-image-forensics) (15)<br>🤖 [AI-Generated and Synthetic Media Detection](#ai-generated-and-synthetic-media-detection) (5)<br>🎬 [Video Analysis and Verification](#video-analysis-and-verification) (6)<br>🎙️ [Audio Analysis and Acoustic OSINT](#audio-analysis-and-acoustic-osint) (23) |
 | **Organisations, money and law** | 🏢 [Corporate and Financial Intelligence](#corporate-and-financial-intelligence) (16)<br>🏛️ [Public Records, Procurement and Lobbying](#public-records-procurement-and-lobbying) (14)<br>🚫 [Sanctions and Politically Exposed Persons](#sanctions-and-politically-exposed-persons) (8)<br>⚖️ [Legal and Court Records](#legal-and-court-records) (10)<br>⛓️ [Cryptocurrency and Blockchain](#cryptocurrency-and-blockchain) (15) |
 | **Transport** | ✈️ [Transport Tracking](#transport-tracking) (21)<br>🚢 [Maritime Intelligence](#maritime-intelligence) (11) |
@@ -135,7 +135,7 @@ Each tool entry follows this format:
 Every tool in this list, alphabetically. Each name links to the section where it appears.
 
 <details>
-<summary><b>Show all 419 tools</b></summary>
+<summary><b>Show all 420 tools</b></summary>
 
 **0–9** · [2GIS](#map-platforms) · [4CAT](#browser-extensions-and-scrapers) · [4plebs](#forums-and-imageboards)
 
@@ -405,7 +405,7 @@ Tools for searching, monitoring, and analyzing social media platforms.
 | [YouTube Metadata](https://mattw.io/youtube-metadata/) | Shows hidden details for any YouTube video, channel or playlist: exact upload time (UTC), tags, recording location where set, and every thumbnail size for reverse image search. | 🟢 Free |
 | [MW Geofind](https://mattw.io/youtube-geofind/) | Search YouTube for videos uploaded near given coordinates, or scan channels for geotagged uploads — useful for finding footage of an event. Location search still works; channel and topic results are thinner since YouTube cut back location metadata. | 🟢 Free |
 | [LinkedIn Post Timestamp Extractor](https://ollie-boyd.github.io/Linkedin-post-timestamp-extractor/) | Decodes a LinkedIn post or comment URL into its exact publication time (LinkedIn itself only shows '2w' or '3mo'). | 🟢 Free / 🔵 Open Source |
-
+| [Tikvoya](https://tikvoya.com/) | Browser-based TikTok profile viewer for OSINT investigations. Look up public accounts by username or profile URL, examine bios and account statistics, browse recent videos and comments, and explore available follower/following lists without a TikTok login. | 🟢 Free |
 ### Location-Based Platforms
 
 | Tool | Description | Pricing |
@@ -1315,11 +1315,11 @@ These tools were listed in earlier editions but are now defunct, unreliable, res
 
 ## Tool Count by Pricing
 
-**419 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
+**420 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
 
 | Type | Tools |
 |------|-------|
-| 🟢 Free | 337 — free to use, including free tiers |
+| 🟢 Free | 338 — free to use, including free tiers |
 | 🔵 Open Source | 79 — source code is public |
 | 🟡 Freemium | 74 — free tier with paid features, or access by application |
 | 🔴 Paid | 31 — subscription or per-use payment |
