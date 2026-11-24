@@ -1,8 +1,8 @@
 # 🔍 OSINT Nexus — 400+ OSINT Tools for Investigations, Geolocation and CTFs
 
-> **A curated list of 419 open source intelligence (OSINT) tools for investigators, journalists, researchers, security professionals and CTF players.** Find the right tool for a photo, video, audio clip, username, email address, domain, company, ship, aircraft or crypto wallet, sorted by what you have and what you need.
+> **A curated list of 420 open source intelligence (OSINT) tools for investigators, journalists, researchers, security professionals and CTF players.** Find the right tool for a photo, video, audio clip, username, email address, domain, company, ship, aircraft or crypto wallet, sorted by what you have and what you need.
 
-[![Tools: 419](https://img.shields.io/badge/tools-419-blue.svg)](#tool-index-az)
+[![Tools: 420](https://img.shields.io/badge/tools-420-blue.svg)](#tool-index-az)
 [![Last commit](https://img.shields.io/github/last-commit/NezrKaan/osint-toolkit)](https://github.com/NezrKaan/osint-toolkit/commits/main)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -66,7 +66,7 @@ Holding a specific clue — a photo, a username, a ship, a wallet address? Start
 |-------|----------------------------|
 | **Start here** | [How to Use This Toolkit](#how-to-use-this-toolkit)<br>[Start From What You Have](#start-from-what-you-have)<br>[Tool Index A–Z](#tool-index-az) |
 | **Practice** | 🏁 [OSINT CTF Challenges and Walkthroughs](#osint-ctf-challenges-and-walkthroughs) |
-| **Places and imagery** | 🗺️ [Maps and Geolocation](#maps-and-geolocation) (34)<br>🛰️ [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation) (25)<br>☀️ [Weather, Time and Shadow Analysis](#weather-time-and-shadow-analysis) (14) |
+| **Places and imagery** | 🗺️ [Maps and Geolocation](#maps-and-geolocation) (35)<br>🛰️ [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation) (25)<br>☀️ [Weather, Time and Shadow Analysis](#weather-time-and-shadow-analysis) (14) |
 | **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (20)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (10)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (10)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
 | **Media verification** | 🖼️ [Reverse Image Search and Image Forensics](#reverse-image-search-and-image-forensics) (15)<br>🤖 [AI-Generated and Synthetic Media Detection](#ai-generated-and-synthetic-media-detection) (5)<br>🎬 [Video Analysis and Verification](#video-analysis-and-verification) (6)<br>🎙️ [Audio Analysis and Acoustic OSINT](#audio-analysis-and-acoustic-osint) (23) |
 | **Organisations, money and law** | 🏢 [Corporate and Financial Intelligence](#corporate-and-financial-intelligence) (16)<br>🏛️ [Public Records, Procurement and Lobbying](#public-records-procurement-and-lobbying) (14)<br>🚫 [Sanctions and Politically Exposed Persons](#sanctions-and-politically-exposed-persons) (8)<br>⚖️ [Legal and Court Records](#legal-and-court-records) (10)<br>⛓️ [Cryptocurrency and Blockchain](#cryptocurrency-and-blockchain) (15) |
@@ -135,7 +135,7 @@ Each tool entry follows this format:
 Every tool in this list, alphabetically. Each name links to the section where it appears.
 
 <details>
-<summary><b>Show all 419 tools</b></summary>
+<summary><b>Show all 420 tools</b></summary>
 
 **0–9** · [2GIS](#map-platforms) · [4CAT](#browser-extensions-and-scrapers) · [4plebs](#forums-and-imageboards)
 
@@ -153,7 +153,7 @@ Every tool in this list, alphabetically. Each name links to the section where it
 
 **G** · [gallery-dl](#browser-extensions-and-scrapers) · [Gaode Maps (Amap)](#map-platforms) · [GeoConfirmed](#conflict-monitoring-and-documentation) · [Geo Data Tool](#ip-asn-and-routing) · [Geograph](#street-level-and-crowdsourced-imagery) · [GeoHints](#geolocation-aids) · [Gephi](#link-analysis-and-networks) · [GH Archive](#code-and-technical-search) · [Ghost Archive](#public-web-archives) · [GHunt](#username-and-identity-search) · [GitHub Code Search](#code-and-technical-search) · [Gitleaks](#code-and-technical-search) · [GLEIF LEI Search](#company-registers-and-ownership) · [Global Energy Monitor](#land-forests-and-emissions) · [Global Fishing Watch](#maritime-intelligence) · [Global Forest Watch](#land-forests-and-emissions) · [GoFullPage](#capture-and-monitoring-tools) · [Google Admin Toolbox Messageheader](#email-phone-and-people-lookup) · [Google Ads Transparency Center](#advertising-transparency) · [Google Advanced Search](#search-engines-and-advanced-operators) · [Google Alerts](#search-engines-and-advanced-operators) · [Google Earth Engine](#analysis-and-event-monitoring) · [Google Earth Pro](#map-platforms) · [Google Earth Timelapse](#imagery-viewers-and-archives) · [Google Earth (web)](#map-platforms) · [Google Flood Hub](#analysis-and-event-monitoring) · [Google Hacking Database](#search-engines-and-advanced-operators) · [Google Lens](#reverse-image-search) · [Google Maps](#map-platforms) · [Google Translate](#translation-and-language) · [Google Trends](#search-engines-and-advanced-operators) · [GovMap](#map-platforms) · [GPSJam](#analysis-and-event-monitoring) · [GrayHatWarfare](#internet-wide-device-search) · [grep.app](#code-and-technical-search) · [GreyNoise](#threat-intelligence-and-reputation)
 
-**H** · [Have I Been Pwned](#data-leaks-and-breach-intelligence) · [Hitta.se](#email-phone-and-people-lookup) · [Hive AI-Generated Content Detection](#ai-generated-and-synthetic-media-detection) · [Holehe](#email-phone-and-people-lookup) · [Host.io](#whois-dns-and-certificates) · [HUDOC](#legal-and-court-records) · [Hudson Rock (Free Tools)](#data-leaks-and-breach-intelligence) · [Hugin](#image-collections-and-panoramas) · [Hunchly](#capture-and-monitoring-tools) · [Hunter.io](#email-phone-and-people-lookup) · [Hurricane Electric BGP Toolkit](#ip-asn-and-routing)
+**H** · [Have I Been Pwned](#data-leaks-and-breach-intelligence) · [H1DR4](#map-platforms) · [Hitta.se](#email-phone-and-people-lookup) · [Hive AI-Generated Content Detection](#ai-generated-and-synthetic-media-detection) · [Holehe](#email-phone-and-people-lookup) · [Host.io](#whois-dns-and-certificates) · [HUDOC](#legal-and-court-records) · [Hudson Rock (Free Tools)](#data-leaks-and-breach-intelligence) · [Hugin](#image-collections-and-panoramas) · [Hunchly](#capture-and-monitoring-tools) · [Hunter.io](#email-phone-and-people-lookup) · [Hurricane Electric BGP Toolkit](#ip-asn-and-routing)
 
 **I** · [ICANN Lookup](#whois-dns-and-certificates) · [ICIJ Offshore Leaks Database](#leaks-and-investigative-databases) · [IDCrawl](#username-and-identity-search) · [IDN Checker (Punycoder)](#whois-dns-and-certificates) · [IMO GISIS](#maritime-intelligence) · [ImportGenius](#trade-and-supply-chains) · [ImportYeti](#trade-and-supply-chains) · [iNaturalist](#environmental-and-bioacoustic-sound-identification) · [Instagram Location Search](#facebook-and-instagram) · [Instaloader](#browser-extensions-and-scrapers) · [Instant Data Scraper](#browser-extensions-and-scrapers) · [Instant Username Search](#username-and-identity-search) · [Intelligence X](#data-leaks-and-breach-intelligence) · [IntelTechniques Tools](#directories-and-meta-resources) · [Interpol Red Notices](#legal-and-court-records) · [InVID / WeVerify Verification Plugin](#video-analysis-and-verification) · [IPinfo](#ip-asn-and-routing) · [iTrace](#weapons-and-munitions-identification)
 
@@ -222,6 +222,7 @@ Tools for mapping, geolocating imagery, and working with geographic data.
 | [Wikimapia](https://wikimapia.org) | Collaborative mapping project where users annotate locations. Useful for identifying military bases, factories, and other sites described by locals. | 🟢 Free |
 | [F4Map](https://demo.f4map.com) | Interactive 3D map rendering OpenStreetMap data. Useful for visualizing building heights, terrain, and urban layouts for geolocation verification. | 🟢 Free |
 | [GovMap](https://www.govmap.gov.il) | Israel's official government mapping portal. Detailed cadastral data, aerial imagery, and infrastructure for Israeli territory. | 🟢 Free |
+| [H1DR4](https://h1dr4.dev/map) | Browse reported incidents by location and inspect public case files and source-linked timelines. Public browsing is free; some private investigation features are paid. | 🟡 Freemium |
 
 ### Street-Level and Crowdsourced Imagery
 
@@ -1315,13 +1316,13 @@ These tools were listed in earlier editions but are now defunct, unreliable, res
 
 ## Tool Count by Pricing
 
-**419 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
+**420 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
 
 | Type | Tools |
 |------|-------|
 | 🟢 Free | 337 — free to use, including free tiers |
 | 🔵 Open Source | 79 — source code is public |
-| 🟡 Freemium | 74 — free tier with paid features, or access by application |
+| 🟡 Freemium | 75 — free tier with paid features, or access by application |
 | 🔴 Paid | 31 — subscription or per-use payment |
 
 ---
