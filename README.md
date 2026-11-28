@@ -1,8 +1,8 @@
 # 🔍 OSINT Nexus — 400+ OSINT Tools for Investigations, Geolocation and CTFs
 
-> **A curated list of 433 open source intelligence (OSINT) tools for investigators, journalists, researchers, security professionals and CTF players.** Find the right tool for a photo, video, audio clip, username, email address, domain, company, ship, aircraft or crypto wallet, sorted by what you have and what you need.
+> **A curated list of 434 open source intelligence (OSINT) tools for investigators, journalists, researchers, security professionals and CTF players.** Find the right tool for a photo, video, audio clip, username, email address, domain, company, ship, aircraft or crypto wallet, sorted by what you have and what you need.
 
-[![Tools: 433](https://img.shields.io/badge/tools-433-blue.svg)](#tool-index-az)
+[![Tools: 434](https://img.shields.io/badge/tools-434-blue.svg)](#tool-index-az)
 [![Last commit](https://img.shields.io/github/last-commit/NezrKaan/osint-toolkit)](https://github.com/NezrKaan/osint-toolkit/commits/main)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -67,7 +67,7 @@ Holding a specific clue — a photo, a username, a ship, a wallet address? Start
 | **Start here** | [How to Use This Toolkit](#how-to-use-this-toolkit)<br>[Start From What You Have](#start-from-what-you-have)<br>[Tool Index A–Z](#tool-index-az) |
 | **Practice** | 🏁 [OSINT CTF Challenges and Walkthroughs](#osint-ctf-challenges-and-walkthroughs) |
 | **Places and imagery** | 🗺️ [Maps and Geolocation](#maps-and-geolocation) (35)<br>🛰️ [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation) (26)<br>☀️ [Weather, Time and Shadow Analysis](#weather-time-and-shadow-analysis) (14) |
-| **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (23)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (11)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (10)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
+| **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (23)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (11)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (11)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
 | **Media verification** | 🖼️ [Reverse Image Search and Image Forensics](#reverse-image-search-and-image-forensics) (14)<br>🤖 [AI-Generated and Synthetic Media Detection](#ai-generated-and-synthetic-media-detection) (6)<br>🎬 [Video Analysis and Verification](#video-analysis-and-verification) (6)<br>🎙️ [Audio Analysis and Acoustic OSINT](#audio-analysis-and-acoustic-osint) (23) |
 | **Organisations, money and law** | 🏢 [Corporate and Financial Intelligence](#corporate-and-financial-intelligence) (16)<br>🏛️ [Public Records, Procurement and Lobbying](#public-records-procurement-and-lobbying) (14)<br>🚫 [Sanctions and Politically Exposed Persons](#sanctions-and-politically-exposed-persons) (8)<br>⚖️ [Legal and Court Records](#legal-and-court-records) (10)<br>⛓️ [Cryptocurrency and Blockchain](#cryptocurrency-and-blockchain) (15) |
 | **Transport** | ✈️ [Transport Tracking](#transport-tracking) (23)<br>🚢 [Maritime Intelligence](#maritime-intelligence) (11) |
@@ -135,7 +135,7 @@ Each tool entry follows this format:
 Every tool in this list, alphabetically. Each name links to the section where it appears.
 
 <details>
-<summary><b>Show all 433 tools</b></summary>
+<summary><b>Show all 434 tools</b></summary>
 
 **0–9** · [2GIS](#map-platforms) · [4CAT](#browser-extensions-and-scrapers) · [4plebs](#forums-and-imageboards)
 
@@ -177,7 +177,7 @@ Every tool in this list, alphabetically. Each name links to the section where it
 
 **S** · [SanctionsExplorer](#sanctions-and-politically-exposed-persons) · [satellites.pro](#imagery-viewers-and-archives) · [Search4Faces](#facial-recognition) · [Search by Image (Extension)](#reverse-image-search) · [SecurityTrails](#whois-dns-and-certificates) · [ShadeMap](#sun-moon-and-shadows) · [Shadow Finder](#sun-moon-and-shadows) · [ShadowMap](#sun-moon-and-shadows) · [Shazam](#speech-language-and-music-identification) · [Sherlock](#username-and-identity-search) · [Sherloq](#image-forensics-and-metadata) · [ShipFinder](#maritime-intelligence) · [ShipSpotting.com](#maritime-intelligence) · [Shodan](#internet-wide-device-search) · [Sightengine AI Image Detection](#ai-generated-and-synthetic-media-detection) · [SingleFile](#capture-and-monitoring-tools) · [SIPRI Arms Transfers Database](#weapons-and-munitions-identification) · [Skopenow](#monitoring-and-cross-platform-analysis) · [SkyFi](#commercial-imagery) · [Skylight](#maritime-intelligence) · [Snap Map](#location-based-platforms) · [Social Analyzer](#username-and-identity-search) · [Software Heritage Archive](#code-and-technical-search) · [Solscan](#block-explorers) · [Sonic Visualiser](#spectrogram-and-frequency-analysis) · [SoX (Sound eXchange)](#annotation-and-batch-processing) · [Species+](#wildlife-and-biodiversity) · [SpiderFoot](#recon-and-automation) · [Spleeter](#background-sound-isolation-and-enhancement) · [Strava Global Heatmap](#location-based-platforms) · [Subfinder](#recon-and-automation) · [SunCalc](#sun-moon-and-shadows) · [SunEarthTools](#sun-moon-and-shadows) · [SynthID check in Gemini](#ai-generated-and-synthetic-media-detection)
 
-**T** · [Tableau Public](#charts-maps-and-timelines) · [TED – Tenders Electronic Daily](#procurement-and-public-spending) · [Telegago](#telegram) · [Telegram Phone Number Checker](#telegram) · [Telemetr.io](#telegram) · [Telepathy](#telegram) · [Tencent Maps](#map-platforms) · [TGStat](#telegram) · [That'sThem](#email-phone-and-people-lookup) · [The Gazette (UK)](#charities-and-official-notices) · [theHarvester](#recon-and-automation) · [The Information Laundromat](#website-fingerprinting-and-connections) · [TikTok Ad Library](#advertising-transparency) · [Time and Date](#historical-weather) · [TimelineJS](#charts-maps-and-timelines) · [TinEye](#reverse-image-search) · [TowerBells.org](#background-event-cross-reference) · [Trace Labs OSINT VM](#investigation-environments) · [Trase](#land-forests-and-emissions) · [Tronscan](#block-explorers) · [TrueCaller](#email-phone-and-people-lookup) · [TruffleHog](#code-and-technical-search) · [Tsurugi Linux](#investigation-environments)
+**T** · [Tableau Public](#charts-maps-and-timelines) · [TED – Tenders Electronic Daily](#procurement-and-public-spending) · [Telegago](#telegram) · [Telegram Phone Number Checker](#telegram) · [Telemetr.io](#telegram) · [Telepathy](#telegram) · [Tencent Maps](#map-platforms) · [TGStat](#telegram) · [That'sThem](#email-phone-and-people-lookup) · [The Gazette (UK)](#charities-and-official-notices) · [theHarvester](#recon-and-automation) · [The Information Laundromat](#website-fingerprinting-and-connections) · [TikTok Ad Library](#advertising-transparency) · [Time and Date](#historical-weather) · [TimelineJS](#charts-maps-and-timelines) · [TinEye](#reverse-image-search) · [TowerBells.org](#background-event-cross-reference) · [Trace Labs OSINT VM](#investigation-environments) · [TraceFind](#email-phone-and-people-lookup) · [Trase](#land-forests-and-emissions) · [Tronscan](#block-explorers) · [TrueCaller](#email-phone-and-people-lookup) · [TruffleHog](#code-and-technical-search) · [Tsurugi Linux](#investigation-environments)
 
 **U** · [UCDP](#conflict-monitoring-and-documentation) · [UK CAA G-INFO](#aviation) · [UK Electoral Commission Political Finance](#lobbying-and-political-finance) · [UK Sanctions List Search](#sanctions-and-politically-exposed-persons) · [Ultra (formerly Overpass Ultra)](#geolocation-aids) · [Umbra Space](#commercial-imagery) · [UN Comtrade Database](#trade-and-supply-chains) · [Unfurl](#monitoring-and-cross-platform-analysis) · [UNOSAT](#conflict-monitoring-and-documentation) · [UN Security Council Consolidated List](#sanctions-and-politically-exposed-persons) · [URLhaus](#threat-intelligence-and-reputation) · [urlscan.io](#website-fingerprinting-and-connections) · [USAspending](#procurement-and-public-spending) · [user-scanner](#username-and-identity-search) · [Uwazi](#notes-and-case-management)
 
@@ -512,6 +512,7 @@ Investigate email addresses and phone numbers, trace where emails came from, and
 | [Castrick Clues](https://castrickclues.com) | Email, username and phone lookups with a clean web interface; free searches plus paid credits and an API. | 🟡 Freemium |
 | [MXToolbox](https://mxtoolbox.com) | Email and DNS diagnostics: MX, SPF and DMARC records, blacklist checks, and an email header analyzer that traces which servers handled a message. | 🟡 Freemium |
 | [Google Admin Toolbox Messageheader](https://toolbox.googleapps.com/apps/messageheader/) | Paste raw email headers to see each relay hop, delays and authentication results — useful for checking whether an email was spoofed. | 🟢 Free |
+| [TraceFind](https://tracefind.info) | Looks up an email address, username or phone number and lists the accounts it is registered on (493 sites per email, about 1,000 per username) and the breach records it appears in, with what each site or breach exposes. Web interface, API and MCP server. Searches that find nothing are free, others cost credits, and new accounts get 3 free previews. Sign-up and password-reset checks can give false positives, so verify hits by hand. | 🟡 Freemium |
 | [TrueCaller](https://www.truecaller.com) | Identify unknown phone numbers via a crowdsourced caller-ID database of hundreds of millions of users. Reverse phone lookup. | 🟡 Freemium |
 | [Hitta.se](https://www.hitta.se) | Swedish person and business search. Find individuals, phone numbers, and addresses in Sweden's public records. | 🟢 Free |
 | [That'sThem](https://thatsthem.com) | US reverse lookup by name, email, phone, address, or IP. A free starting point for US-based people search; paid plans add more daily queries. | 🟡 Freemium |
@@ -1330,13 +1331,13 @@ These tools were listed in earlier editions but are now defunct, unreliable, res
 
 ## Tool Count by Pricing
 
-**433 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
+**434 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
 
 | Type | Tools |
 |------|-------|
 | 🟢 Free | 343 — free to use, including free tiers |
 | 🔵 Open Source | 90 — source code is public |
-| 🟡 Freemium | 80 — free tier with paid features, or access by application |
+| 🟡 Freemium | 81 — free tier with paid features, or access by application |
 | 🔴 Paid | 33 — subscription or per-use payment |
 
 ---
