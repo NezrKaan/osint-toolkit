@@ -1,8 +1,8 @@
 # 🔍 OSINT Nexus — 400+ OSINT Tools for Investigations, Geolocation and CTFs
 
-> **A curated list of 419 open source intelligence (OSINT) tools for investigators, journalists, researchers, security professionals and CTF players.** Find the right tool for a photo, video, audio clip, username, email address, domain, company, ship, aircraft or crypto wallet, sorted by what you have and what you need.
+> **A curated list of 433 open source intelligence (OSINT) tools for investigators, journalists, researchers, security professionals and CTF players.** Find the right tool for a photo, video, audio clip, username, email address, domain, company, ship, aircraft or crypto wallet, sorted by what you have and what you need.
 
-[![Tools: 419](https://img.shields.io/badge/tools-419-blue.svg)](#tool-index-az)
+[![Tools: 433](https://img.shields.io/badge/tools-433-blue.svg)](#tool-index-az)
 [![Last commit](https://img.shields.io/github/last-commit/NezrKaan/osint-toolkit)](https://github.com/NezrKaan/osint-toolkit/commits/main)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -56,7 +56,7 @@ Step-by-step solutions to five challenges from the [Bellingcat Open Source Chall
 
 ---
 
-> **🗓️ Last full review: 10 October 2026. Links re-checked: 15 November 2026.** Every entry links to the tool's own website, extension-store page or repository; catalogues and guides are kept separately in [Directories and Meta-Resources](#directories-and-meta-resources). The November check covered every GitHub repository link and every internal link, plus spot checks of smaller community tools; other entries carry over from the October review. See the [Changelog](#changelog) for what changed. Tool availability changes fast — if you hit a dead link, please [open an issue](https://github.com/NezrKaan/osint-toolkit/issues).
+> **🗓️ Last full review: 10 October 2026. Links re-checked: 28 November 2026.** Every entry links to the tool's own website, extension-store page or repository; catalogues and guides are kept separately in [Directories and Meta-Resources](#directories-and-meta-resources). The November check covered every GitHub repository link and every internal link, plus spot checks of smaller community tools; other entries carry over from the October review. See the [Changelog](#changelog) for what changed. Tool availability changes fast — if you hit a dead link, please [open an issue](https://github.com/NezrKaan/osint-toolkit/issues).
 
 ## Contents
 
@@ -66,14 +66,14 @@ Holding a specific clue — a photo, a username, a ship, a wallet address? Start
 |-------|----------------------------|
 | **Start here** | [How to Use This Toolkit](#how-to-use-this-toolkit)<br>[Start From What You Have](#start-from-what-you-have)<br>[Tool Index A–Z](#tool-index-az) |
 | **Practice** | 🏁 [OSINT CTF Challenges and Walkthroughs](#osint-ctf-challenges-and-walkthroughs) |
-| **Places and imagery** | 🗺️ [Maps and Geolocation](#maps-and-geolocation) (34)<br>🛰️ [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation) (25)<br>☀️ [Weather, Time and Shadow Analysis](#weather-time-and-shadow-analysis) (14) |
-| **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (20)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (10)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (10)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
-| **Media verification** | 🖼️ [Reverse Image Search and Image Forensics](#reverse-image-search-and-image-forensics) (15)<br>🤖 [AI-Generated and Synthetic Media Detection](#ai-generated-and-synthetic-media-detection) (5)<br>🎬 [Video Analysis and Verification](#video-analysis-and-verification) (6)<br>🎙️ [Audio Analysis and Acoustic OSINT](#audio-analysis-and-acoustic-osint) (23) |
+| **Places and imagery** | 🗺️ [Maps and Geolocation](#maps-and-geolocation) (35)<br>🛰️ [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation) (26)<br>☀️ [Weather, Time and Shadow Analysis](#weather-time-and-shadow-analysis) (14) |
+| **Search, people and platforms** | 🔎 [Search Engines and Advanced Operators](#search-engines-and-advanced-operators) (10)<br>📱 [Social Media Intelligence](#social-media-intelligence) (23)<br>💬 [Messaging and Forums](#messaging-and-forums) (8)<br>👤 [Username and Identity Search](#username-and-identity-search) (11)<br>📧 [Email, Phone and People Lookup](#email-phone-and-people-lookup) (10)<br>🧑 [Facial Recognition](#facial-recognition) (4) |
+| **Media verification** | 🖼️ [Reverse Image Search and Image Forensics](#reverse-image-search-and-image-forensics) (14)<br>🤖 [AI-Generated and Synthetic Media Detection](#ai-generated-and-synthetic-media-detection) (6)<br>🎬 [Video Analysis and Verification](#video-analysis-and-verification) (6)<br>🎙️ [Audio Analysis and Acoustic OSINT](#audio-analysis-and-acoustic-osint) (23) |
 | **Organisations, money and law** | 🏢 [Corporate and Financial Intelligence](#corporate-and-financial-intelligence) (16)<br>🏛️ [Public Records, Procurement and Lobbying](#public-records-procurement-and-lobbying) (14)<br>🚫 [Sanctions and Politically Exposed Persons](#sanctions-and-politically-exposed-persons) (8)<br>⚖️ [Legal and Court Records](#legal-and-court-records) (10)<br>⛓️ [Cryptocurrency and Blockchain](#cryptocurrency-and-blockchain) (15) |
-| **Transport** | ✈️ [Transport Tracking](#transport-tracking) (21)<br>🚢 [Maritime Intelligence](#maritime-intelligence) (11) |
-| **Infrastructure and cyber** | 🌐 [Domains, IPs and Internet Infrastructure](#domains-ips-and-internet-infrastructure) (37)<br>🔓 [Data Leaks and Breach Intelligence](#data-leaks-and-breach-intelligence) (8)<br>💻 [Code and Technical Search](#code-and-technical-search) (6) |
+| **Transport** | ✈️ [Transport Tracking](#transport-tracking) (23)<br>🚢 [Maritime Intelligence](#maritime-intelligence) (11) |
+| **Infrastructure and cyber** | 🌐 [Domains, IPs and Internet Infrastructure](#domains-ips-and-internet-infrastructure) (38)<br>🔓 [Data Leaks and Breach Intelligence](#data-leaks-and-breach-intelligence) (9)<br>💻 [Code and Technical Search](#code-and-technical-search) (7) |
 | **Conflict and environment** | 💣 [Conflict, Arms and Munitions](#conflict-arms-and-munitions) (14)<br>🌍 [Environmental and Wildlife Intelligence](#environmental-and-wildlife-intelligence) (16) |
-| **Workflow and tooling** | 📦 [Archiving and Preservation](#archiving-and-preservation) (14)<br>🧩 [Browser Extensions and Scrapers](#browser-extensions-and-scrapers) (8)<br>📊 [Data Analysis and Visualization](#data-analysis-and-visualization) (14)<br>📝 [Frameworks, Automation and Case Management](#frameworks-automation-and-case-management) (12)<br>🔤 [Translation and Language](#translation-and-language) (4)<br>📚 [Directories and Meta-Resources](#directories-and-meta-resources) (7) |
+| **Workflow and tooling** | 📦 [Archiving and Preservation](#archiving-and-preservation) (14)<br>🧩 [Browser Extensions and Scrapers](#browser-extensions-and-scrapers) (8)<br>📊 [Data Analysis and Visualization](#data-analysis-and-visualization) (14)<br>📝 [Frameworks, Automation and Case Management](#frameworks-automation-and-case-management) (13)<br>🔤 [Translation and Language](#translation-and-language) (4)<br>📚 [Directories and Meta-Resources](#directories-and-meta-resources) (9) |
 | **Reference** | [Deprecated and Defunct Tools](#deprecated-and-defunct-tools)<br>[Tool Count by Pricing](#tool-count-by-pricing)<br>[Changelog](#changelog)<br>[Contributing](#contributing)<br>[Disclaimer](#disclaimer)<br>[License](#license) |
 
 ---
@@ -135,59 +135,59 @@ Each tool entry follows this format:
 Every tool in this list, alphabetically. Each name links to the section where it appears.
 
 <details>
-<summary><b>Show all 419 tools</b></summary>
+<summary><b>Show all 433 tools</b></summary>
 
 **0–9** · [2GIS](#map-platforms) · [4CAT](#browser-extensions-and-scrapers) · [4plebs](#forums-and-imageboards)
 
-**A** · [AbuseIPDB](#threat-intelligence-and-reputation) · [ACLED](#conflict-monitoring-and-documentation) · [Adobe Audition](#spectrogram-and-frequency-analysis) · [Adobe Podcast Enhance](#background-sound-isolation-and-enhancement) · [ADS-B Exchange](#aviation) · [ADSB.lol](#aviation) · [AHA Music (Extension)](#speech-language-and-music-identification) · [AI or Not](#ai-generated-and-synthetic-media-detection) · [Airframes](#aviation) · [Airwars](#conflict-monitoring-and-documentation) · [AlienVault OTX](#threat-intelligence-and-reputation) · [AllTrails](#geolocation-aids) · [Apollo Mapping](#commercial-imagery) · [Apple Maps](#map-platforms) · [Aqueduct Water Risk Atlas](#land-forests-and-emissions) · [ArchiveBox](#capture-and-monitoring-tools) · [Archive.today](#public-web-archives) · [ArchiveWeb.page](#capture-and-monitoring-tools) · [Arctic Shift](#reddit-youtube-and-linkedin) · [Arkham Intelligence](#tracing-attribution-and-risk) · [Arquivo.pt](#public-web-archives) · [ASF Vertex](#imagery-viewers-and-archives) · [Atlos](#conflict-monitoring-and-documentation) · [Audacity](#spectrogram-and-frequency-analysis) · [Auto Archiver](#capture-and-monitoring-tools) · [Awesome OSINT](#directories-and-meta-resources) · [Azure AI Video Indexer](#video-analysis-and-verification)
+**A** · [AbuseIPDB](#threat-intelligence-and-reputation) · [ACLED](#conflict-monitoring-and-documentation) · [Adobe Audition](#spectrogram-and-frequency-analysis) · [Adobe Podcast Enhance](#background-sound-isolation-and-enhancement) · [ADS-B Exchange](#aviation) · [ADS-B Exposed](#aviation) · [ADSB.lol](#aviation) · [AHA Music (Extension)](#speech-language-and-music-identification) · [AI or Not](#ai-generated-and-synthetic-media-detection) · [Airframes](#aviation) · [AirNav Radar](#aviation) · [Airwars](#conflict-monitoring-and-documentation) · [AlienVault OTX](#threat-intelligence-and-reputation) · [AllTrails](#geolocation-aids) · [Apollo Mapping](#commercial-imagery) · [Apple Maps](#map-platforms) · [Aqueduct Water Risk Atlas](#land-forests-and-emissions) · [ArchiveBox](#capture-and-monitoring-tools) · [Archive.today](#public-web-archives) · [ArchiveWeb.page](#capture-and-monitoring-tools) · [Arctic Shift](#reddit-youtube-and-linkedin) · [Arkham Intelligence](#tracing-attribution-and-risk) · [Arquivo.pt](#public-web-archives) · [ASF Vertex](#imagery-viewers-and-archives) · [Atlos](#conflict-monitoring-and-documentation) · [Audacity](#spectrogram-and-frequency-analysis) · [Auto Archiver](#capture-and-monitoring-tools) · [Awesome OSINT](#directories-and-meta-resources) · [Awesome OSINT MCP Servers](#directories-and-meta-resources) · [Azure AI Video Indexer](#video-analysis-and-verification)
 
-**B** · [Baidu](#search-engines-and-advanced-operators) · [Baidu Image Search](#reverse-image-search) · [Baidu Maps](#map-platforms) · [BAILII](#legal-and-court-records) · [BBOT](#recon-and-automation) · [Bellingcat Online Investigation Toolkit](#directories-and-meta-resources) · [Bellingcat OpenStreetMap Search](#geolocation-aids) · [Bellingcat Toolkit: China-related Resources](#directories-and-meta-resources) · [Bing](#search-engines-and-advanced-operators) · [Bing Maps](#map-platforms) · [Bing Visual Search](#reverse-image-search) · [BirdNET Analyzer](#environmental-and-bioacoustic-sound-identification) · [BirdNET Web Demo](#environmental-and-bioacoustic-sound-identification) · [Blackbird](#username-and-identity-search) · [Blender](#charts-maps-and-timelines) · [Blockchair](#block-explorers) · [Blockstream Explorer](#block-explorers) · [Brave Search](#search-engines-and-advanced-operators) · [Breadcrumbs](#tracing-attribution-and-risk) · [BSky Atlas (Jaz)](#bluesky-and-the-fediverse) · [BskyFollowFinder](#bluesky-and-the-fediverse) · [BuiltWith](#website-fingerprinting-and-connections) · [Bulletpicker](#weapons-and-munitions-identification)
+**B** · [Baidu](#search-engines-and-advanced-operators) · [Baidu Image Search](#reverse-image-search) · [Baidu Maps](#map-platforms) · [BAILII](#legal-and-court-records) · [BBOT](#recon-and-automation) · [Bellingcat Damage Proxy Maps](#analysis-and-event-monitoring) · [Bellingcat Online Investigation Toolkit](#directories-and-meta-resources) · [Bellingcat OpenStreetMap Search](#geolocation-aids) · [Bellingcat Toolkit: China-related Resources](#directories-and-meta-resources) · [Bing](#search-engines-and-advanced-operators) · [Bing Maps](#map-platforms) · [Bing Visual Search](#reverse-image-search) · [BirdNET Analyzer](#environmental-and-bioacoustic-sound-identification) · [BirdNET Web Demo](#environmental-and-bioacoustic-sound-identification) · [Blackbird](#username-and-identity-search) · [Blender](#charts-maps-and-timelines) · [Blockchair](#block-explorers) · [Blockstream Explorer](#block-explorers) · [Brave Search](#search-engines-and-advanced-operators) · [Breadcrumbs](#tracing-attribution-and-risk) · [BSky Atlas (Jaz)](#bluesky-and-the-fediverse) · [BskyFollowFinder](#bluesky-and-the-fediverse) · [BuiltWith](#website-fingerprinting-and-connections) · [Bulletpicker](#weapons-and-munitions-identification)
 
-**C** · [CanLII](#legal-and-court-records) · [Carbon Mapper](#land-forests-and-emissions) · [Castrick Clues](#email-phone-and-people-lookup) · [CAT-UXO](#weapons-and-munitions-identification) · [CelesTrak](#satellites-in-orbit) · [Censys Platform](#internet-wide-device-search) · [Chainabuse](#tracing-attribution-and-risk) · [Chainalysis](#tracing-attribution-and-risk) · [Charity Commission Register](#charities-and-official-notices) · [Chronotrains](#rail) · [CITES Trade Database](#wildlife-and-biodiversity) · [ClearSky (Bluesky)](#bluesky-and-the-fediverse) · [Climate TRACE](#land-forests-and-emissions) · [Cobalt](#video-analysis-and-verification) · [Companies House (UK)](#company-registers-and-ownership) · [Content Credentials Verify](#ai-generated-and-synthetic-media-detection) · [Convert Geographic Units](#coordinates-and-map-utilities) · [Copernicus Browser](#imagery-viewers-and-archives) · [Copernicus Emergency Management Service](#analysis-and-event-monitoring) · [CourtListener / RECAP](#legal-and-court-records) · [Criminal IP](#internet-wide-device-search) · [crt.sh](#whois-dns-and-certificates) · [Crunchbase](#company-registers-and-ownership) · [CSI Linux](#investigation-environments)
+**C** · [CanLII](#legal-and-court-records) · [Carbon Mapper](#land-forests-and-emissions) · [Castrick Clues](#email-phone-and-people-lookup) · [CAT-UXO](#weapons-and-munitions-identification) · [CelesTrak](#satellites-in-orbit) · [Censys Platform](#internet-wide-device-search) · [Chainabuse](#tracing-attribution-and-risk) · [Chainalysis](#tracing-attribution-and-risk) · [Charity Commission Register](#charities-and-official-notices) · [Chronotrains](#rail) · [CITES Trade Database](#wildlife-and-biodiversity) · [ClearSky (Bluesky)](#bluesky-and-the-fediverse) · [Climate TRACE](#land-forests-and-emissions) · [Cobalt](#video-analysis-and-verification) · [Companies House (UK)](#company-registers-and-ownership) · [Content Credentials Verify](#ai-generated-and-synthetic-media-detection) · [Copernicus Browser](#imagery-viewers-and-archives) · [Copernicus Emergency Management Service](#analysis-and-event-monitoring) · [CourtListener / RECAP](#legal-and-court-records) · [Criminal IP](#internet-wide-device-search) · [crt.sh](#whois-dns-and-certificates) · [Crunchbase](#company-registers-and-ownership) · [CSI Linux](#investigation-environments)
 
-**D** · [Datasette](#documents-and-data-wrangling) · [Datawrapper](#charts-maps-and-timelines) · [DeBank](#tracing-attribution-and-risk) · [DeepFake-o-Meter](#ai-generated-and-synthetic-media-detection) · [DeepL Translator](#translation-and-language) · [DeepStateMap](#conflict-monitoring-and-documentation) · [DeHashed](#data-leaks-and-breach-intelligence) · [Demucs](#background-sound-isolation-and-enhancement) · [Disboard](#discord) · [DiscordChatExporter](#browser-extensions-and-scrapers) · [discord.id](#discord) · [DiscordLeaks](#data-leaks-and-breach-intelligence) · [Distill.io](#capture-and-monitoring-tools) · [DNSDumpster](#whois-dns-and-certificates) · [DNSlytics](#whois-dns-and-certificates) · [DomainTools Whois](#whois-dns-and-certificates) · [draw.io](#link-analysis-and-networks) · [DVLA Vehicle Enquiry](#road-and-vehicles)
+**D** · [Datasette](#documents-and-data-wrangling) · [Datawrapper](#charts-maps-and-timelines) · [DeBank](#tracing-attribution-and-risk) · [DeepFake-o-Meter](#ai-generated-and-synthetic-media-detection) · [DeepL Translator](#translation-and-language) · [DeepStateMap](#conflict-monitoring-and-documentation) · [DeFlock](#road-and-vehicles) · [DeHashed](#data-leaks-and-breach-intelligence) · [Demucs](#background-sound-isolation-and-enhancement) · [Disboard](#discord) · [DiscordChatExporter](#browser-extensions-and-scrapers) · [discord.id](#discord) · [DiscordLeaks](#data-leaks-and-breach-intelligence) · [Distill.io](#capture-and-monitoring-tools) · [DNSDumpster](#whois-dns-and-certificates) · [DNSlytics](#whois-dns-and-certificates) · [DomainTools Whois](#whois-dns-and-certificates) · [draw.io](#link-analysis-and-networks) · [DVLA Vehicle Enquiry](#road-and-vehicles)
 
-**E** · [Earth Explorer (USGS)](#imagery-viewers-and-archives) · [Earth Online (ESA)](#imagery-viewers-and-archives) · [eBird](#wildlife-and-biodiversity) · [EDGAR Full-Text Search](#company-registers-and-ownership) · [EDGAR (SEC)](#company-registers-and-ownership) · [EIA International](#land-forests-and-emissions) · [ELAN](#annotation-and-batch-processing) · [ENF Fingerprinting Tool](#enf-electric-network-frequency-analysis) · [ENS App](#tracing-attribution-and-risk) · [Environmental Justice Atlas](#land-forests-and-emissions) · [EOSDA LandViewer](#imagery-viewers-and-archives) · [Epieos](#email-phone-and-people-lookup) · [Equasis](#maritime-intelligence) · [Esri World Imagery Wayback](#imagery-viewers-and-archives) · [Etherscan](#block-explorers) · [EU Business Registers (e-Justice)](#company-registers-and-ownership) · [EU Financial Transparency System](#procurement-and-public-spending) · [Europe's Most Wanted](#legal-and-court-records) · [EU Sanctions Map](#sanctions-and-politically-exposed-persons) · [EU Transparency Register](#lobbying-and-political-finance) · [ExifTool](#image-forensics-and-metadata)
+**E** · [Earth Explorer (USGS)](#imagery-viewers-and-archives) · [Earth Online (ESA)](#imagery-viewers-and-archives) · [eBird](#wildlife-and-biodiversity) · [EDGAR Full-Text Search](#company-registers-and-ownership) · [EDGAR (SEC)](#company-registers-and-ownership) · [EIA International](#land-forests-and-emissions) · [ELAN](#annotation-and-batch-processing) · [ENF Fingerprinting Tool](#enf-electric-network-frequency-analysis) · [ENS App](#tracing-attribution-and-risk) · [Environmental Justice Atlas](#land-forests-and-emissions) · [EOSDA LandViewer](#imagery-viewers-and-archives) · [EOxCloudless (Sentinel-2 Cloudless)](#imagery-viewers-and-archives) · [Epieos](#email-phone-and-people-lookup) · [Equasis](#maritime-intelligence) · [Esri World Imagery Wayback](#imagery-viewers-and-archives) · [Etherscan](#block-explorers) · [EU Business Registers (e-Justice)](#company-registers-and-ownership) · [EU Financial Transparency System](#procurement-and-public-spending) · [Europe's Most Wanted](#legal-and-court-records) · [EU Sanctions Map](#sanctions-and-politically-exposed-persons) · [EU Transparency Register](#lobbying-and-political-finance) · [ExifTool](#image-forensics-and-metadata)
 
-**F** · [F4Map](#map-platforms) · [FAA Aircraft Registry](#aviation) · [FaceCheck.ID](#facial-recognition) · [Face Comparison by ToolPie](#facial-recognition) · [FARA eFile](#lobbying-and-political-finance) · [FEC Campaign Finance Data](#lobbying-and-political-finance) · [FediDB](#bluesky-and-the-fediverse) · [FFmpeg](#video-analysis-and-verification) · [ffprobe](#audio-metadata-and-file-forensics) · [Find a Tender (UK)](#procurement-and-public-spending) · [Find Case Law (UK)](#legal-and-court-records) · [Flickr Map](#street-level-and-crowdsourced-imagery) · [FlightAware](#aviation) · [Flightradar24](#aviation) · [Flourish](#charts-maps-and-timelines) · [FOFA](#internet-wide-device-search) · [Forensically](#image-forensics-and-metadata) · [FotoForensics](#image-forensics-and-metadata) · [Freesound](#environmental-and-bioacoustic-sound-identification) · [Friture](#spectrogram-and-frequency-analysis)
+**F** · [F4Map](#map-platforms) · [FAA Aircraft Registry](#aviation) · [FaceCheck.ID](#facial-recognition) · [Face Comparison by ToolPie](#facial-recognition) · [FARA eFile](#lobbying-and-political-finance) · [FEC Campaign Finance Data](#lobbying-and-political-finance) · [FediDB](#bluesky-and-the-fediverse) · [FFmpeg](#video-analysis-and-verification) · [ffprobe](#audio-metadata-and-file-forensics) · [Filmot](#reddit-youtube-and-linkedin) · [Find a Tender (UK)](#procurement-and-public-spending) · [Find Case Law (UK)](#legal-and-court-records) · [Flickr Map](#street-level-and-crowdsourced-imagery) · [FlightAware](#aviation) · [Flightradar24](#aviation) · [Flourish](#charts-maps-and-timelines) · [FOFA](#internet-wide-device-search) · [Forensically](#image-forensics-and-metadata) · [FotoForensics](#image-forensics-and-metadata) · [Freesound](#environmental-and-bioacoustic-sound-identification) · [Friture](#spectrogram-and-frequency-analysis)
 
-**G** · [gallery-dl](#browser-extensions-and-scrapers) · [Gaode Maps (Amap)](#map-platforms) · [GeoConfirmed](#conflict-monitoring-and-documentation) · [Geo Data Tool](#ip-asn-and-routing) · [Geograph](#street-level-and-crowdsourced-imagery) · [GeoHints](#geolocation-aids) · [Gephi](#link-analysis-and-networks) · [GH Archive](#code-and-technical-search) · [Ghost Archive](#public-web-archives) · [GHunt](#username-and-identity-search) · [GitHub Code Search](#code-and-technical-search) · [Gitleaks](#code-and-technical-search) · [GLEIF LEI Search](#company-registers-and-ownership) · [Global Energy Monitor](#land-forests-and-emissions) · [Global Fishing Watch](#maritime-intelligence) · [Global Forest Watch](#land-forests-and-emissions) · [GoFullPage](#capture-and-monitoring-tools) · [Google Admin Toolbox Messageheader](#email-phone-and-people-lookup) · [Google Ads Transparency Center](#advertising-transparency) · [Google Advanced Search](#search-engines-and-advanced-operators) · [Google Alerts](#search-engines-and-advanced-operators) · [Google Earth Engine](#analysis-and-event-monitoring) · [Google Earth Pro](#map-platforms) · [Google Earth Timelapse](#imagery-viewers-and-archives) · [Google Earth (web)](#map-platforms) · [Google Flood Hub](#analysis-and-event-monitoring) · [Google Hacking Database](#search-engines-and-advanced-operators) · [Google Lens](#reverse-image-search) · [Google Maps](#map-platforms) · [Google Translate](#translation-and-language) · [Google Trends](#search-engines-and-advanced-operators) · [GovMap](#map-platforms) · [GPSJam](#analysis-and-event-monitoring) · [GrayHatWarfare](#internet-wide-device-search) · [grep.app](#code-and-technical-search) · [GreyNoise](#threat-intelligence-and-reputation)
+**G** · [gallery-dl](#browser-extensions-and-scrapers) · [Gaode Maps (Amap)](#map-platforms) · [GeoConfirmed](#conflict-monitoring-and-documentation) · [Geo Data Tool](#ip-asn-and-routing) · [Geograph](#street-level-and-crowdsourced-imagery) · [GeoHints](#geolocation-aids) · [geo-sleuth](#geolocation-aids) · [Gephi](#link-analysis-and-networks) · [GH Archive](#code-and-technical-search) · [Ghost Archive](#public-web-archives) · [GHOST OSINT CRM](#notes-and-case-management) · [GHunt](#username-and-identity-search) · [GitFive](#code-and-technical-search) · [GitHub Code Search](#code-and-technical-search) · [Gitleaks](#code-and-technical-search) · [GLEIF LEI Search](#company-registers-and-ownership) · [Global Energy Monitor](#land-forests-and-emissions) · [Global Fishing Watch](#maritime-intelligence) · [Global Nature Watch (formerly Global Forest Watch)](#land-forests-and-emissions) · [GoFullPage](#capture-and-monitoring-tools) · [Google Admin Toolbox Messageheader](#email-phone-and-people-lookup) · [Google Ads Transparency Center](#advertising-transparency) · [Google Advanced Search](#search-engines-and-advanced-operators) · [Google Alerts](#search-engines-and-advanced-operators) · [Google Earth Engine](#analysis-and-event-monitoring) · [Google Earth Pro](#map-platforms) · [Google Earth Timelapse](#imagery-viewers-and-archives) · [Google Earth (web)](#map-platforms) · [Google Flood Hub](#analysis-and-event-monitoring) · [Google Hacking Database](#search-engines-and-advanced-operators) · [Google Lens](#reverse-image-search) · [Google Maps](#map-platforms) · [Google Translate](#translation-and-language) · [Google Trends](#search-engines-and-advanced-operators) · [GovMap](#map-platforms) · [GPSJam](#analysis-and-event-monitoring) · [GrayHatWarfare](#internet-wide-device-search) · [grep.app](#code-and-technical-search) · [GreyNoise](#threat-intelligence-and-reputation)
 
 **H** · [Have I Been Pwned](#data-leaks-and-breach-intelligence) · [Hitta.se](#email-phone-and-people-lookup) · [Hive AI-Generated Content Detection](#ai-generated-and-synthetic-media-detection) · [Holehe](#email-phone-and-people-lookup) · [Host.io](#whois-dns-and-certificates) · [HUDOC](#legal-and-court-records) · [Hudson Rock (Free Tools)](#data-leaks-and-breach-intelligence) · [Hugin](#image-collections-and-panoramas) · [Hunchly](#capture-and-monitoring-tools) · [Hunter.io](#email-phone-and-people-lookup) · [Hurricane Electric BGP Toolkit](#ip-asn-and-routing)
 
-**I** · [ICANN Lookup](#whois-dns-and-certificates) · [ICIJ Offshore Leaks Database](#leaks-and-investigative-databases) · [IDCrawl](#username-and-identity-search) · [IDN Checker (Punycoder)](#whois-dns-and-certificates) · [IMO GISIS](#maritime-intelligence) · [ImportGenius](#trade-and-supply-chains) · [ImportYeti](#trade-and-supply-chains) · [iNaturalist](#environmental-and-bioacoustic-sound-identification) · [Instagram Location Search](#facebook-and-instagram) · [Instaloader](#browser-extensions-and-scrapers) · [Instant Data Scraper](#browser-extensions-and-scrapers) · [Instant Username Search](#username-and-identity-search) · [Intelligence X](#data-leaks-and-breach-intelligence) · [IntelTechniques Tools](#directories-and-meta-resources) · [Interpol Red Notices](#legal-and-court-records) · [InVID / WeVerify Verification Plugin](#video-analysis-and-verification) · [IPinfo](#ip-asn-and-routing) · [iTrace](#weapons-and-munitions-identification)
+**I** · [ICANN Lookup](#whois-dns-and-certificates) · [ICIJ Offshore Leaks Database](#leaks-and-investigative-databases) · [IDCrawl](#username-and-identity-search) · [IMO GISIS](#maritime-intelligence) · [ImportGenius](#trade-and-supply-chains) · [ImportYeti](#trade-and-supply-chains) · [iNaturalist](#environmental-and-bioacoustic-sound-identification) · [Instagram Location Search](#facebook-and-instagram) · [Instaloader](#browser-extensions-and-scrapers) · [Instant Data Scraper](#browser-extensions-and-scrapers) · [Instant Username Search](#username-and-identity-search) · [Intelligence X](#data-leaks-and-breach-intelligence) · [IntelTechniques Tools](#directories-and-meta-resources) · [Interpol Red Notices](#legal-and-court-records) · [InVID / WeVerify Verification Plugin](#video-analysis-and-verification) · [IPinfo](#ip-asn-and-routing) · [ip.thc.org](#whois-dns-and-certificates) · [iTrace](#weapons-and-munitions-identification)
 
-**J** · [Jeffrey's Image Metadata Viewer](#image-forensics-and-metadata) · [Justia](#legal-and-court-records)
+**J** · [Justia](#legal-and-court-records)
 
 **K** · [Kakao Map](#map-platforms) · [KartaView](#street-level-and-crowdsourced-imagery) · [kepler.gl](#charts-maps-and-timelines) · [Kumu](#link-analysis-and-networks)
 
 **L** · [LeakIX](#internet-wide-device-search) · [Leak-Lookup](#data-leaks-and-breach-intelligence) · [Library of Leaks](#data-leaks-and-breach-intelligence) · [LightningMaps](#historical-weather) · [LinkedIn Post Timestamp Extractor](#reddit-youtube-and-linkedin) · [LittleSis](#company-registers-and-ownership) · [Liveuamap](#conflict-monitoring-and-documentation) · [LobbyFacts](#lobbying-and-political-finance) · [Locust Hub (FAO)](#wildlife-and-biodiversity) · [Logseq](#notes-and-case-management) · [LPR Maps](#road-and-vehicles) · [Lumen Database](#legal-and-court-records)
 
-**M** · [Maigret](#username-and-identity-search) · [Maltego](#link-analysis-and-networks) · [MapBiomas](#land-forests-and-emissions) · [MapChecking](#geolocation-aids) · [Mapillary](#street-level-and-crowdsourced-imagery) · [MapSwitcher](#coordinates-and-map-utilities) · [Mapy.com](#map-platforms) · [MarineTraffic](#maritime-intelligence) · [MediaInfo](#audio-metadata-and-file-forensics) · [mempool.space](#block-explorers) · [Merlin Bird ID](#environmental-and-bioacoustic-sound-identification) · [Meta Ad Library](#advertising-transparency) · [Meta Content Library](#facebook-and-instagram) · [MetaSleuth](#tracing-attribution-and-risk) · [Meteostat](#historical-weather) · [Mitaka](#browser-extensions-and-scrapers) · [Mojeek](#search-engines-and-advanced-operators) · [MoonCalc](#sun-moon-and-shadows) · [MOT History](#road-and-vehicles) · [MW Geofind](#reddit-youtube-and-linkedin) · [MXToolbox](#email-phone-and-people-lookup) · [MyShipTracking](#maritime-intelligence)
+**M** · [Maigret](#username-and-identity-search) · [Maltego](#link-analysis-and-networks) · [MapBiomas](#land-forests-and-emissions) · [MapChecking](#geolocation-aids) · [Mapillary](#street-level-and-crowdsourced-imagery) · [MapSwitcher](#coordinates-and-map-utilities) · [Mapy.com](#map-platforms) · [MarineTraffic](#maritime-intelligence) · [MediaInfo](#audio-metadata-and-file-forensics) · [mempool.space](#block-explorers) · [Merlin Bird ID](#environmental-and-bioacoustic-sound-identification) · [Meta Ad Library](#advertising-transparency) · [Meta Content Library](#facebook-and-instagram) · [MetaSleuth](#tracing-attribution-and-risk) · [Meteostat](#historical-weather) · [Mitaka](#browser-extensions-and-scrapers) · [Mojeek](#search-engines-and-advanced-operators) · [MoonCalc](#sun-moon-and-shadows) · [MOT History](#road-and-vehicles) · [MW Geofind](#reddit-youtube-and-linkedin) · [MW Metadata (formerly YouTube Metadata)](#reddit-youtube-and-linkedin) · [MXToolbox](#email-phone-and-people-lookup) · [MyShipTracking](#maritime-intelligence)
 
-**N** · [N2YO](#satellites-in-orbit) · [Namechk](#username-and-identity-search) · [Name Variant Search](#username-and-identity-search) · [NASA Earthdata Search](#imagery-viewers-and-archives) · [NASA FIRMS](#analysis-and-event-monitoring) · [NASA Worldview](#imagery-viewers-and-archives) · [Naver](#search-engines-and-advanced-operators) · [Naver Map](#map-platforms) · [Navtex](#maritime-intelligence) · [Netcraft Site Report](#website-fingerprinting-and-connections) · [Netlas.io](#internet-wide-device-search) · [NHTSA VIN Decoder](#road-and-vehicles) · [NOAA Climate Data Online](#historical-weather) · [North Data](#company-registers-and-ownership)
+**N** · [N2YO](#satellites-in-orbit) · [Namechk](#username-and-identity-search) · [Name Variant Search](#username-and-identity-search) · [NASA Earthdata Search](#imagery-viewers-and-archives) · [NASA FIRMS](#analysis-and-event-monitoring) · [NASA Worldview](#imagery-viewers-and-archives) · [Naver](#search-engines-and-advanced-operators) · [Naver Map](#map-platforms) · [navtex.net](#maritime-intelligence) · [Netcraft Site Report](#website-fingerprinting-and-connections) · [Netlas.io](#internet-wide-device-search) · [NHTSA VIN Decoder](#road-and-vehicles) · [NOAA Climate Data Online](#historical-weather) · [North Data](#company-registers-and-ownership)
 
-**O** · [Obsidian](#notes-and-case-management) · [OCCRP Aleph Pro](#leaks-and-investigative-databases) · [OFAC Sanctions List Search](#sanctions-and-politically-exposed-persons) · [Ogimet](#historical-weather) · [OKLink](#block-explorers) · [Onyphe](#internet-wide-device-search) · [OpenAerialMap](#imagery-viewers-and-archives) · [OpenCorporates](#company-registers-and-ownership) · [Open ENF](#enf-electric-network-frequency-analysis) · [Open Measures](#monitoring-and-cross-platform-analysis) · [Open Ownership](#company-registers-and-ownership) · [OpenRailwayMap](#rail) · [OpenRefine](#documents-and-data-wrangling) · [OpenSanctions](#sanctions-and-politically-exposed-persons) · [OpenSecrets](#lobbying-and-political-finance) · [OpenSky Network](#aviation) · [Open Source Munitions Portal](#weapons-and-munitions-identification) · [OpenStreetMap](#map-platforms) · [OpenStreetMap (via Overpass Turbo)](#geolocation-aids) · [Open Supply Hub](#trade-and-supply-chains) · [Opentender](#procurement-and-public-spending) · [OrbTrack](#satellites-in-orbit) · [Oryx](#weapons-and-munitions-identification) · [OSINT Framework](#directories-and-meta-resources) · [OSINT Industries](#email-phone-and-people-lookup) · [OSoMeNet (formerly Hoaxy)](#monitoring-and-cross-platform-analysis) · [Overpass Ultra](#geolocation-aids) · [OWASP Amass](#recon-and-automation)
+**O** · [Obsidian](#notes-and-case-management) · [OCCRP Aleph Pro](#leaks-and-investigative-databases) · [OFAC Sanctions List Search](#sanctions-and-politically-exposed-persons) · [Ogimet](#historical-weather) · [OKLink](#block-explorers) · [Onyphe](#internet-wide-device-search) · [OpenAerialMap](#imagery-viewers-and-archives) · [OpenCorporates](#company-registers-and-ownership) · [Open ENF](#enf-electric-network-frequency-analysis) · [Open Measures](#monitoring-and-cross-platform-analysis) · [Open Ownership](#company-registers-and-ownership) · [OpenRailwayMap](#rail) · [OpenRefine](#documents-and-data-wrangling) · [OpenSanctions](#sanctions-and-politically-exposed-persons) · [OpenSecrets](#lobbying-and-political-finance) · [OpenSky Network](#aviation) · [Open Source Munitions Portal](#weapons-and-munitions-identification) · [OpenStreetMap](#map-platforms) · [OpenStreetMap (via Overpass Turbo)](#geolocation-aids) · [Open Supply Hub](#trade-and-supply-chains) · [Opentender](#procurement-and-public-spending) · [OrbTrack](#satellites-in-orbit) · [Oryx](#weapons-and-munitions-identification) · [OSINT Framework](#directories-and-meta-resources) · [OSINT Industries](#email-phone-and-people-lookup) · [OSINT Navigator](#directories-and-meta-resources) · [OSoMeNet (formerly Hoaxy)](#monitoring-and-cross-platform-analysis) · [OWASP Amass](#recon-and-automation)
 
-**P** · [PACER](#legal-and-court-records) · [Papago](#translation-and-language) · [PeakFinder](#geolocation-aids) · [PeakVisor](#geolocation-aids) · [Perma.cc](#public-web-archives) · [PimEyes](#facial-recognition) · [Pinpoint](#documents-and-data-wrangling) · [PixPlot](#image-collections-and-panoramas) · [Planespotters.net](#aviation) · [Planet Labs](#commercial-imagery) · [Plonk It](#geolocation-aids) · [Pray Times](#sun-moon-and-shadows) · [ProPublica Nonprofit Explorer](#charities-and-official-notices) · [PublicWWW](#website-fingerprinting-and-connections)
+**P** · [PACER](#legal-and-court-records) · [Papago](#translation-and-language) · [PeakFinder](#geolocation-aids) · [PeakVisor](#geolocation-aids) · [Perma.cc](#public-web-archives) · [PGC Coordinate Converter](#coordinates-and-map-utilities) · [PimEyes](#facial-recognition) · [Pinpoint](#documents-and-data-wrangling) · [PixPlot](#image-collections-and-panoramas) · [Planespotters.net](#aviation) · [Planet Labs](#commercial-imagery) · [Plonk It](#geolocation-aids) · [Pray Times](#sun-moon-and-shadows) · [ProPublica Nonprofit Explorer](#charities-and-official-notices) · [PublicWWW](#website-fingerprinting-and-connections) · [Punycoder](#whois-dns-and-certificates)
 
 **Q** · [QGIS](#analysis-and-event-monitoring)
 
-**R** · [RadarBox](#aviation) · [Radar Interference Tracker](#analysis-and-event-monitoring) · [RAMMB SLIDER](#imagery-viewers-and-archives) · [ransomware.live](#data-leaks-and-breach-intelligence) · [RAWGraphs](#charts-maps-and-timelines) · [Realtime Trains](#rail) · [recon-ng](#recon-and-automation) · [ReplayWeb.page](#capture-and-monitoring-tools) · [Resource Watch](#land-forests-and-emissions) · [Reverse Image Search Anywhere](#reverse-image-search) · [RIPEstat](#ip-asn-and-routing) · [Robtex](#ip-asn-and-routing) · [RootAbout](#reverse-image-search) · [RuPEP](#sanctions-and-politically-exposed-persons)
+**R** · [Radar Interference Tracker](#analysis-and-event-monitoring) · [RAMMB SLIDER](#imagery-viewers-and-archives) · [ransomware.live](#data-leaks-and-breach-intelligence) · [RAWGraphs](#charts-maps-and-timelines) · [Realtime Trains](#rail) · [recon-ng](#recon-and-automation) · [ReplayWeb.page](#capture-and-monitoring-tools) · [Resource Watch](#land-forests-and-emissions) · [Reverse Image Search Anywhere](#reverse-image-search) · [RIPEstat](#ip-asn-and-routing) · [Robin](#data-leaks-and-breach-intelligence) · [Robtex](#ip-asn-and-routing) · [RootAbout](#reverse-image-search) · [RuPEP](#sanctions-and-politically-exposed-persons)
 
-**S** · [SanctionsExplorer](#sanctions-and-politically-exposed-persons) · [satellites.pro](#imagery-viewers-and-archives) · [Search4Faces](#facial-recognition) · [Search by Image (Extension)](#reverse-image-search) · [SecurityTrails](#whois-dns-and-certificates) · [Sentinel-2 Cloudless (EOX)](#imagery-viewers-and-archives) · [ShadeMap](#sun-moon-and-shadows) · [Shadow Finder](#sun-moon-and-shadows) · [ShadowMap](#sun-moon-and-shadows) · [Shazam](#speech-language-and-music-identification) · [Sherlock](#username-and-identity-search) · [Sherloq](#image-forensics-and-metadata) · [ShipFinder](#maritime-intelligence) · [ShipSpotting.com](#maritime-intelligence) · [Shodan](#internet-wide-device-search) · [Sightengine AI Image Detection](#ai-generated-and-synthetic-media-detection) · [SingleFile](#capture-and-monitoring-tools) · [SIPRI Arms Transfers Database](#weapons-and-munitions-identification) · [Skopenow](#monitoring-and-cross-platform-analysis) · [SkyFi](#commercial-imagery) · [Skylight](#maritime-intelligence) · [Snap Map](#location-based-platforms) · [Social Analyzer](#username-and-identity-search) · [Software Heritage Archive](#code-and-technical-search) · [Solscan](#block-explorers) · [Sonic Visualiser](#spectrogram-and-frequency-analysis) · [SoX (Sound eXchange)](#annotation-and-batch-processing) · [Species+](#wildlife-and-biodiversity) · [SpiderFoot](#recon-and-automation) · [Spleeter](#background-sound-isolation-and-enhancement) · [Strava Global Heatmap](#location-based-platforms) · [Subfinder](#recon-and-automation) · [SunCalc](#sun-moon-and-shadows) · [SunEarthTools](#sun-moon-and-shadows)
+**S** · [SanctionsExplorer](#sanctions-and-politically-exposed-persons) · [satellites.pro](#imagery-viewers-and-archives) · [Search4Faces](#facial-recognition) · [Search by Image (Extension)](#reverse-image-search) · [SecurityTrails](#whois-dns-and-certificates) · [ShadeMap](#sun-moon-and-shadows) · [Shadow Finder](#sun-moon-and-shadows) · [ShadowMap](#sun-moon-and-shadows) · [Shazam](#speech-language-and-music-identification) · [Sherlock](#username-and-identity-search) · [Sherloq](#image-forensics-and-metadata) · [ShipFinder](#maritime-intelligence) · [ShipSpotting.com](#maritime-intelligence) · [Shodan](#internet-wide-device-search) · [Sightengine AI Image Detection](#ai-generated-and-synthetic-media-detection) · [SingleFile](#capture-and-monitoring-tools) · [SIPRI Arms Transfers Database](#weapons-and-munitions-identification) · [Skopenow](#monitoring-and-cross-platform-analysis) · [SkyFi](#commercial-imagery) · [Skylight](#maritime-intelligence) · [Snap Map](#location-based-platforms) · [Social Analyzer](#username-and-identity-search) · [Software Heritage Archive](#code-and-technical-search) · [Solscan](#block-explorers) · [Sonic Visualiser](#spectrogram-and-frequency-analysis) · [SoX (Sound eXchange)](#annotation-and-batch-processing) · [Species+](#wildlife-and-biodiversity) · [SpiderFoot](#recon-and-automation) · [Spleeter](#background-sound-isolation-and-enhancement) · [Strava Global Heatmap](#location-based-platforms) · [Subfinder](#recon-and-automation) · [SunCalc](#sun-moon-and-shadows) · [SunEarthTools](#sun-moon-and-shadows) · [SynthID check in Gemini](#ai-generated-and-synthetic-media-detection)
 
-**T** · [Tableau Public](#charts-maps-and-timelines) · [TED – Tenders Electronic Daily](#procurement-and-public-spending) · [Telegago](#telegram) · [Telegram Phone Number Checker](#telegram) · [Telemetr.io](#telegram) · [Telepathy](#telegram) · [Tencent Maps](#map-platforms) · [TGStat](#telegram) · [That'sThem](#email-phone-and-people-lookup) · [The Gazette (UK)](#charities-and-official-notices) · [theHarvester](#recon-and-automation) · [The Information Laundromat](#website-fingerprinting-and-connections) · [Time and Date](#historical-weather) · [TimelineJS](#charts-maps-and-timelines) · [TinEye](#reverse-image-search) · [TowerBells.org](#background-event-cross-reference) · [Trace Labs OSINT VM](#investigation-environments) · [Trase](#land-forests-and-emissions) · [Tronscan](#block-explorers) · [TrueCaller](#email-phone-and-people-lookup) · [TruffleHog](#code-and-technical-search) · [Tsurugi Linux](#investigation-environments)
+**T** · [Tableau Public](#charts-maps-and-timelines) · [TED – Tenders Electronic Daily](#procurement-and-public-spending) · [Telegago](#telegram) · [Telegram Phone Number Checker](#telegram) · [Telemetr.io](#telegram) · [Telepathy](#telegram) · [Tencent Maps](#map-platforms) · [TGStat](#telegram) · [That'sThem](#email-phone-and-people-lookup) · [The Gazette (UK)](#charities-and-official-notices) · [theHarvester](#recon-and-automation) · [The Information Laundromat](#website-fingerprinting-and-connections) · [TikTok Ad Library](#advertising-transparency) · [Time and Date](#historical-weather) · [TimelineJS](#charts-maps-and-timelines) · [TinEye](#reverse-image-search) · [TowerBells.org](#background-event-cross-reference) · [Trace Labs OSINT VM](#investigation-environments) · [Trase](#land-forests-and-emissions) · [Tronscan](#block-explorers) · [TrueCaller](#email-phone-and-people-lookup) · [TruffleHog](#code-and-technical-search) · [Tsurugi Linux](#investigation-environments)
 
-**U** · [UCDP](#conflict-monitoring-and-documentation) · [UK CAA G-INFO](#aviation) · [UK Electoral Commission Political Finance](#lobbying-and-political-finance) · [UK Sanctions List Search](#sanctions-and-politically-exposed-persons) · [Umbra Space](#commercial-imagery) · [UN Comtrade Database](#trade-and-supply-chains) · [UNOSAT](#conflict-monitoring-and-documentation) · [UN Security Council Consolidated List](#sanctions-and-politically-exposed-persons) · [URLhaus](#threat-intelligence-and-reputation) · [urlscan.io](#website-fingerprinting-and-connections) · [USAspending](#procurement-and-public-spending) · [Uwazi](#notes-and-case-management)
+**U** · [UCDP](#conflict-monitoring-and-documentation) · [UK CAA G-INFO](#aviation) · [UK Electoral Commission Political Finance](#lobbying-and-political-finance) · [UK Sanctions List Search](#sanctions-and-politically-exposed-persons) · [Ultra (formerly Overpass Ultra)](#geolocation-aids) · [Umbra Space](#commercial-imagery) · [UN Comtrade Database](#trade-and-supply-chains) · [Unfurl](#monitoring-and-cross-platform-analysis) · [UNOSAT](#conflict-monitoring-and-documentation) · [UN Security Council Consolidated List](#sanctions-and-politically-exposed-persons) · [URLhaus](#threat-intelligence-and-reputation) · [urlscan.io](#website-fingerprinting-and-connections) · [USAspending](#procurement-and-public-spending) · [user-scanner](#username-and-identity-search) · [Uwazi](#notes-and-case-management)
 
 **V** · [Validin](#threat-intelligence-and-reputation) · [VesselFinder](#maritime-intelligence) · [ViewDNS.info](#whois-dns-and-certificates) · [VirusTotal](#threat-intelligence-and-reputation) · [VLC Media Player](#video-analysis-and-verification)
 
-**W** · [WalletExplorer](#tracing-attribution-and-risk) · [Wappalyzer](#website-fingerprinting-and-connections) · [War & Sanctions](#sanctions-and-politically-exposed-persons) · [Wayback Machine (Internet Archive)](#public-web-archives) · [Weather Underground History](#historical-weather) · [Web Scraper](#browser-extensions-and-scrapers) · [what3words](#geolocation-aids) · [What CMS](#website-fingerprinting-and-connections) · [WhatsMyName](#username-and-identity-search) · [Whisper (OpenAI)](#speech-language-and-music-identification) · [Who Posted What?](#facebook-and-instagram) · [Whoxy](#whois-dns-and-certificates) · [WiGLE](#geolocation-aids) · [Wikimapia](#map-platforms) · [Wikipedia: List of Company Registers](#directories-and-meta-resources) · [Wikipedia: List of Web Archiving Initiatives](#directories-and-meta-resources) · [Wildlife Trade Portal](#wildlife-and-biodiversity) · [Windy](#historical-weather) · [World Database on Protected Areas](#wildlife-and-biodiversity) · [World License Plates](#road-and-vehicles) · [World Port Index](#maritime-intelligence)
+**W** · [WalletExplorer](#tracing-attribution-and-risk) · [Wappalyzer](#website-fingerprinting-and-connections) · [War & Sanctions](#sanctions-and-politically-exposed-persons) · [Wayback Machine (Internet Archive)](#public-web-archives) · [Weather Underground History](#historical-weather) · [Web Scraper](#browser-extensions-and-scrapers) · [what3words](#geolocation-aids) · [What CMS](#website-fingerprinting-and-connections) · [WhatsMyName](#username-and-identity-search) · [Whisper (OpenAI)](#speech-language-and-music-identification) · [Who Posted What?](#facebook-and-instagram) · [Whoxy](#whois-dns-and-certificates) · [WiGLE](#geolocation-aids) · [Wikimapia](#map-platforms) · [Wikipedia: List of Official Business Registers](#directories-and-meta-resources) · [Wikipedia: List of Web Archiving Initiatives](#directories-and-meta-resources) · [Wildlife Trade Portal](#wildlife-and-biodiversity) · [Windy](#historical-weather) · [World Database on Protected and Conserved Areas](#wildlife-and-biodiversity) · [World License Plates](#road-and-vehicles) · [World Port Index](#maritime-intelligence)
 
 **X** · [xeno-canto](#environmental-and-bioacoustic-sound-identification) · [XTools](#monitoring-and-cross-platform-analysis) · [X (Twitter) Advanced Search](#x-twitter)
 
-**Y** · [Yandex Images](#reverse-image-search) · [Yandex Maps](#map-platforms) · [Yandex Search](#search-engines-and-advanced-operators) · [Yandex Translate](#translation-and-language) · [YouTube Metadata](#reddit-youtube-and-linkedin) · [yt-dlp](#video-analysis-and-verification)
+**Y** · [Yandex Images](#reverse-image-search) · [Yandex Maps](#map-platforms) · [Yandex Search](#search-engines-and-advanced-operators) · [Yandex Translate](#translation-and-language) · [yt-dlp](#video-analysis-and-verification)
 
 **Z** · [Zeeschuimer](#browser-extensions-and-scrapers) · [Zoom Earth](#imagery-viewers-and-archives) · [ZoomEye](#internet-wide-device-search) · [Zotero](#capture-and-monitoring-tools)
 
@@ -206,8 +206,8 @@ Tools for mapping, geolocating imagery, and working with geographic data.
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [Google Maps](https://maps.google.com) | The most widely used mapping platform. OSINT use: Street View for visual verification, historical imagery, measuring distances, identifying businesses and landmarks. | 🟢 Free |
-| [Google Earth Pro](https://www.google.com/earth/versions/#earth-pro) | Desktop application with advanced satellite imagery, historical imagery timeline, 3D terrain, measurement tools, and GIS data import. Essential for geolocation and temporal analysis. | 🟢 Free |
-| [Google Earth (web)](https://earth.google.com/web/) | Browser version of Google Earth with 3D buildings, measuring tools and historical imagery — no install needed. | 🟢 Free |
+| [Google Earth Pro](https://www.google.com/earth/versions/#earth-pro) | ⚠️ Desktop application with advanced satellite imagery, historical imagery timeline, 3D terrain, measurement tools, and GIS data import. Google stops new downloads on 25 June 2027; existing installs keep working without updates, and Google Earth on the web is the replacement. | 🟢 Free |
+| [Google Earth (web)](https://earth.google.com/web/) | Browser version of Google Earth with 3D buildings, measuring tools and historical imagery — no install needed. Google's replacement for Earth Pro; the free Standard plan covers these features, and paid Professional plans add specialist data layers. | 🟢 Free |
 | [Bing Maps](https://www.bing.com/maps) | Microsoft's mapping platform with Bird's Eye View (oblique aerial imagery) not available on Google Maps. Useful for verifying angles and perspectives. | 🟢 Free |
 | [Apple Maps](https://maps.apple.com) | Apple's mapping service with Look Around (street-level imagery). Sometimes has newer imagery than Google in certain areas. Web version available. | 🟢 Free |
 | [OpenStreetMap](https://www.openstreetmap.org) | The open, community-edited world map. Inspect any feature's tags and edit history to see who mapped it and when. | 🟢 Free / 🔵 Open Source |
@@ -239,7 +239,7 @@ Tools for mapping, geolocating imagery, and working with geographic data.
 | [GeoHints](https://geohints.com) | A reference guide for GeoGuessr-style geolocation. Clues by country: road markings, bollards, utility poles, signage. Invaluable for image geolocation. | 🟢 Free |
 | [Plonk It](https://www.plonkit.net) | Country-by-country guides to geolocation clues (road markings, poles, signs, number plates) written for GeoGuessr players. | 🟢 Free |
 | [OpenStreetMap (via Overpass Turbo)](https://overpass-turbo.eu) | Query and extract specific features from OpenStreetMap's open database. Search building types, infrastructure, and POIs by attribute. Extremely powerful for targeted geolocation. | 🟢 Free / 🔵 Open Source |
-| [Overpass Ultra](https://overpass-ultra.us) | A modern Overpass Turbo alternative with MapLibre rendering, shareable queries, and improved styling. Handy for infrastructure-pattern geolocation. | 🟢 Free / 🔵 Open Source |
+| [Ultra (formerly Overpass Ultra)](https://overpass-ultra.us) | A modern Overpass Turbo alternative with MapLibre rendering, shareable queries, and improved styling; it can also map GeoJSON, GPX and KML files. Handy for infrastructure-pattern geolocation. | 🟢 Free / 🔵 Open Source |
 | [Bellingcat OpenStreetMap Search](https://osm-search.bellingcat.com) | Bellingcat's tool for searching OpenStreetMap data by object type and location. Simplifies complex Overpass queries into a friendly interface. | 🟢 Free |
 | [PeakFinder](https://www.peakfinder.com) | Renders the mountain skyline from any viewpoint and names the peaks. Match a photo's horizon to find where it was taken. | 🟢 Free (web) / 🔴 Paid (app) |
 | [PeakVisor](https://peakvisor.com) | Mountain and terrain identification. Match mountain silhouettes to geolocate photos taken in mountainous areas. | 🟡 Freemium |
@@ -247,12 +247,13 @@ Tools for mapping, geolocating imagery, and working with geographic data.
 | [AllTrails](https://www.alltrails.com) | Hiking and trail maps. Identify trails and paths visible in imagery; user-uploaded geotagged photos add ground-level context. | 🟡 Freemium |
 | [MapChecking](https://www.mapchecking.com) | Estimate crowd sizes by drawing an area on a map and adjusting crowd density. Used by journalists to verify protest/rally attendance claims. | 🟢 Free |
 | [what3words](https://what3words.com) | Divides the world into 3m x 3m squares, each with a unique 3-word address. Used in emergency services and can help pinpoint exact locations. | 🟢 Free (basic) / 🟡 Freemium (API) |
+| [geo-sleuth](https://github.com/Oldcircle/geo-sleuth) | ⚠️ Open-source skill that turns an AI coding agent (Claude Code, Codex, Gemini CLI and others) into a photo geolocator that shows its evidence: it queries OpenStreetMap, matches skylines, ranks satellite tiles and compares street-level imagery. Runs take 30–70 minutes plus LLM costs, and images are sent to Baidu and Yandex reverse image search, so keep sensitive photos out. | 🟢 Free / 🔵 Open Source |
 
 ### Coordinates and Map Utilities
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Convert Geographic Units](https://applications.pgc.umn.edu/convert/) | Convert between coordinate formats (decimal degrees, DMS, UTM, MGRS). Essential when working with coordinates from different sources. | 🟢 Free |
+| [PGC Coordinate Converter](https://applications.pgc.umn.edu/convert/) | Polar Geospatial Center (University of Minnesota) converter between decimal degrees, degrees and decimal minutes, and DMS, plus polar stereographic coordinates. It does not convert UTM or MGRS. | 🟢 Free |
 | [MapSwitcher](https://github.com/david-r-edgar/MapSwitcher) | ⚠️ Browser extension to switch between map services (Google, Bing, Yandex, etc.) for the same location with one click. The original Chrome Web Store release can no longer be installed; load it from source, or use the similar [OpenSwitchMaps](https://github.com/tankaru/OpenSwitchMaps) (Chrome/Firefox). | 🟢 Free / 🔵 Open Source |
 
 > **See also:** [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation) for overhead imagery, [Weather, Time and Shadow Analysis](#weather-time-and-shadow-analysis) for working out *when* a photo was taken, and Instagram Location Search in [Facebook and Instagram](#facebook-and-instagram).
@@ -273,17 +274,17 @@ Access and analyze satellite imagery for change detection, infrastructure monito
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Copernicus Browser](https://browser.dataspace.copernicus.eu) | ESA/Copernicus Data Space Ecosystem browser — the current front-end for Sentinel-1/2/3/5P data, with time-lapse and analysis tools. Successor to Sentinel Hub Playground and EO Browser, whose web apps were retired on 20 March 2026. | 🟢 Free |
+| [Copernicus Browser](https://browser.dataspace.copernicus.eu) | ESA/Copernicus Data Space Ecosystem browser — the current front-end for Sentinel-1/2/3/5P data, with time-lapse and analysis tools. Successor to Sentinel Hub Playground (replaced in 2024) and EO Browser (retired on 20 March 2026). | 🟢 Free |
 | [Esri World Imagery Wayback](https://livingatlas.arcgis.com/wayback/) | Every archived version of Esri's World Imagery basemap since 2014. Compare high-resolution imagery of the same spot across dozens of dates. | 🟢 Free |
 | [Google Earth Timelapse](https://earthengine.google.com/timelapse/) | Annual cloud-free satellite mosaics from 1984 onwards as a zoomable time-lapse. Shows construction, deforestation and coastline change. | 🟢 Free |
-| [Sentinel-2 Cloudless (EOX)](https://cloudless.eox.at/preview) | EOX's seamless, cloud-free global Sentinel-2 mosaics at 10 m resolution, released yearly — a clean baseline for spotting change. | 🟢 Free (non-commercial) |
+| [EOxCloudless (Sentinel-2 Cloudless)](https://cloudless.eox.at/preview) | EOX's seamless, cloud-free global Sentinel-2 mosaics at 10 m resolution, released yearly — a clean baseline for spotting change. Free for non-commercial use; commercial use needs a paid licence. | 🟢 Free (non-commercial) |
 | [NASA Worldview](https://worldview.earthdata.nasa.gov) | Near-real-time satellite imagery from NASA's fleet. Visualize fires, smoke plumes, flooding, and other events. Supports temporal comparison. | 🟢 Free |
 | [Zoom Earth](https://zoom.earth) | Near-real-time weather satellite imagery, wildfire detections and storm tracking on a fast map. | 🟢 Free |
-| [EOSDA LandViewer](https://eos.com/landviewer/) | Search, view and download free Sentinel and Landsat scenes and buy commercial high-resolution imagery, with on-the-fly index analysis. | 🟡 Freemium |
+| [EOSDA LandViewer](https://eos.com/landviewer/) | ⚠️ Search, view and analyse Sentinel and Landsat scenes with ready-made indices, and buy or task commercial high-resolution imagery. The free Starter plan is capped at 5 images a month with limited analytics; for unlimited free Sentinel data, use Copernicus Browser. | 🟡 Freemium |
 | [Earth Explorer (USGS)](https://earthexplorer.usgs.gov) | Free access to the USGS archive of Landsat imagery, aerial photos, and elevation data. Decades of historical imagery. | 🟢 Free |
 | [NASA Earthdata Search](https://search.earthdata.nasa.gov) | Search and download NASA's Earth observation datasets (MODIS, VIIRS, Landsat and more). Free Earthdata login required for downloads. | 🟢 Free |
 | [ASF Vertex](https://search.asf.alaska.edu) | Alaska Satellite Facility's search for radar (SAR) data, including every Sentinel-1 scene. SAR sees through cloud and at night. | 🟢 Free |
-| [Earth Online (ESA)](https://earth.esa.int) | European Space Agency's platform for accessing Sentinel mission data and other ESA Earth observation datasets. | 🟢 Free |
+| [Earth Online (ESA)](https://earth.esa.int) | European Space Agency's Earth observation portal: mission information, documentation and data access for ESA's Earth Explorers, heritage missions (such as ERS and Envisat) and third-party missions. For Sentinel data, use Copernicus Browser. | 🟢 Free |
 | [OpenAerialMap](https://openaerialmap.org) | Open repository of publicly licensed aerial and satellite imagery. Includes drone imagery, post-disaster captures, and humanitarian mapping data. | 🟢 Free / 🔵 Open Source |
 | [satellites.pro](https://satellites.pro) | Quick access to satellite imagery from Google, Bing, Yandex, and Esri in one interface. Convenient for rapid comparison. | 🟢 Free |
 | [RAMMB SLIDER](https://rammb-slider.cira.colostate.edu) | Real-time weather satellite imagery viewer. Full-disk imagery from GOES, Himawari, and Meteosat. Useful for verifying weather conditions at specific times. | 🟢 Free |
@@ -294,7 +295,7 @@ Access and analyze satellite imagery for change detection, infrastructure monito
 |------|-------------|---------|
 | [Planet Labs](https://www.planet.com) | Commercial constellation capturing daily imagery of the entire Earth at 3-5m resolution. Gold standard for monitoring change over time. | 🔴 Paid (journalist/NGO programs available) |
 | [Umbra Space](https://umbra.space) | Commercial Synthetic Aperture Radar (SAR) provider. SAR penetrates clouds and captures imagery at night — essential when optical imagery is unavailable. Note: Umbra also releases an open SAR archive worth checking. | 🔴 Paid (open sample archive available) |
-| [SkyFi](https://www.skyfi.com) | Marketplace for purchasing satellite imagery from multiple providers (Planet, Airbus, Maxar). Simplifies ordering high-resolution commercial imagery. | 🔴 Paid |
+| [SkyFi](https://www.skyfi.com) | Marketplace for buying satellite imagery from 40+ providers, including Vantor (formerly Maxar), Planet SkySat, Umbra, ICEYE and Satellogic. Simplifies ordering archive and newly tasked high-resolution imagery, and has a free open-data catalogue. | 🔴 Paid (free open data available) |
 | [Apollo Mapping](https://apollomapping.com) | Satellite and aerial imagery broker offering access to imagery from 30+ providers. Useful for obtaining historical high-res imagery for specific dates. | 🔴 Paid |
 
 ### Analysis and Event Monitoring
@@ -305,9 +306,10 @@ Access and analyze satellite imagery for change detection, infrastructure monito
 | [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov) | Fire Information for Resource Management System. Detect active fires and thermal anomalies worldwide in near-real-time via MODIS and VIIRS. Used to verify conflict/fire events. | 🟢 Free |
 | [Copernicus Emergency Management Service](https://emergency.copernicus.eu) | EU rapid-mapping service publishing satellite-based damage and flood-extent maps after disasters such as floods, fires and earthquakes. | 🟢 Free |
 | [Google Flood Hub](https://sites.research.google/floods/) | Google's AI-powered flood forecasting platform. Visualize flood predictions and historical flood data for river basins globally. | 🟢 Free |
-| [Radar Interference Tracker](https://ollielballinger.users.earthengine.app/view/interference) | Detect GPS/radar jamming and interference by analyzing Sentinel-1 SAR data. Reveals military electronic warfare activity. Built by Ollie Ballinger. | 🟢 Free |
+| [Radar Interference Tracker](https://ollielballinger.users.earthengine.app/view/bellingcat-radar-interference-tracker) | ⚠️ Locates active military radar systems from the radio-frequency interference they leave in Sentinel-1 SAR imagery. Built by Ollie Ballinger with Bellingcat. Data loading has been patchy since Earth Engine quota changes. | 🟢 Free |
 | [GPSJam](https://gpsjam.org) | Visualize GPS interference and jamming zones worldwide using ADS-B aircraft data. Reveals areas of electronic warfare or intentional disruption. | 🟢 Free |
 | [QGIS](https://qgis.org) | Professional open-source GIS. Full GIS analysis, custom map creation, spatial data processing. The open-source alternative to ArcGIS. | 🟢 Free / 🔵 Open Source |
+| [Bellingcat Damage Proxy Maps](https://bellingcat-ee.projects.earthengine.app/view/middle-east-change) | Earth Engine apps that flag probable building damage by comparing Sentinel-1 radar images from before and after a conflict began (Ollie Ballinger's Pixel-Wise T-Test). The 2026 Iran and Gulf map joins earlier ones for Gaza and Ukraine. Flags are probabilities and miss smaller damage, so confirm each one with optical imagery. | 🟢 Free / 🔵 Open Source |
 
 <sub>[⬆ Back to contents](#contents)</sub>
 
@@ -384,9 +386,9 @@ Tools for searching, monitoring, and analyzing social media platforms.
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Who Posted What?](https://whopostedwhat.com) | Facebook keyword-by-date search by Henk van Ess. Surfaces historical public Facebook posts that native search hides. Requires being logged into a Facebook account. | 🟢 Free (donation-supported) |
+| [Who Posted What?](https://whopostedwhat.com) | Henk van Ess's keyword search launcher: enter one keyword and open date-filtered searches on 22 platforms, including Facebook, X, Bluesky, Threads, LinkedIn, TikTok and Telegram. Its Facebook section is the original keyword-by-date search for historical public posts; results depend on your login on each platform. | 🟡 Freemium (2 free searches a day) |
 | [Meta Content Library](https://transparency.meta.com/researchtools/meta-content-library) | Meta's official research API for public content across Facebook and Instagram. The sanctioned successor to CrowdTangle (which Meta shut down in 2024). Available to qualified researchers. | 🟢 Free (approved researchers) |
-| [Instagram Location Search](https://github.com/bellingcat/instagram-location-search) | Bellingcat CLI tool to find Instagram location IDs near given coordinates. Still maintained; requires Instagram session cookies. Note: the old follow-on `instagram-scraper` no longer exists, so it's now mainly a location-ID lead generator. | 🟢 Free / 🔵 Open Source |
+| [Instagram Location Search](https://github.com/bellingcat/instagram-location-search) | ⚠️ Bellingcat CLI tool to find Instagram location IDs near given coordinates. Not updated since April 2024 and needs Instagram session cookies, so test it before relying on it. Note: the old follow-on `instagram-scraper` no longer exists, so it's now mainly a location-ID lead generator. | 🟢 Free / 🔵 Open Source |
 
 ### Bluesky and the Fediverse
 
@@ -402,7 +404,8 @@ Tools for searching, monitoring, and analyzing social media platforms.
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [Arctic Shift](https://arctic-shift.photon-reddit.com) | Archive and search of Reddit posts and comments, including many later deleted. Fills much of the gap left by Pushshift. | 🟢 Free |
-| [YouTube Metadata](https://mattw.io/youtube-metadata/) | Shows hidden details for any YouTube video, channel or playlist: exact upload time (UTC), tags, recording location where set, and every thumbnail size for reverse image search. | 🟢 Free |
+| [MW Metadata (formerly YouTube Metadata)](https://mattw.io/youtube-metadata/) | Shows hidden details for any YouTube video, channel or playlist: exact upload time (UTC), tags, recording location where set, and every thumbnail size for reverse image search. | 🟢 Free |
+| [Filmot](https://filmot.com) | Searches the subtitles and auto-captions of 1.7 billion+ YouTube videos, so you can find footage by what is said in it, with exact-phrase and NEAR operators. Results can include videos that have since been deleted. | 🟢 Free |
 | [MW Geofind](https://mattw.io/youtube-geofind/) | Search YouTube for videos uploaded near given coordinates, or scan channels for geotagged uploads — useful for finding footage of an event. Location search still works; channel and topic results are thinner since YouTube cut back location metadata. | 🟢 Free |
 | [LinkedIn Post Timestamp Extractor](https://ollie-boyd.github.io/Linkedin-post-timestamp-extractor/) | Decodes a LinkedIn post or comment URL into its exact publication time (LinkedIn itself only shows '2w' or '3mo'). | 🟢 Free / 🔵 Open Source |
 
@@ -410,7 +413,7 @@ Tools for searching, monitoring, and analyzing social media platforms.
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Snap Map](https://map.snapchat.com) | Snapchat's public map of geotagged Snaps worldwide. Real-time crowd-sourced video and photo from events, protests, and breaking news. | 🟢 Free |
+| [Snap Map](https://values.snap.com/privacy/privacy-by-product/snap-map) | ⚠️ Snapchat's map of public geotagged Snaps worldwide: real-time crowd-sourced video and photo from events, protests, and breaking news. The web version (map.snapchat.com) was retired, so you now need the Snapchat app and an account. | 🟢 Free (app and account required) |
 | [Strava Global Heatmap](https://www.strava.com/heatmap) | Fitness platform with a global heatmap of exercise routes. Has revealed military bases, secret facilities, and personnel movement patterns. | 🟡 Freemium |
 
 ### Advertising Transparency
@@ -418,6 +421,7 @@ Tools for searching, monitoring, and analyzing social media platforms.
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [Meta Ad Library](https://www.facebook.com/ads/library/) | Every active ad on Facebook, Instagram and Messenger, plus a seven-year archive of political and issue ads with spend and reach. Reveals who is paying to push a message. | 🟢 Free |
+| [TikTok Ad Library](https://library.tiktok.com/ads) | TikTok's library of ads shown in the EEA, Switzerland and the UK: advertiser and payer, first and last shown dates, estimated reach by country and a targeting summary. No account needed. | 🟢 Free |
 | [Google Ads Transparency Center](https://adstransparency.google.com) | Search ads run by any verified advertiser across Google Search, YouTube and display networks, including political ads. | 🟢 Free |
 
 ### Monitoring and Cross-Platform Analysis
@@ -428,6 +432,7 @@ Tools for searching, monitoring, and analyzing social media platforms.
 | [Open Measures](https://openmeasures.io) | Search and analyze content from fringe and alt-tech platforms (Telegram, 4chan, Gab and more). The free public app and API cover data at least 6 months old with a daily request limit; Pro and Enterprise plans are paid. Formerly the Social Media Analysis Toolkit (SMAT). | 🟡 Freemium |
 | [Skopenow](https://www.skopenow.com) | Professional social media and web investigation platform. Automated collection and analysis across platforms with reporting. | 🔴 Paid |
 | [XTools](https://xtools.wmcloud.org) | Wikimedia's analytics for Wikipedia pages and editors: who wrote a page, its edit history and top editors. Helps spot paid or reputation-management editing. | 🟢 Free / 🔵 Open Source |
+| [Unfurl](https://hindsig.ht/unfurl/) | Breaks a URL or ID into its parts and decodes hidden values, including the timestamps inside TikTok, X, Bluesky, LinkedIn and Mastodon IDs, Discord snowflakes and Facebook `fbclid` click times. Runs online or locally (`pip install dfir-unfurl`). | 🟢 Free / 🔵 Open Source |
 
 > **See also:** [Messaging and Forums](#messaging-and-forums) for Telegram and Discord, and [Browser Extensions and Scrapers](#browser-extensions-and-scrapers) for Zeeschuimer, 4CAT and Instaloader.
 
@@ -448,7 +453,7 @@ Investigate Telegram, Discord, forums, and other communication channels.
 | [Telegago](https://cse.google.com/cse?cx=006368593537057042503:efxu7xprihg) | Google Custom Search Engine focused on Telegram content. Search channels and groups via indexed web content. | 🟢 Free |
 | [TGStat](https://tgstat.com) | Telegram analytics. Search channels/groups; view subscriber growth, engagement, and cross-posting patterns. | 🟡 Freemium |
 | [Telemetr.io](https://telemetr.io) | Telegram channel analytics. Track subscriber dynamics, post reach, engagement, and content patterns. | 🟡 Freemium |
-| [Telepathy](https://github.com/prose-intelligence-ltd/Telepathy-Community) | ⚠️ OSINT toolkit for Telegram investigations: extract members, messages and media from groups and channels. Limited maintenance — the last release (2.3.4) dates from July 2024 and the README warns that installing from source is broken, so use a published release. | 🟢 Free / 🔵 Open Source |
+| [Telepathy](https://github.com/prose-intelligence-ltd/Telepathy-Community) | ⚠️ OSINT toolkit for Telegram investigations: extract members, messages and media from groups and channels. Its README says it is not actively maintained: the last release (2.3.4 on PyPI) dates from July 2024 and installing from source is broken, so install with `pip install telepathy` and test it first. | 🟢 Free / 🔵 Open Source |
 | [Telegram Phone Number Checker](https://github.com/bellingcat/telegram-phone-number-checker) | Bellingcat tool to check whether phone numbers are associated with Telegram accounts and retrieve usernames. | 🟢 Free / 🔵 Open Source |
 
 > **Tip:** Public Telegram channels can be read in a browser without an account at `https://t.me/s/<channel_name>`.
@@ -479,15 +484,16 @@ Find accounts and digital footprints across platforms.
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [Sherlock](https://github.com/sherlock-project/sherlock) | Search for usernames across 400+ social networks simultaneously. The most popular OSINT username enumeration tool. | 🟢 Free / 🔵 Open Source |
-| [Maigret](https://github.com/soxoj/maigret) | Advanced username search across 3,000+ sites. A powerful Sherlock evolution with profile page parsing and identifier extraction. | 🟢 Free / 🔵 Open Source |
-| [WhatsMyName](https://whatsmyname.app) | Username enumeration checking 600+ websites, maintained with a focus on reducing false positives. Also powers many other tools' site lists. | 🟢 Free / 🔵 Open Source |
+| [Maigret](https://github.com/soxoj/maigret) | Advanced username search across 5,900+ sites (a default run checks the 500 most popular; `-a` checks them all). A powerful Sherlock evolution with profile page parsing and identifier extraction. | 🟢 Free / 🔵 Open Source |
+| [WhatsMyName](https://whatsmyname.app) | ⚠️ Username enumeration across 691 websites, built to keep false positives low; its site list also powers many other tools. The project stopped on 9 November 2026 and its repository is archived, so the final site list will slowly go stale. | 🟢 Free / 🔵 Open Source |
 | [Blackbird](https://github.com/p1ngul1n0/blackbird) | Fast username (and email) search across hundreds of sites, with metadata extraction and reporting. | 🟢 Free / 🔵 Open Source |
 | [Social Analyzer](https://github.com/qeeqbox/social-analyzer) | Finds a profile across 1,000+ sites and rates its confidence in each match. CLI or web interface. | 🟢 Free / 🔵 Open Source |
 | [Instant Username Search](https://instantusername.com) | Checks a handle across 100+ platforms as you type — a quick first pass before running Sherlock or Maigret. | 🟢 Free |
 | [Namechk](https://namechk.com) | Check username and domain availability across dozens of platforms at once. Quick way to map a person's online presence. | 🟢 Free |
 | [Name Variant Search](https://bellingcat.github.io/name-variant-search/) | Bellingcat tool that generates common variations of a person's name (spellings, initials, ordering) and builds search queries from them. Essential when searching across languages and alphabets. | 🟢 Free / 🔵 Open Source |
-| [GHunt](https://github.com/mxrch/GHunt) | Google account investigation tool. Extracts data from a Google account/email (profile, Maps reviews, calendar, etc.). Requires authenticated cookies. Actively maintained. | 🟢 Free / 🔵 Open Source |
+| [GHunt](https://github.com/mxrch/GHunt) | Google account investigation tool. Extracts data from a Google account/email (profile, Maps reviews, calendar, etc.). Requires authenticated cookies. | 🟢 Free / 🔵 Open Source |
 | [IDCrawl](https://www.idcrawl.com) | Aggregated people/username search pulling social profiles, phone, email, and public records into one view. Good quick pivot from a username or real name. No sign-up required. | 🟢 Free |
+| [user-scanner](https://github.com/kaifcodec/user-scanner) | Checks a username across 2,500+ sites and an email address across 200+ services in one run, pulls profile metadata and follows linked handles to more accounts. Exports PDF, JSON or CSV and includes an MCP server for AI agents. Sign-up checks give false positives, so verify hits by hand. | 🟢 Free / 🔵 Open Source |
 
 <sub>[⬆ Back to contents](#contents)</sub>
 
@@ -500,9 +506,9 @@ Investigate email addresses and phone numbers, trace where emails came from, and
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [Epieos](https://epieos.com) | Reverse email and phone lookup. Reveals connected Google account data, linked services, and profiles from a single address. One of the most-used email OSINT tools today. | 🟡 Freemium |
-| [Holehe](https://github.com/megadose/holehe) | CLI tool that checks whether an email is registered on 120+ sites via password-reset/registration flows, usually without alerting the target. | 🟢 Free / 🔵 Open Source |
+| [Holehe](https://github.com/megadose/holehe) | ⚠️ CLI tool that checks whether an email is registered on 120+ sites via password-reset/registration flows, usually without alerting the target. Not updated since September 2024, and users report broken modules and false positives, so confirm every hit by hand. | 🟢 Free / 🔵 Open Source |
 | [Hunter.io](https://hunter.io) | Find and verify professional email addresses associated with a domain. Useful for mapping an organization's staff. | 🟡 Freemium |
-| [OSINT Industries](https://osint.industries) | Commercial email/phone/username enrichment returning linked accounts across hundreds of services. Popular with professional investigators. | 🔴 Paid (limited free trial) |
+| [OSINT Industries](https://osint.industries) | Commercial enrichment by email, phone, username, name or crypto wallet, returning linked accounts from 1,500+ sources (the vendor's figure). Popular with professional investigators. | 🔴 Paid (limited free trial) |
 | [Castrick Clues](https://castrickclues.com) | Email, username and phone lookups with a clean web interface; free searches plus paid credits and an API. | 🟡 Freemium |
 | [MXToolbox](https://mxtoolbox.com) | Email and DNS diagnostics: MX, SPF and DMARC records, blacklist checks, and an email header analyzer that traces which servers handled a message. | 🟡 Freemium |
 | [Google Admin Toolbox Messageheader](https://toolbox.googleapps.com/apps/messageheader/) | Paste raw email headers to see each relay hop, delays and authentication results — useful for checking whether an email was spoofed. | 🟢 Free |
@@ -549,7 +555,7 @@ Trace the origin of images, detect manipulation, and read hidden metadata.
 | [TinEye](https://tineye.com) | Dedicated reverse image search. Finds exact and modified matches. Its "oldest" sort shows the first known appearance of an image online. | 🟢 Free (basic) / 🔴 Paid (API) |
 | [Baidu Image Search](https://image.baidu.com) | Reverse image search with strong coverage of Chinese websites and platforms. | 🟢 Free |
 | [Search by Image (Extension)](https://github.com/dessant/search-by-image) | Browser extension to right-click any image and reverse-search it across Google, Yandex, TinEye, Bing, and more at once. | 🟢 Free / 🔵 Open Source |
-| [Reverse Image Search Anywhere](https://reverseimage.app/) | Browser extension (Chrome, Edge, Firefox) and web tool that runs one image through Google Lens, Yandex, Bing and TinEye, including cropped regions, pasted images and images on sites such as Instagram or Pinterest that hide the image address. Those images are uploaded to the developer's storage and deleted after about a day, so keep sensitive material local. Treat matches as leads, not proof of origin. | 🟢 Free / 🔵 Open Source |
+| [Reverse Image Search Anywhere](https://reverseimage.app/) | Browser extension (Chrome, Edge, Firefox) and web tool that runs one image through Google Lens, Yandex, Bing and TinEye, including cropped regions, pasted images and images on sites such as Instagram or Pinterest that hide the image address. Those images are uploaded to the developer's storage and deleted after about a day, so keep sensitive material local. Only the extension's code is open source (MIT); the web tool and upload backend are not. Treat matches as leads, not proof of origin. | 🟢 Free / 🔵 Open Source |
 | [RootAbout](https://rootabout.com) | Reverse image search against Internet Archive collections (plus an Open Library book-cover search). Finds near-identical copies only, and searches can be slow or fail intermittently. | 🟢 Free |
 
 ### Image Forensics and Metadata
@@ -560,7 +566,6 @@ Trace the origin of images, detect manipulation, and read hidden metadata.
 | [FotoForensics](https://fotoforensics.com) | Long-running online ELA and metadata forensics service. A second opinion alongside Forensically for tampering analysis. | 🟢 Free |
 | [Sherloq](https://github.com/GuidoBartoli/sherloq) | Open-source desktop toolkit that bundles many image-forensics methods (ELA, noise analysis, clone detection, JPEG analysis) in one interface. | 🟢 Free / 🔵 Open Source |
 | [ExifTool](https://exiftool.org) | The gold standard for reading, writing, and editing metadata in image, video, and document files. Extract GPS coords, camera model, timestamps, and more. | 🟢 Free / 🔵 Open Source |
-| [Jeffrey's Image Metadata Viewer](https://exif.regex.info/exif.cgi) | Long-running web tool that shows full EXIF, IPTC and XMP metadata for an uploaded image or image URL, with a map for GPS data. | 🟢 Free |
 
 ### Image Collections and Panoramas
 
@@ -582,10 +587,11 @@ Check whether images, video or audio were generated or altered by AI, and read p
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [Content Credentials Verify](https://verify.contentauthenticity.org/) | Checks an image or video for C2PA Content Credentials — signed provenance data recording the capture device, editing software or AI generator. Missing credentials prove nothing; valid ones are strong evidence. | 🟢 Free |
-| [Hive AI-Generated Content Detection](https://hivemoderation.com/ai-generated-content-detection) | Classifier that estimates whether an image, video, text or audio file was AI-generated. Free web demo and Chrome extension; paid API. | 🟡 Freemium |
+| [Hive AI-Generated Content Detection](https://hivemoderation.com/ai-generated-content-detection) | ⚠️ Classifier that estimates whether an image, video or audio file (including music) was AI-generated. Free web demo and Chrome extension; paid API. Hive rebranded as Deploy in October 2026; this page still works. | 🟡 Freemium |
 | [AI or Not](https://www.aiornot.com) | AI-content checker for images, audio, video, text and deepfakes — a quick second opinion alongside Hive. | 🟡 Freemium |
 | [Sightengine AI Image Detection](https://sightengine.com/detect-ai-generated-images) | Detects AI-generated and deepfake images with a probability score. Free account with limited checks; paid API. | 🟡 Freemium |
 | [DeepFake-o-Meter](https://zinc.cse.buffalo.edu/ubmdfl/deep-o-meter/) | University at Buffalo's open platform that runs several academic deepfake-detection models on the same image, video or audio file so you can compare their verdicts. | 🟢 Free (account required) |
+| [SynthID check in Gemini](https://gemini.google.com) | Upload an image, a short video or an audio file and ask Gemini whether it was made with Google AI: it looks for SynthID, the invisible watermark Google's models embed, and reads C2PA Content Credentials. A hit is strong evidence, but a negative result says nothing about other generators. Google sign-in required; uploads go to Google. | 🟢 Free |
 
 > ⚠️ AI detectors give probabilities, not proof, and are easily fooled by compression, cropping or newer models. Use them as one signal alongside reverse image search, metadata and source checks.
 
@@ -599,14 +605,14 @@ Analyze, verify, download, and extract data from video content.
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [InVID / WeVerify Verification Plugin](https://weverify.eu/verification-plugin/) | The standard verification extension for journalists, now developed under the vera.ai project. Extracts keyframes from YouTube, Facebook and X videos, runs reverse image searches, and offers a magnifier, metadata reader and forensic filters. Some advanced tools (such as synthetic-image detection) need a verified-professional account. Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/fake-news-debunker-invid/mhccpoafgdgbhnjfhkcmgknndkeenfhe). | 🟢 Free |
+| [InVID / WeVerify Verification Plugin](https://chromewebstore.google.com/detail/fake-news-debunker-invid/mhccpoafgdgbhnjfhkcmgknndkeenfhe) | The standard verification extension for journalists, maintained by AFP Medialab and built through the EU-funded InVID, WeVerify and vera.ai projects. Extracts keyframes from YouTube, Facebook and X videos, runs reverse image searches, and offers a magnifier, metadata reader and forensic filters. Some advanced tools (such as synthetic-image detection) need a verified-professional account. | 🟢 Free |
 | [yt-dlp](https://github.com/yt-dlp/yt-dlp) | The de-facto standard CLI downloader for YouTube and 1,000+ sites. Archive source video and metadata for offline analysis. Replaces the old youtube-dl/single-site downloaders. | 🟢 Free / 🔵 Open Source |
-| [Cobalt](https://cobalt.tools) | Clean, no-ads web/CLI media downloader supporting X, TikTok, Instagram, YouTube and more. Useful for quickly preserving a specific clip. | 🟢 Free / 🔵 Open Source |
+| [Cobalt](https://cobalt.tools) | ⚠️ Clean, no-ads web media downloader for X, TikTok, Instagram, Reddit, Bluesky and more; open source and self-hostable. The public cobalt.tools instance no longer supports YouTube, so use yt-dlp for YouTube. Useful for quickly preserving a specific clip. | 🟢 Free / 🔵 Open Source |
 | [FFmpeg](https://ffmpeg.org) | Command-line toolkit to extract frames (`ffmpeg -i in.mp4 -vf fps=1 frame_%04d.png`), trim clips, convert formats and read stream metadata. | 🟢 Free / 🔵 Open Source |
 | [VLC Media Player](https://www.videolan.org/vlc/) | Plays almost any format, with frame-by-frame stepping (E key), speed control, and Tools → Codec Information for stream metadata. | 🟢 Free / 🔵 Open Source |
 | [Azure AI Video Indexer](https://vi.microsoft.com) | Microsoft's AI video analysis. Extracts faces, on-screen text (OCR), objects, scenes, transcription, and sentiment. Free account covers up to 40 indexing hours. | 🟡 Freemium / 🔴 Paid |
 
-> **See also:** YouTube Metadata and MW Geofind in [Reddit, YouTube and LinkedIn](#reddit-youtube-and-linkedin), and Ghost Archive for saving videos in [Archiving and Preservation](#archiving-and-preservation).
+> **See also:** MW Metadata and MW Geofind in [Reddit, YouTube and LinkedIn](#reddit-youtube-and-linkedin), and Ghost Archive for saving videos in [Archiving and Preservation](#archiving-and-preservation).
 
 <sub>[⬆ Back to contents](#contents)</sub>
 
@@ -636,7 +642,7 @@ Tools for analyzing audio recordings to extract geolocation, environmental, and 
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Audacity](https://www.audacityteam.org) | The essential starting point. Use **Spectrogram view** for frequency-over-time, and **Plot Spectrum** (Analyze menu) for FFT. Set FFT size to 16384+ for high-resolution plots. Identify ENF hum, mechanical noise, and environmental signatures. Linux: `sudo apt install audacity`. | 🟢 Free / 🔵 Open Source |
+| [Audacity](https://www.audacityteam.org) | The essential starting point. Use **Spectrogram view** for frequency-over-time, and **Plot Spectrum** (Analyze menu) for FFT. Set FFT size to 16384+ for high-resolution plots. Identify ENF hum, mechanical noise, and environmental signatures. Audacity 4 (September 2026) is a rewrite that still lacks some tools; if Plot Spectrum is missing, use Audacity 3.7. Linux: `sudo apt install audacity`. | 🟢 Free / 🔵 Open Source |
 | [Sonic Visualiser](https://www.sonicvisualiser.org) | Professional audio analysis with synchronized views (waveform, spectrogram, spectrum), a Vamp plugin system, and annotation layers. More powerful than Audacity for forensic-grade analysis. | 🟢 Free / 🔵 Open Source |
 | [Adobe Audition](https://www.adobe.com/products/audition.html) | Professional DAW with advanced spectral frequency display and spectral repair tools. Useful for isolating specific sounds within a dense recording. | 🔴 Paid |
 | [Friture](https://friture.org) | Real-time audio analyzer with spectrogram, spectrum, and octave-band views. Good for quick frequency profiling. Cross-platform, lightweight. | 🟢 Free / 🔵 Open Source |
@@ -647,8 +653,8 @@ ENF analysis compares the subtle fluctuation of the electrical hum in a recordin
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Open ENF](https://github.com/openenf/openenf) | ⚠️ Open-source CLI that extracts the ENF signal from a `.wav` file and matches it against downloaded grid-frequency data to estimate when it was recorded. Beta software; currently covers the Central European and GB grids only, and works best on recordings of ~3 minutes or more. | 🟢 Free / 🔵 Open Source |
-| [ENF Fingerprinting Tool](https://github.com/GalenReich/enf_fingerprinting_tool) | ⚠️ Browser-based ENF prototype built as part of Bellingcat community work (see also [ENFormant](https://github.com/CargoCultScientist/ENFormant)). Good for learning the technique; its author says it should not yet be used for real investigations. | 🟢 Free / 🔵 Open Source |
+| [Open ENF](https://github.com/openenf/openenf) | ⚠️ Open-source CLI that extracts the ENF signal from a `.wav` file and matches it against downloaded grid-frequency data to estimate when it was recorded. Beta software; currently covers the Central European and GB grids only, and works best on recordings of ~3 minutes or more. No updates since April 2023. | 🟢 Free / 🔵 Open Source |
+| [ENF Fingerprinting Tool](https://github.com/GalenReich/enf_fingerprinting_tool) | ⚠️ Browser-based ENF prototype built as part of Bellingcat community work (see also [ENFormant](https://github.com/CargoCultScientist/ENFormant)). Good for learning the technique; its author says it should not yet be used for real investigations. Neither tool has been updated since December 2023. | 🟢 Free / 🔵 Open Source |
 
 > **Manual check in Audacity:** Analyze → Plot Spectrum, set the FFT size to 16384 and use a linear frequency axis. A sharp peak at exactly 50 Hz or 60 Hz (plus harmonics at 100/150 Hz or 120/180 Hz) confirms a grid-connected recording and indicates the continent.
 
@@ -659,16 +665,16 @@ ENF analysis compares the subtle fluctuation of the electrical hum in a recordin
 | [BirdNET Analyzer](https://github.com/birdnet-team/BirdNET-Analyzer) | Cornell Lab / Chemnitz University's open-source bird-sound recognition engine. Batch-analyze long recordings from the CLI for timestamped species detections. Species ranges can narrow location. The third-party `birdnetlib` package is a handy Python wrapper. | 🟢 Free / 🔵 Open Source |
 | [BirdNET Web Demo](https://birdnet.cornell.edu/demo/) | Cornell Lab's in-browser BirdNET: identify bird species from a short clip, with the audio processed locally (nothing is uploaded) — handy when evidence must stay private. A mobile app with live detections is at [birdnet.cornell.edu/app](https://birdnet.cornell.edu/app/). | 🟢 Free |
 | [Merlin Bird ID](https://merlin.allaboutbirds.org) | Mobile app with Sound ID. Identifies bird species in real time; cross-reference with range maps to constrain location. | 🟢 Free |
-| [xeno-canto](https://xeno-canto.org) | Crowdsourced database of 800,000+ bird recordings mapped by species and location. Compare unknown calls against confirmed recordings filtered by region. | 🟢 Free |
-| [iNaturalist](https://www.inaturalist.org) | AI species identification from audio and images, covering insects, amphibians, and more. Constrain location to a species' known range. | 🟢 Free |
-| [Freesound](https://freesound.org) | Community audio database with 500,000+ sounds tagged by type and location. Find reference recordings of specific environments (stations, markets, squares) to compare against your sample. | 🟢 Free |
+| [xeno-canto](https://xeno-canto.org) | Crowdsourced database of 1,000,000+ wildlife sound recordings, mostly birds but also grasshoppers, bats and frogs, mapped by species and location. Compare unknown calls against confirmed recordings filtered by region. | 🟢 Free |
+| [iNaturalist](https://www.inaturalist.org) | Community species identification with AI suggestions for photos; sound recordings are identified by other users. Covers insects, amphibians, and more. Constrain location to a species' known range. | 🟢 Free |
+| [Freesound](https://freesound.org) | Community audio database with 740,000+ sounds tagged by type and location. Find reference recordings of specific environments (stations, markets, squares) to compare against your sample. | 🟢 Free |
 
 ### Background Sound Isolation and Enhancement
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [Demucs](https://github.com/adefossez/demucs) | ⚠️ Open-source source-separation model (originally Meta's). Split a recording into stems, or isolate speech from ambient background. Runs locally via Python. The Meta repo was archived in January 2025; the author's fork receives only critical fixes. | 🟢 Free / 🔵 Open Source |
-| [Spleeter](https://github.com/deezer/spleeter) | Deezer's open-source separation library (2/4/5 stems) for isolating ambient sound from foreground speech. Legacy: the latest release (v2.3.0) is several years old, so prefer Demucs for new work. | 🟢 Free / 🔵 Open Source |
+| [Spleeter](https://github.com/deezer/spleeter) | Deezer's open-source separation library (2/4/5 stems) for isolating ambient sound from foreground speech. Updates are rare (latest release 2.4.2, April 2025), so prefer Demucs for new work. | 🟢 Free / 🔵 Open Source |
 | [Adobe Podcast Enhance](https://podcast.adobe.com/enhance) | AI speech enhancement that removes background noise. Web-based, no install. Useful for cleaning a recording before analysis. | 🟢 Free (web) |
 
 > **Audacity:** Effect → Noise Reduction removes steady background noise so intermittent sounds stand out. Combine it with high- and low-pass filters to separate speech (300–3400 Hz), traffic and machinery (low frequencies) and birds or insects (high frequencies).
@@ -679,7 +685,7 @@ ENF analysis compares the subtle fluctuation of the electrical hum in a recordin
 |------|-------------|---------|
 | [Whisper (OpenAI)](https://github.com/openai/whisper) | State-of-the-art open-source speech recognition and language detection. Transcribes and auto-detects language even in noisy recordings. `pip install openai-whisper`. A crucial first step when voices are present. | 🟢 Free / 🔵 Open Source |
 | [Shazam](https://www.shazam.com) | Identify music in the background of a recording. Background music can reveal broadcast source, country, or venue. | 🟢 Free |
-| [AHA Music (Extension)](https://www.aha-music.com) | Browser extension that identifies music playing on your computer in real time. Play the file and let it detect recognizable music. | 🟢 Free |
+| [AHA Music (Extension)](https://www.aha-music.com) | Browser extension (Chrome, Edge) and website that identify music playing in a browser tab. Play the file and let it detect recognizable music. Free with daily limits; a Pro plan removes ads and raises them. | 🟡 Freemium |
 
 ### Background Event Cross-Reference
 
@@ -699,7 +705,7 @@ Heard something identifiable in the background? Check it against the recording's
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [ELAN](https://archive.mpi.nl/tla/elan) | Linguistic annotation tool from the Max Planck Institute. Create time-coded annotations on audio/video — useful for systematically documenting every sound event. | 🟢 Free |
+| [ELAN](https://archive.mpi.nl/tla/elan) | Linguistic annotation tool from the Max Planck Institute. Create time-coded annotations on audio/video — useful for systematically documenting every sound event. | 🟢 Free / 🔵 Open Source |
 | [SoX (Sound eXchange)](https://sourceforge.net/projects/sox/) | The "Swiss Army knife" of terminal audio processing. Convert formats, apply filters, measure statistics, and batch-process. `sox file.mp3 -n stat` gives a statistical summary. | 🟢 Free / 🔵 Open Source |
 
 <sub>[⬆ Back to contents](#contents)</sub>
@@ -716,7 +722,7 @@ Investigate companies, beneficial ownership, trade relationships, and financial 
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [OpenCorporates](https://opencorporates.com) | The world's largest open database of companies — 200M+ records from 140+ jurisdictions. Free basic search; bulk/API requires subscription. | 🟡 Freemium |
+| [OpenCorporates](https://opencorporates.com) | The world's largest open database of companies — 200M+ records from 140+ jurisdictions. Free search and basic company profiles; officers, filings and incorporation dates need a free account, and bulk/API access requires a subscription. | 🟡 Freemium |
 | [Companies House (UK)](https://find-and-update.company-information.service.gov.uk) | UK's official company register. Free filings, directors, ownership (PSC), and financial statements for all UK companies. Free public API. | 🟢 Free |
 | [GLEIF LEI Search](https://search.gleif.org) | Global Legal Entity Identifier database: a company's LEI record, registered address and — where reported — its direct and ultimate parent companies. | 🟢 Free |
 | [North Data](https://www.northdata.com) | European company information: beneficial ownership, financials, network graphs, and corporate hierarchies for EU companies. | 🟡 Freemium / 🔴 Paid |
@@ -738,9 +744,9 @@ Investigate companies, beneficial ownership, trade relationships, and financial 
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [ImportYeti](https://www.importyeti.com) | Free US import/export customs record search. Find suppliers and buyers. A good free alternative to paid trade-data tools. | 🟢 Free |
+| [ImportYeti](https://www.importyeti.com) | Search US sea-import bills of lading (from 2015) to find a company's suppliers and buyers. Free search by company name, with a free account needed after a few page views; power search and downloads need a paid plan. | 🟡 Freemium |
 | [ImportGenius](https://www.importgenius.com) | Search US and international import/export shipping records. Track supply chains, trading partners, and smuggling. | 🔴 Paid |
-| [UN Comtrade Database](https://comtradeplus.un.org) | UN international trade statistics. Bilateral trade flows between countries for specific commodities. Detect sanctions-evasion patterns. | 🟢 Free |
+| [UN Comtrade Database](https://comtrade.un.org) | UN international trade statistics. Bilateral trade flows between countries for specific commodities. Detect sanctions-evasion patterns. | 🟢 Free |
 | [Open Supply Hub](https://opensupplyhub.org) | Open map of production facilities worldwide (factories, farms, processing sites) contributed by brands and suppliers. Link products and brands to specific sites. | 🟢 Free |
 
 > **See also:** [Public Records, Procurement and Lobbying](#public-records-procurement-and-lobbying), [Sanctions and Politically Exposed Persons](#sanctions-and-politically-exposed-persons), and the list of company registers in [Directories and Meta-Resources](#directories-and-meta-resources).
@@ -760,7 +766,7 @@ Follow public money and influence: procurement notices, government spending, lob
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [TED – Tenders Electronic Daily](https://ted.europa.eu/en/) | The EU's official public-procurement journal. Search contract notices and award decisions across member states to see who wins public contracts and for how much. | 🟢 Free |
-| [Opentender](https://opentender.eu) | Procurement-data portal from the DIGIWHIST project covering EU member states and several other countries, with integrity indicators (such as single bidding) for spotting risky tenders. | 🟢 Free |
+| [Opentender](https://opentender.eu) | Procurement-data portal built by the DIGIWHIST project and now run by the Government Transparency Institute, covering EU member states and several other countries, with integrity indicators (such as single bidding) for spotting risky tenders. Most country datasets currently end in 2024. | 🟢 Free |
 | [EU Financial Transparency System](https://ec.europa.eu/budget/financial-transparency-system/) | European Commission database of who received money from the EU budget, how much, and for what — trace EU grants and contracts to companies and NGOs. | 🟢 Free |
 | [USAspending](https://www.usaspending.gov) | Official source for US federal spending: contracts, grants and loans searchable by recipient, agency and location. | 🟢 Free |
 | [Find a Tender (UK)](https://www.find-tender.service.gov.uk) | UK government service where public-sector buyers publish procurement notices and contract awards. | 🟢 Free |
@@ -794,14 +800,14 @@ Check sanctions lists, PEP databases, and politically exposed individuals.
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [OpenSanctions](https://www.opensanctions.org) | Unified database of international sanctions, PEPs, and persons of interest, aggregating 30+ official sources. Free and open source. | 🟢 Free / 🔵 Open Source |
+| [OpenSanctions](https://www.opensanctions.org) | Unified database of international sanctions, PEPs, and persons of interest, aggregating 400+ data sources. Free for non-commercial use; commercial users need a paid licence or the paid API. The data pipeline is open source. | 🟢 Free (non-commercial) / 🔴 Paid (commercial) / 🔵 Open Source |
 | [OFAC Sanctions List Search](https://sanctionssearch.ofac.treas.gov) | US Treasury's official search of the SDN and other OFAC lists, with fuzzy name matching. Entries can include aliases, vessel IMO numbers and crypto addresses. | 🟢 Free |
 | [UK Sanctions List Search](https://search-uk-sanctions-list.service.gov.uk) | Official search of the UK Sanctions List, the single source for UK designations since the OFSI Consolidated List closed on 28 January 2026. | 🟢 Free |
 | [EU Sanctions Map](https://www.sanctionsmap.eu) | Official EU sanctions visualization. See all EU restrictive measures by country, regime, and type. | 🟢 Free |
 | [UN Security Council Consolidated List](https://main.un.org/securitycouncil/en/content/un-sc-consolidated-list) | All individuals and entities subject to UN Security Council sanctions, downloadable in several formats. | 🟢 Free |
-| [SanctionsExplorer](https://sanctionsexplorer.org) | C4ADS search of current and historical sanctions across major sanctioning authorities (US, EU, UK, UN and more). | 🟢 Free |
+| [SanctionsExplorer](https://sanctionsexplorer.org) | ⚠️ C4ADS search of current and historical sanctions across major sanctioning authorities (US, EU, UK, UN and more). The site says it is under maintenance and data updates are paused, so check any result against the official list. | 🟢 Free |
 | [War & Sanctions](https://war-sanctions.gur.gov.ua) | Ukraine's Defence Intelligence (GUR) portal on Russia's war economy: foreign components found in weapons, shadow-fleet vessels, defence companies and the sanctions status of linked people and entities. | 🟢 Free |
-| [RuPEP](https://rupep.org) | Russian and Belarusian PEP database. Track officials, oligarchs, and their connections. | 🟢 Free |
+| [RuPEP](https://rupep.org) | Database of politically exposed persons in Russia and Belarus, plus Kazakhstan, Kyrgyzstan, Georgia and Moldova. Track officials, oligarchs, and their connections. A free account is needed, with a limit of 20 profiles a day. | 🟢 Free |
 
 <sub>[⬆ Back to contents](#contents)</sub>
 
@@ -822,7 +828,7 @@ Access court filings, judgments, wanted notices, and legal takedown records.
 | [HUDOC](https://hudoc.echr.coe.int) | European Court of Human Rights case-law database, searchable by country, article and keyword. | 🟢 Free |
 | [Interpol Red Notices](https://www.interpol.int/How-we-work/Notices/Red-Notices/View-Red-Notices) | Public extracts of Interpol Red Notices (requests to locate and provisionally arrest a person). Most notices are not public, so absence proves nothing. | 🟢 Free |
 | [Europe's Most Wanted](https://eumostwanted.eu) | Europol-hosted list of the most-wanted fugitives sought by EU member states. | 🟢 Free |
-| [Lumen Database](https://lumendatabase.org) | Database of legal takedown requests (DMCA, copyright, defamation). Reveals removed content and why — useful for uncovering suppressed information. | 🟢 Free |
+| [Lumen Database](https://lumendatabase.org) | ⚠️ Database of legal takedown requests (DMCA, copyright, defamation). Shows who asked for content to be removed and why, which helps uncover suppressed information. Without researcher credentials you can open only one full notice per email address every 24 hours. | 🟢 Free |
 
 <sub>[⬆ Back to contents](#contents)</sub>
 
@@ -880,11 +886,12 @@ Track aircraft, satellites, trains, and road vehicles.
 | [ADS-B Exchange](https://globe.adsbexchange.com) | ⚠️ Global ADS-B flight tracker known for not filtering military, government and private aircraft, with historical playback. Acquired by JetNet in 2023: the free web globe remains public, but bulk data and API access are more restricted. | 🟢 Free (viewer) |
 | [ADSB.lol](https://adsb.lol) | Community-run, unfiltered ADS-B tracker with a free API. A good open alternative for tracking aircraft, including those hidden on commercial trackers. | 🟢 Free / 🔵 Open Source |
 | [OpenSky Network](https://opensky-network.org) | Non-profit ADS-B network with a live map and a large historical flight-data archive available to researchers. | 🟢 Free |
-| [RadarBox](https://www.radarbox.com) | Flight tracker with its own receiver network, flight history and airport data. | 🟡 Freemium |
+| [AirNav Radar](https://www.airnavradar.com) | Flight tracker (formerly RadarBox) with its own receiver network, flight history and airport data. | 🟡 Freemium |
 | [Airframes](https://app.airframes.io) | Community-collected ACARS, VDL2, HFDL and satellite messages sent by aircraft — reveals flight details that ADS-B alone doesn't show. | 🟢 Free |
 | [Planespotters.net](https://www.planespotters.net) | Airframe histories (registrations, operators, delivery dates) and photos for commercial and many private aircraft. | 🟢 Free |
 | [FAA Aircraft Registry](https://registry.faa.gov/aircraftinquiry/) | Official US aircraft register: look up an N-number, serial number or registered owner. | 🟢 Free |
-| [UK CAA G-INFO](https://siteapps.caa.co.uk/g-info/) | Official UK aircraft register: G-registered aircraft, their owners and registration history. | 🟢 Free |
+| [UK CAA G-INFO](https://www.caa.co.uk/aircraft-register/g-info/search-g-info/) | Official UK aircraft register: G-registered aircraft, their owners and registration history. | 🟢 Free |
+| [ADS-B Exposed](https://adsb.exposed) | ClickHouse's visualizer of tens of billions of historical ADS-B positions, mainly from ADSB.lol since 2023. Filter with SQL, then select an area to list the flights, aircraft types and registrations seen there, which helps spot patrol orbits and unusual traffic over a site. Heavy in the browser. | 🟢 Free / 🔵 Open Source |
 
 > **Worked example:** [Window Seat](https://nezrkaan.com/writeups/window-seat) narrows a photo taken from a plane window to one flight, using Flightradar24's playback and the shape of the valleys below.
 
@@ -893,7 +900,7 @@ Track aircraft, satellites, trains, and road vehicles.
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [OrbTrack](https://www.orbtrack.org) | Real-time satellite tracking. Visualize the position and orbit of satellites, the ISS, and debris. Verify satellite pass times. | 🟢 Free |
-| [CelesTrak](https://celestrak.org) | Authoritative public source of satellite orbital data (TLEs), launch catalogues and visualisations. | 🟢 Free |
+| [CelesTrak](https://celestrak.org) | Authoritative public source of satellite orbital data (GP element sets), launch catalogues and visualisations. Objects catalogued since July 2026 have 6-digit numbers and are published only in newer formats such as OMM, not as TLEs. | 🟢 Free |
 | [N2YO](https://www.n2yo.com) | Live satellite tracking and pass predictions for any location. | 🟢 Free |
 
 ### Rail
@@ -901,7 +908,7 @@ Track aircraft, satellites, trains, and road vehicles.
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [OpenRailwayMap](https://www.openrailwaymap.org) | OpenStreetMap-based map of the world's railways: tracks, stations, signalling, electrification and speed limits. | 🟢 Free / 🔵 Open Source |
-| [Realtime Trains](https://www.realtimetrains.co.uk) | Live and historical running data for trains in Great Britain, including platforms and actual arrival and departure times. | 🟢 Free |
+| [Realtime Trains](https://www.realtimetrains.co.uk) | Live and historical running data for trains in Great Britain, including platforms and actual arrival and departure times. Free accounts see about a month of history; the RTT+ subscription adds longer history, CSV export and fleet allocations. | 🟡 Freemium |
 | [Chronotrains](https://www.chronotrains.com) | Visualize how far you can travel by train from any European station in a given time. Useful for understanding transit possibilities and alibis. | 🟢 Free |
 
 ### Road and Vehicles
@@ -913,6 +920,7 @@ Track aircraft, satellites, trains, and road vehicles.
 | [DVLA Vehicle Enquiry](https://vehicleenquiry.service.gov.uk) | UK government check of a registration number: make, colour, tax and MOT status, and month of first registration. | 🟢 Free |
 | [MOT History](https://www.check-mot.service.gov.uk) | UK MOT test history for a registration: test dates, recorded mileage and failures — check that a vehicle matches what a photo shows. | 🟢 Free |
 | [LPR Maps](https://www.lprmaps.com) | Community map of automatic number-plate recognition (ALPR) cameras — research the surveillance infrastructure in an area. | 🟢 Free |
+| [DeFlock](https://deflock.org) | Crowdsourced map of automatic licence-plate readers (Flock, Motorola, Axon and others), showing each camera's type and the direction it faces. Its data lives in OpenStreetMap, so you can also query it with Overpass. Over 140,000 devices, strongest in the US; locations can be incomplete or out of date. | 🟢 Free / 🔵 Open Source |
 
 <sub>[⬆ Back to contents](#contents)</sub>
 
@@ -930,11 +938,11 @@ Track ships, monitor maritime activity, and investigate vessel movements and own
 | [ShipFinder](https://shipfinder.co) | Simplified vessel tracking. Good for quick lookups of positions and basic voyage info. | 🟡 Freemium |
 | [Global Fishing Watch](https://globalfishingwatch.org/map/) | Visualize global fishing vessel activity. Detect illegal fishing, transshipment events, and fleet movements via AIS and VMS. | 🟢 Free |
 | [Skylight](https://www.skylight.global) | Ai2's maritime-awareness platform, using AIS and satellite imagery to flag dark vessels and suspected illegal fishing. Free for eligible government and NGO partners. | 🟢 Free (eligible partners) |
-| [Equasis](https://www.equasis.org) | Free maritime safety database. Ship inspection records, flag history, classification, and ownership data. Run by the European Maritime Safety Agency. | 🟢 Free (registration required) |
+| [Equasis](https://www.equasis.org) | Free maritime safety database. Ship inspection records, flag history, classification, and ownership data. Founded by France and the European Commission and funded by maritime administrations; its management unit sits at EMSA in Lisbon. | 🟢 Free (registration required) |
 | [IMO GISIS](https://gisis.imo.org) | International Maritime Organization database: ship particulars by IMO number, registered owners and company IMO numbers. Free registration. | 🟢 Free |
-| [ShipSpotting.com](https://www.shipspotting.com) | Millions of user photos of ships, searchable by name or IMO number — confirm a vessel's appearance and former names. | 🟢 Free |
+| [ShipSpotting.com](https://www.shipspotting.com) | Over 1.7 million user photos of ships, searchable by name or IMO number — confirm a vessel's appearance and former names. | 🟢 Free |
 | [World Port Index](https://msi.nga.mil/Publications/WPI) | US National Geospatial-Intelligence Agency database of ports worldwide, with location, facilities and characteristics. | 🟢 Free |
-| [Navtex](https://www.navtex.net) | Maritime navigational warning system. Monitor safety information, coastal warnings, and navigational hazards. | 🟢 Free |
+| [navtex.net](https://www.navtex.net) | ⚠️ Private, non-commercial archive of received NAVTEX broadcasts (navigational and weather warnings). Unofficial and possibly out of date, so confirm warnings with official sources. | 🟢 Free |
 
 <sub>[⬆ Back to contents](#contents)</sub>
 
@@ -950,16 +958,17 @@ Investigate websites, domains, hosting, certificates, routing, and internet-conn
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [ICANN Lookup](https://lookup.icann.org) | Official ICANN WHOIS lookup — the authoritative source for domain registration data. | 🟢 Free |
+| [ICANN Lookup](https://lookup.icann.org) | Official ICANN lookup for domain registration data via RDAP, which replaced WHOIS for most gTLDs in January 2025. Shows what a domain's registry and registrar publish. | 🟢 Free |
 | [DomainTools Whois](https://whois.domaintools.com) | Industry-leading WHOIS with historical records. Track ownership changes, DNS history, and connected domains. | 🟡 Freemium / 🔴 Paid |
 | [Whoxy](https://www.whoxy.com) | WHOIS search with reverse lookup. Find all domains registered by a person/email/company. Affordable API. | 🟡 Freemium / 🔴 Paid |
 | [crt.sh](https://crt.sh) | Certificate Transparency log search. Enumerate a domain's subdomains and infrastructure from issued TLS certificates. A free, essential recon staple. | 🟢 Free |
-| [DNSDumpster](https://dnsdumpster.com) | Free DNS reconnaissance and mapping. Discover subdomains, hosts, MX/NS records, and visualize a domain's footprint. | 🟢 Free |
-| [SecurityTrails](https://securitytrails.com) | Historical DNS, WHOIS, and subdomain data. Track how a domain's infrastructure changed over time. | 🟡 Freemium / 🔴 Paid |
+| [DNSDumpster](https://dnsdumpster.com) | DNS reconnaissance and mapping from HackerTarget. Discover subdomains, hosts, MX/NS records, and visualize a domain's footprint. Free accounts get 50 searches a day; paid plans raise the limits. | 🟡 Freemium |
+| [SecurityTrails](https://securitytrails.com) | Historical DNS, WHOIS, and subdomain data. Track how a domain's infrastructure changed over time. Owned by Recorded Future; the pricing page now lists only paid plans. | 🔴 Paid |
 | [ViewDNS.info](https://viewdns.info) | A one-stop set of free DNS/IP utilities: reverse IP, reverse WHOIS, DNS records, IP history, and more. | 🟢 Free |
 | [DNSlytics](https://dnslytics.com) | Reverse IP, reverse analytics and AdSense ID, and DNS history lookups for connecting websites run by the same owner. | 🟡 Freemium |
 | [Host.io](https://host.io) | Domain data including backlinks, redirects, co-hosted domains on the same IP and shared analytics IDs. | 🟡 Freemium |
-| [IDN Checker (Punycoder)](https://www.punycoder.com) | Detect internationalized domain name (IDN) homograph attacks. Identifies visually similar characters used in phishing domains. | 🟢 Free |
+| [Punycoder](https://www.punycoder.com) | Convert domain names between Unicode and Punycode (xn--) to see what an internationalized domain really spells. Useful for checking suspected IDN homograph phishing domains, though it doesn't flag lookalike characters itself. | 🟢 Free |
+| [ip.thc.org](https://ip.thc.org/) | The Hacker's Choice's free reverse-DNS search over 5 billion+ domain records: list every domain on an IP or CIDR range, a domain's subdomains, or every domain aliased (CNAME) to a host. No account needed; curl-friendly API and bulk dumps. Records can be stale, so confirm current DNS. | 🟢 Free |
 
 ### Website Fingerprinting and Connections
 
@@ -987,14 +996,14 @@ Investigate websites, domains, hosting, certificates, routing, and internet-conn
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Shodan](https://www.shodan.io) | The search engine for internet-connected devices. Find servers, webcams, ICS/SCADA, databases, and open ports by banner, product, port, or geography. A cornerstone of technical OSINT. | 🟡 Freemium (one-time paid tiers) |
+| [Shodan](https://www.shodan.io) | The search engine for internet-connected devices. Find servers, webcams, ICS/SCADA, databases, and open ports by banner, product, port, or geography. A cornerstone of technical OSINT. | 🟡 Freemium ($49 one-time membership; monthly API plans) |
 | [Censys Platform](https://platform.censys.io) | Internet-wide host and certificate search. Rich structured data on services, TLS certs, and software — a strong complement to Shodan. Replaced Censys Legacy Search (search.censys.io), deprecated in September 2026; the free account is limited to 100 results per search. | 🟡 Freemium |
-| [ZoomEye](https://www.zoomeye.org) | Chinese cyberspace search engine indexing hosts, devices, and services worldwide. Useful for cross-checking Shodan/Censys results. | 🟡 Freemium |
+| [ZoomEye](https://www.zoomeye.ai) | Chinese cyberspace search engine indexing hosts, devices, and services worldwide; zoomeye.ai is the site for users outside mainland China. Useful for cross-checking Shodan/Censys results. | 🟡 Freemium |
 | [FOFA](https://en.fofa.info) | Chinese internet asset search engine with powerful fingerprint queries. Strong coverage of assets under-represented on Western engines. | 🟡 Freemium |
 | [Netlas.io](https://netlas.io) | Internet-wide scan data: hosts, domains, certificates, and responses, with a generous free query allowance. | 🟡 Freemium |
-| [Onyphe](https://www.onyphe.io) | Cyber-defense search engine aggregating scan data, threat intel, and exposed-asset information. | 🟡 Freemium |
+| [Onyphe](https://www.onyphe.com) | Cyber-defense search engine aggregating scan data, threat intel, and exposed-asset information. The site no longer advertises a free plan; pricing is custom through sales. | 🔴 Paid |
 | [LeakIX](https://leakix.net) | Search engine for exposed services and leaks found by internet-wide scanning, such as open databases and exposed .git or .env files. | 🟡 Freemium |
-| [Criminal IP](https://www.criminalip.io) | Internet asset search with risk scoring for IPs and domains, exposed services and vulnerabilities. | 🟡 Freemium |
+| [Criminal IP](https://search.criminalip.io) | Internet asset search with risk scoring for IPs and domains, exposed services and vulnerabilities. | 🟡 Freemium |
 | [GrayHatWarfare](https://buckets.grayhatwarfare.com) | Search engine for publicly exposed cloud storage — open S3/Azure/GCP buckets and their files. Frequently surfaces accidentally public sensitive data. | 🟡 Freemium |
 
 ### Threat Intelligence and Reputation
@@ -1020,14 +1029,15 @@ Search leaked databases, breach notifications, and leak-site monitoring for inve
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Have I Been Pwned](https://haveibeenpwned.com) | Check if an email or phone appears in known breaches. Created by Troy Hunt. The most trusted breach notification service. | 🟢 Free |
+| [Have I Been Pwned](https://haveibeenpwned.com) | Check if an email address appears in known breaches. Created by Troy Hunt. The most trusted breach notification service. Phone number and username search were dropped from the website in May 2025. | 🟢 Free |
 | [Hudson Rock (Free Tools)](https://www.hudsonrock.com/free-tools) | Free lookups that check whether an email, domain, or username appears in infostealer malware logs. Excellent for assessing infostealer exposure. | 🟢 Free (free tools) / 🔴 Paid |
 | [DeHashed](https://dehashed.com) | Search engine for leaked databases by email, username, name, IP, phone, address, or password hash. | 🔴 Paid |
 | [Leak-Lookup](https://leak-lookup.com) | Breach search engine. Query leaked data by email, username, keyword, domain, or password. | 🟡 Freemium / 🔴 Paid |
 | [Intelligence X](https://intelx.io) | Search engine for leaked data, darknet content, and OSINT selectors. Archives Tor sites, paste sites, and breach data. Powerful but the useful tiers are paid. | 🟡 Freemium / 🔴 Paid |
 | [Library of Leaks](https://search.libraryofleaks.org) | Distributed Denial of Secrets' searchable archive of leaked documents and datasets released in the public interest. | 🟢 Free |
 | [DiscordLeaks](https://discordleaks.unicornriot.ninja) | Searchable archive of leaked Discord messages from extremist groups, published by Unicorn Riot. | 🟢 Free |
-| [ransomware.live](https://www.ransomware.live) | Tracks victims posted on ransomware groups' leak sites, with group profiles and timelines. | 🟡 Freemium |
+| [ransomware.live](https://www.ransomware.live) | Tracks victims posted on ransomware groups' leak sites, with group profiles and timelines. A free API key unlocks the full API; commercial use needs the owner's approval. | 🟢 Free (non-commercial) |
+| [Robin](https://github.com/apurvsinghgautam/robin) | ⚠️ AI-assisted dark-web search: an LLM refines your query, runs it through .onion search engines over Tor, filters the hits and summarises them with links to the sources. Useful for checking whether a handle, email, domain or wallet is discussed on dark-web forums. Works with local models; summaries can be wrong, so open and verify every source. | 🟢 Free / 🔵 Open Source |
 
 > ⚠️ Use breach data only to assess exposure or corroborate facts in lawful investigations. Never log in with leaked credentials.
 
@@ -1041,12 +1051,13 @@ Search source code and repositories for attribution, deleted history, and expose
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [grep.app](https://grep.app) | Search across 500K+ public Git repositories. Find API keys, config files, code snippets, and developer attributions. | 🟢 Free |
+| [grep.app](https://grep.app) | Vercel's fast code search across a million public GitHub repositories, plus any other public GitHub repo on demand. Find API keys, config files, code snippets, and developer attributions. | 🟢 Free |
 | [GitHub Code Search](https://github.com/search) | GitHub's native code search covers millions of public repos with regex and qualifiers. Find leaked secrets, usernames, and unique strings tied to a target. | 🟢 Free (GitHub account) |
 | [GH Archive](https://www.gharchive.org) | Archive of public GitHub events since 2011 (pushes, issues, stars), queryable in Google BigQuery. Recover activity from deleted repositories or accounts. | 🟢 Free |
 | [Software Heritage Archive](https://archive.softwareheritage.org) | Universal archive of public source code from GitHub, GitLab and other forges, including repositories that have since been deleted. | 🟢 Free |
 | [TruffleHog](https://github.com/trufflesecurity/trufflehog) | Scan Git repos, S3 buckets, Docker images, and CI/CD systems for exposed secrets, API keys, and credentials. | 🟢 Free / 🔵 Open Source |
 | [Gitleaks](https://github.com/gitleaks/gitleaks) | Fast scanner for secrets (API keys, tokens, passwords) in Git history and files — a lighter alternative to TruffleHog. | 🟢 Free / 🔵 Open Source |
+| [GitFive](https://github.com/mxrch/GitFive) | Investigates GitHub users: username and name history, email-to-account matching, SSH keys, identities leaked in commits and likely secondary accounts. From the author of GHunt; needs a login with a secondary GitHub account. | 🟢 Free / 🔵 Open Source |
 
 <sub>[⬆ Back to contents](#contents)</sub>
 
@@ -1062,22 +1073,22 @@ Track conflict events, identify weapons and munitions, and document civilian har
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [ACLED](https://acleddata.com) | Real-time data on political violence and protest events worldwide, with precise geolocations. The standard for conflict tracking. | 🟢 Free (registration required) |
+| [ACLED](https://acleddata.com) | ⚠️ Data on political violence and protest events worldwide, with precise geolocations. The standard for conflict tracking. Since a 2025 access change, free Open accounts get aggregated data only; event-level data needs an institutional Research account (time-lagged) or a paid licence. | 🟡 Freemium |
 | [UCDP](https://ucdp.uu.se) | Uppsala Conflict Data Program: the longest-running dataset on organised violence, with geocoded event-level data. | 🟢 Free |
-| [Liveuamap](https://liveuamap.com) | Real-time interactive map of conflict events, protests, and security incidents. Covers Ukraine, the Middle East, Africa, and other zones. | 🟢 Free |
+| [Liveuamap](https://liveuamap.com) | Real-time interactive map of conflict events, protests, and security incidents. Covers Ukraine, the Middle East, Africa, and other zones. The live map is free with ads; history, location search, satellite basemaps and export need a paid Pro plan. | 🟡 Freemium |
 | [DeepStateMap](https://deepstatemap.live) | Daily-updated map of the front line and territorial control in Russia's war against Ukraine. | 🟢 Free |
 | [GeoConfirmed](https://geoconfirmed.org) | Volunteer-run maps of geolocated photos and videos from conflict zones, each linked to the source footage. | 🟢 Free |
 | [Airwars](https://airwars.org) | Monitors civilian harm from explosive weapons in conflicts, with incident-level casualty records. | 🟢 Free |
 | [UNOSAT](https://unosat.org/products/) | UN satellite-based damage assessments and situational analyses for conflict zones and natural disasters. | 🟢 Free |
-| [Atlos](https://www.atlos.org) | Collaborative platform for visual investigation and geolocation. Open-source tooling for verifying conflict incidents from media. | 🟢 Free / 🔵 Open Source |
+| [Atlos](https://www.atlos.org) | Collaborative platform for visual investigation and geolocation. Open-source tooling for verifying conflict incidents from media. Free accounts are limited to a set number of incidents a month; full access is paid. | 🟡 Freemium / 🔵 Open Source |
 
 ### Weapons and Munitions Identification
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
 | [CAT-UXO](https://cat-uxo.com) | UXO identification reference. Identify unexploded ordnance and munitions found in conflict zones from photos. | 🟢 Free |
-| [Bulletpicker](https://bulletpicker.com) | US military ordnance identification database. Detailed technical data on bombs, rockets, mines, and other ordnance. | 🟢 Free |
-| [Open Source Munitions Portal](https://osmp.ngo) | Open database for identifying munitions from images, run by Airwars, Conflict Armament Research and King's College London. Work in progress — coverage is strongest for the Middle East and Ukraine. | 🟢 Free |
+| [Bulletpicker](https://bulletpicker.com) | Reference library of US military ordnance documentation: bombs, rockets, mines and other ordnance. The site says its content isn't meant for identification or instruction, so use it to corroborate CAT-UXO or the Open Source Munitions Portal. | 🟢 Free |
+| [Open Source Munitions Portal](https://osmp.ngo) | Open database for identifying munitions from images, created by Airwars and Armament Research Services (ARES). Work in progress — coverage is strongest for the Middle East and Ukraine. | 🟢 Free |
 | [Oryx](https://www.oryxspioenkop.com) | Lists of military equipment losses, each documented with photo or video evidence. | 🟢 Free |
 | [iTrace](https://itrace.conflictarm.com) | Conflict Armament Research's global map of weapons and ammunition documented in conflict zones and traced back to manufacturers and supply chains. | 🟢 Free |
 | [SIPRI Arms Transfers Database](https://www.sipri.org/databases/armstransfers) | All international transfers of major conventional weapons since 1950, by supplier and recipient. | 🟢 Free |
@@ -1096,13 +1107,13 @@ Investigate deforestation, pollution, emissions, wildlife trafficking, and ecolo
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Global Forest Watch](https://www.globalforestwatch.org) | Monitor deforestation in near-real-time. Tree-cover-loss alerts, fire data, and land-use analysis. Used to track illegal logging. | 🟢 Free |
+| [Global Nature Watch (formerly Global Forest Watch)](https://globalnaturewatch.org) | WRI's forest and land monitoring platform, renamed from Global Forest Watch in September 2026. Near-real-time deforestation alerts, tree-cover-loss and fire data, and land-use analysis. Used to track illegal logging. | 🟢 Free |
 | [MapBiomas](https://mapbiomas.org) | Annual land-cover and land-use maps back to 1985 for Brazil and several other countries, with deforestation alerts. | 🟢 Free |
 | [Trase](https://trase.earth) | Traces commodity supply chains (soy, beef, palm oil, cocoa) from production regions to traders and importing countries, linked to deforestation. | 🟢 Free |
 | [Global Energy Monitor](https://globalenergymonitor.org) | Trackers of coal plants, oil and gas pipelines, LNG terminals, steel plants and more, with owners and locations. | 🟢 Free |
 | [Climate TRACE](https://climatetrace.org) | Independent, facility-level greenhouse-gas emissions estimates (from satellites and AI) for power plants, oil fields, ships and more. | 🟢 Free |
 | [Carbon Mapper](https://carbonmapper.org) | Satellite and aircraft detections of methane and CO₂ plumes from individual facilities, with a public data portal. | 🟢 Free |
-| [Resource Watch](https://resourcewatch.org) | Hundreds of datasets visualized on maps: air quality, deforestation, water stress, food production. A World Resources Institute platform. | 🟢 Free |
+| [Resource Watch](https://resourcewatch.org) | ⚠️ Hundreds of datasets visualized on maps: air quality, deforestation, water stress, food production. WRI says the site is no longer updated and will be archived; for current WRI data, use the [WRI Data Explorer](https://datasets.wri.org). | 🟢 Free |
 | [Aqueduct Water Risk Atlas](https://www.wri.org/aqueduct) | Map global water stress, flood risk, and drought severity. Useful for environmental investigations and climate-impact analysis. | 🟢 Free |
 | [Environmental Justice Atlas](https://ejatlas.org) | Global map of environmental conflicts, documenting ecological disputes, pollution, and land-grabbing with detailed case studies. | 🟢 Free |
 | [EIA International](https://eia-international.org) | Environmental Investigation Agency's reporting on environmental crimes: illegal logging, wildlife trafficking, and climate crimes. | 🟢 Free |
@@ -1113,8 +1124,8 @@ Investigate deforestation, pollution, emissions, wildlife trafficking, and ecolo
 |------|-------------|---------|
 | [CITES Trade Database](https://trade.cites.org) | International trade in endangered species. Search permits and shipments regulated under CITES. Track wildlife-trafficking patterns. | 🟢 Free |
 | [Species+](https://speciesplus.net) | CITES species database with trade data, distribution maps, and legal status. Identify protected species encountered in investigations. | 🟢 Free |
-| [Wildlife Trade Portal](https://www.wildlifetradeportal.org) | Monitor global wildlife trade with species-level data. Analyze legal and illegal trade flows. | 🟢 Free |
-| [World Database on Protected Areas](https://www.protectedplanet.net) | Global database of terrestrial and marine protected areas. Verify whether activities occur in protected zones. | 🟢 Free |
+| [Wildlife Trade Portal](https://www.wildlifetradeportal.org) | TRAFFIC's open-access database of wildlife seizures and trafficking incidents, searchable by species, country and date. | 🟢 Free (registration required) |
+| [World Database on Protected and Conserved Areas](https://www.protectedplanet.net) | UNEP-WCMC and IUCN's global database of terrestrial and marine protected and conserved areas on Protected Planet (formerly the WDPA, merged with the WD-OECM in November 2025). Verify whether activities occur in protected zones. Free for non-commercial use. | 🟢 Free |
 | [eBird](https://ebird.org) | Cornell Lab's database of bird sightings and range maps. Check whether a species seen or heard in media occurs in the claimed place and season. | 🟢 Free |
 | [Locust Hub (FAO)](https://locust-hub-hqfao.hub.arcgis.com) | Track desert locust swarms globally. FAO platform monitoring outbreaks and their impact on food security. | 🟢 Free |
 
@@ -1134,7 +1145,7 @@ Capture and preserve web content before it disappears.
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Wayback Machine (Internet Archive)](https://web.archive.org) | The most comprehensive web archive. Billions of saved pages back to 1996. View how sites looked at specific dates. | 🟢 Free |
+| [Wayback Machine (Internet Archive)](https://web.archive.org) | The most comprehensive web archive. More than a trillion saved pages back to 1996. View how sites looked at specific dates. | 🟢 Free |
 | [Archive.today](https://archive.today) | On-demand webpage snapshot service. Creates permanent frozen copies of pages and often bypasses paywalls on archived content. | 🟢 Free |
 | [Ghost Archive](https://ghostarchive.org) | On-demand archiving that can also save YouTube videos and pages that archive.today and the Wayback Machine struggle with. | 🟢 Free |
 | [Arquivo.pt](https://arquivo.pt) | Portugal's national web archive, with full-text search across archived pages back to the 1990s — including many non-Portuguese sites. | 🟢 Free |
@@ -1164,12 +1175,12 @@ Extensions and tools for data extraction, bulk downloading, and browser-based in
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Instant Data Scraper](https://webrobots.io/instantdata/) | AI-powered browser extension that auto-detects tables and lists on pages and exports them to CSV/Excel. No coding required. | 🟢 Free |
+| [Instant Data Scraper](https://chromewebstore.google.com/detail/instant-data-scraper/ofaokhiedipichpaobibbnahnkdoiiah) | ⚠️ AI-powered browser extension that auto-detects tables and lists on pages and exports them to CSV/Excel. No coding required. Web Robots no longer owns or supports it; the extension is now published by Flavr Technology, LP. | 🟢 Free |
 | [Web Scraper](https://webscraper.io) | Point-and-click scraper extension for multi-page sites (pagination, nested pages) that exports to CSV or XLSX. | 🟡 Freemium |
-| [Zeeschuimer](https://github.com/digitalmethodsinitiative/zeeschuimer) | Browser extension that intercepts social-media API traffic and saves it as structured data. Captures from TikTok, Instagram, X, LinkedIn, and more. Pairs with 4CAT for analysis. | 🟢 Free / 🔵 Open Source |
+| [Zeeschuimer](https://github.com/digitalmethodsinitiative/zeeschuimer) | Firefox extension that intercepts social-media API traffic and saves it as structured data. Captures from TikTok, Instagram, Threads, X, Pinterest and more (its LinkedIn module was removed in June 2026). Pairs with 4CAT for analysis. | 🟢 Free / 🔵 Open Source |
 | [4CAT](https://github.com/digitalmethodsinitiative/4cat) | The Digital Methods Initiative's capture and analysis toolkit. Import data from Zeeschuimer or other sources and run analyses such as word trees, hashtag networks and image walls. | 🟢 Free / 🔵 Open Source |
 | [Instaloader](https://instaloader.github.io) | Download Instagram profiles, posts, stories, reels, and metadata. Python CLI for bulk Instagram data collection. | 🟢 Free / 🔵 Open Source |
-| [gallery-dl](https://github.com/mikf/gallery-dl) | Command-line downloader for image galleries and collections from hundreds of sites, preserving metadata. | 🟢 Free / 🔵 Open Source |
+| [gallery-dl](https://codeberg.org/mikf/gallery-dl) | Command-line downloader for image galleries and collections from hundreds of sites, preserving metadata. Development moved from GitHub to Codeberg in 2026. | 🟢 Free / 🔵 Open Source |
 | [DiscordChatExporter](https://github.com/Tyrrrz/DiscordChatExporter) | Export Discord chat history to HTML, JSON, CSV, or plain text. Preserve Discord evidence for investigations. | 🟢 Free / 🔵 Open Source |
 | [Mitaka](https://github.com/ninoseki/mitaka) | Browser extension: select an IP, domain, URL, hash or other indicator on any page and search it across Shodan, VirusTotal, urlscan.io and many more. | 🟢 Free / 🔵 Open Source |
 
@@ -1196,7 +1207,7 @@ Clean, explore, and present investigative data: link charts, documents, maps, an
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Pinpoint](https://journaliststudio.google.com/pinpoint/) | Google's AI-powered document and image analysis for journalists. OCR, entity extraction, and search across large document collections. | 🟢 Free |
+| [Pinpoint](https://journaliststudio.google.com/pinpoint/) | Google's AI-powered research tool for large collections of documents, images and audio: OCR, transcription, entity extraction, search and Gemini-assisted questions. Built for journalists, now open to anyone 18+ with a Google account (journalists and academics can apply for more storage). | 🟢 Free |
 | [OpenRefine](https://openrefine.org) | Clean and reconcile messy data (inconsistent names, duplicates, formats) before analysis — a staple for working with leaks and registries. | 🟢 Free / 🔵 Open Source |
 | [Datasette](https://datasette.io) | Explore and publish datasets (SQLite) through a browsable web interface with SQL queries. | 🟢 Free / 🔵 Open Source |
 
@@ -1226,7 +1237,7 @@ Automate collection, organize investigations, and set up a safe working environm
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [SpiderFoot](https://github.com/smicallef/spiderfoot) | Powerful open-source OSINT automation. Point it at a domain, IP, email, name, or username and it queries 200+ modules to build an entity graph. Also offered as a hosted service (SpiderFoot HX). | 🟢 Free / 🔵 Open Source / 🔴 Paid (HX) |
+| [SpiderFoot](https://github.com/smicallef/spiderfoot) | ⚠️ Powerful open-source OSINT automation. Point it at a domain, IP, email, name, or username and it queries 200+ modules to build an entity graph. Also offered as a hosted service (SpiderFoot HX) by Intel 471, which acquired it in 2022. Limited maintenance: no commits since November 2023, and the last release (v4.0) dates from April 2022. | 🟢 Free / 🔵 Open Source / 🔴 Paid (HX) |
 | [recon-ng](https://github.com/lanmaster53/recon-ng) | Modular recon framework with a Metasploit-style workflow. Automates domain, host, and contact discovery into a local database. | 🟢 Free / 🔵 Open Source |
 | [theHarvester](https://github.com/laramies/theHarvester) | Classic CLI tool for gathering emails, subdomains, hosts, and names from public search engines and data sources. A recon staple. | 🟢 Free / 🔵 Open Source |
 | [Subfinder](https://github.com/projectdiscovery/subfinder) | ProjectDiscovery's fast passive subdomain-enumeration tool, querying dozens of sources at once. | 🟢 Free / 🔵 Open Source |
@@ -1237,9 +1248,10 @@ Automate collection, organize investigations, and set up a safe working environm
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [Obsidian](https://obsidian.md) | Markdown knowledge management with graph-based note linking. Build interconnected investigation notebooks; a plugin ecosystem extends it for OSINT. | 🟢 Free (personal) / 🔴 Paid (sync/commercial) |
+| [Obsidian](https://obsidian.md) | Markdown knowledge management with graph-based note linking. Build interconnected investigation notebooks; a plugin ecosystem extends it for OSINT. Free for personal and work use; Sync and Publish are paid add-ons. | 🟢 Free / 🔴 Paid (Sync, Publish) |
 | [Logseq](https://logseq.com) | Open-source, privacy-first outliner (local storage) with bidirectional linking and daily journals for investigation logging. | 🟢 Free / 🔵 Open Source |
 | [Uwazi](https://www.uwazi.io) | Open-source document management for human-rights organizations. Organize, analyze, and publish collections of legal and investigative documents. | 🟢 Free / 🔵 Open Source |
+| [GHOST OSINT CRM](https://github.com/elm1nst3r/GHOST-osint-crm) | Self-hosted case manager for investigations: track subjects and their links to companies, phones, emails, wallets and places on a relationship graph, map and timeline, with hashed attachments and audit logging. Source-available under the Business Source License, so check its terms before commercial use. | 🟢 Free / 🔵 Open Source |
 
 ### Investigation Environments
 
@@ -1261,7 +1273,7 @@ Read foreign-language sources, documents, and screenshots.
 
 | Tool | Description | Pricing |
 |------|-------------|---------|
-| [DeepL Translator](https://www.deepl.com/translator) | High-quality machine translation for European and major Asian languages; translates whole documents. | 🟡 Freemium |
+| [DeepL Translator](https://www.deepl.com/translator) | High-quality machine translation in 100+ languages; translates whole PDF, Word and PowerPoint documents. | 🟡 Freemium |
 | [Google Translate](https://translate.google.com) | Covers 200+ languages, with document and website translation; the mobile app translates signs and screenshots through the camera. | 🟢 Free |
 | [Yandex Translate](https://translate.yandex.com) | Often stronger than others for Russian, Ukrainian and Turkic languages; translates text in images. | 🟢 Free |
 | [Papago](https://papago.naver.com) | Naver's translator, strong for Korean, Japanese and Chinese. | 🟢 Free |
@@ -1280,10 +1292,12 @@ Other curated directories and reference lists. Unlike the rest of this toolkit, 
 |------|-------------|---------|
 | [Bellingcat Online Investigation Toolkit](https://bellingcat.gitbook.io/toolkit) | Bellingcat's volunteer-maintained catalogue of investigation tools, with detailed how-to pages, limitations and cost notes. | 🟢 Free |
 | [OSINT Framework](https://osintframework.com) | A browsable directory that maps OSINT needs to tools by category. The go-to starting map for finding the right tool for a task. | 🟢 Free |
+| [OSINT Navigator](https://navigator.indicator.media/) | Indicator's AI tool-finder: describe a task (such as finding who owns a website) and get matching tools and tips from 11,000+ entries drawn from 18 curated OSINT toolkits. 10 free searches a day with an email sign-in; Indicator members get more. Check each suggestion, since some tools may be dead. | 🟡 Freemium |
 | [IntelTechniques Tools](https://inteltechniques.com/tools/) | Michael Bazzell's search-tool collection for streamlined queries across many platforms and data types. | 🟢 Free |
 | [Awesome OSINT](https://github.com/jivoi/awesome-osint) | Large community-maintained list of OSINT tools and resources on GitHub. | 🟢 Free / 🔵 Open Source |
+| [Awesome OSINT MCP Servers](https://github.com/soxoj/awesome-osint-mcp-servers) | Curated list of 80+ MCP servers that connect AI assistants to OSINT sources: username search, Shodan and DNS, company registries, sanctions lists and threat intelligence. Maintained by the author of Maigret. Most servers are community-built, so review one before installing it. | 🟢 Free / 🔵 Open Source |
 | [Bellingcat Toolkit: China-related Resources](https://bellingcat.gitbook.io/toolkit/more/all-tools/china-related-resources) | Bellingcat's guide to Chinese registries and platforms, such as court judgments, company credit records and corporate data sites. | 🟢 Free |
-| [Wikipedia: List of Company Registers](https://en.wikipedia.org/wiki/List_of_company_registers) | Comprehensive list of company registers worldwide. A useful starting point when investigating companies in unfamiliar jurisdictions. | 🟢 Free |
+| [Wikipedia: List of Official Business Registers](https://en.wikipedia.org/wiki/List_of_official_business_registers) | Wikipedia's list of official business registers by country, including company, tax and insolvency registers. Incomplete, but a useful starting point when investigating companies in unfamiliar jurisdictions. | 🟢 Free |
 | [Wikipedia: List of Web Archiving Initiatives](https://en.wikipedia.org/wiki/List_of_Web_archiving_initiatives) | Directory of web-archiving initiatives worldwide. Find regional and specialized archives beyond the Internet Archive. | 🟢 Free |
 
 <sub>[⬆ Back to contents](#contents)</sub>
@@ -1302,12 +1316,13 @@ These tools were listed in earlier editions but are now defunct, unreliable, res
 | instagram-scraper (bellingcat follow-on) | ⚫ No longer exists | The scraper that Instagram Location Search fed into is gone. Instagram Location Search still returns location IDs, but you'll need another method to pull media from them. |
 | NeutrOSINT | ⚫ Unmaintained | Multi-purpose repo went stale and its underlying lookups broke. Prefer maintained tools: Maigret/Blackbird (usernames), Holehe/Epieos (email), and dedicated phone/IP tools. |
 | GeoSpy (geospy.ai) | ⚫ No public access (Apr 2026) | Graylark rebranded GeoSpy as **Raven** and now sells it only to qualified law-enforcement, government and enterprise customers; geospy.ai redirects to that announcement. There is no free tier. |
-| Sentinel Hub Playground / EO Browser | ⚫ Retired (20 Mar 2026) | Planet retired the Sentinel Hub web apps. Use **Copernicus Browser** (see [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation)) for free Sentinel data, or Planet Insights for commercial work. |
+| Sentinel Hub Playground / EO Browser | ⚫ Retired (Playground 2024, EO Browser 20 Mar 2026) | Planet retired the Sentinel Hub web apps. Use **Copernicus Browser** (see [Satellite Imagery and Earth Observation](#satellite-imagery-and-earth-observation)) for free Sentinel data, or Planet Insights for commercial work. |
 | Social Bearing (socialbearing.com) | ⚫ Defunct | The domain now redirects to its creator's blog and the search tool is no longer available. Free X/Twitter analytics tools have largely disappeared since X's 2023 API changes. |
 | Index Database (indexdb.org) | ⚫ Unstable / gone | Breach-dump directory that has been intermittently offline and is not a dependable source. Use Have I Been Pwned and Hudson Rock's free tools instead. |
 | DiscordLookup (discordlookup.com) | ⚫ Archived (Nov 2025) | The original open-source project was archived; its domain now hosts the EasyPoll bot, and discordlookup.org is an unofficial clone. Use **discord.id** (see [Discord](#discord)). |
 | Open Ownership Register | ⚫ Closed (29 Nov 2024) | The global beneficial-ownership register closed. Open Ownership still publishes guidance and bulk data; search national registers such as Companies House (PSC data) instead. |
 | License Plate Maps (licenseplatemaps.com) | ⚫ Not found | No reference site exists at this address — the name came from a Bellingcat Toolkit page. Use **World License Plates** (see [Road and Vehicles](#road-and-vehicles)). |
+| Jeffrey's Image Metadata Viewer (exif.regex.info) | ⚫ Shut down | Jeffrey Friedl's online EXIF/IPTC/XMP viewer no longer loads; in December 2024 he said it would not return because it was too expensive to maintain. Use **ExifTool** locally or **Forensically**'s metadata view (see [Image Forensics and Metadata](#image-forensics-and-metadata)). |
 
 <sub>[⬆ Back to contents](#contents)</sub>
 
@@ -1315,18 +1330,49 @@ These tools were listed in earlier editions but are now defunct, unreliable, res
 
 ## Tool Count by Pricing
 
-**419 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
+**433 tools** in total. The counts below overlap, because many tools carry more than one pricing label (for example, free and open source).
 
 | Type | Tools |
 |------|-------|
-| 🟢 Free | 337 — free to use, including free tiers |
-| 🔵 Open Source | 79 — source code is public |
-| 🟡 Freemium | 74 — free tier with paid features, or access by application |
-| 🔴 Paid | 31 — subscription or per-use payment |
+| 🟢 Free | 343 — free to use, including free tiers |
+| 🔵 Open Source | 90 — source code is public |
+| 🟡 Freemium | 80 — free tier with paid features, or access by application |
+| 🔴 Paid | 33 — subscription or per-use payment |
 
 ---
 
 ## Changelog
+
+### 28 November 2026
+
+**Status changes**
+
+- WhatsMyName stopped maintenance on 9 November 2026 and its repository is archived. The site still works, but its site list will slowly go stale.
+- Jeffrey's Image Metadata Viewer has shut down and moved to [Deprecated](#deprecated-and-defunct-tools).
+- Google Earth Pro: Google stops new downloads on 25 June 2027, and Google Earth on the web replaces it.
+- Snap Map's web version is gone; Snap Map now needs the Snapchat app.
+- Resource Watch is no longer updated and will be archived. SanctionsExplorer has paused its data updates.
+- New ⚠️ flags for maintenance or access limits: ACLED, Cobalt (no YouTube on the public instance), EOSDA LandViewer, ENF Fingerprinting Tool, Hive (now Deploy), Holehe, Instagram Location Search, Instant Data Scraper (new owner), Lumen Database, navtex.net, Open ENF, Radar Interference Tracker, SpiderFoot and Telepathy.
+
+**Renamed or moved**
+
+- RadarBox → AirNav Radar, Global Forest Watch → Global Nature Watch, Overpass Ultra → Ultra, YouTube Metadata → MW Metadata, Sentinel-2 Cloudless → EOxCloudless, World Database on Protected Areas → World Database on Protected and Conserved Areas, IDN Checker (Punycoder) → Punycoder, Navtex → navtex.net, and Wikipedia's List of Company Registers → List of Official Business Registers.
+- Convert Geographic Units is now listed under its real name, PGC Coordinate Converter. It doesn't convert UTM or MGRS.
+- New links for gallery-dl (now on Codeberg), Criminal IP, InVID / WeVerify, Instant Data Scraper, Onyphe, Radar Interference Tracker, UK CAA G-INFO, UN Comtrade and ZoomEye.
+
+**Pricing**
+
+- Now 🟡 Freemium: ACLED, AHA Music, Atlos, DNSDumpster, ImportYeti, Liveuamap, Realtime Trains and Who Posted What?
+- Now 🔴 Paid: Onyphe and SecurityTrails. OpenSanctions is free only for non-commercial use.
+- ransomware.live is free for non-commercial use, Obsidian is free for work use too, and ELAN is open source.
+
+**Descriptions**
+
+- Updated facts for 30+ entries, including Have I Been Pwned (no more phone search), Maigret (5,900+ sites), grep.app (now Vercel's), CelesTrak (6-digit catalogue numbers), Zeeschuimer (LinkedIn removed), Pinpoint (open to anyone 18+), the Open Source Munitions Portal (created by Airwars and ARES) and Copernicus Browser.
+
+**New tools**
+
+- Added 15 tools that the OSINT community picked up in 2025–26: geo-sleuth, Bellingcat Damage Proxy Maps, Filmot, TikTok Ad Library, Unfurl, user-scanner, SynthID check in Gemini, ADS-B Exposed, DeFlock, ip.thc.org, Robin, GitFive, GHOST OSINT CRM, OSINT Navigator and Awesome OSINT MCP Servers.
 
 ### 15 November 2026
 
